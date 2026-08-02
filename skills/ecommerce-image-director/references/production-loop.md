@@ -109,6 +109,23 @@ After each relevant product-image, prompt-engineering, market-reference, QA, or 
 - Keep updates concise and evidence-based; do not add private product details unless they teach a general rule.
 - Mention in the final response whether the skill was updated and whether it was synced to GitHub.
 
+## Daily Trend Radar
+
+The user expects this skill to keep learning from frontier image-generation models and current ecommerce visual practice. A recurring radar should monitor:
+- New or materially changed image models: product identity preservation, multi-reference fusion, local editing, text rendering, batch consistency, upscaling, transparent background, and image-to-video/product-video handoff.
+- Ecommerce style shifts: platform-native main images, detail-page modules, live-shopping covers, short-video thumbnails, UGC/product hybrid scenes, AI studio photography, surreal product worlds, and category-specific proof patterns.
+- Platform and compliance changes: image size/crop, prohibited claims, label accuracy, before-after restrictions, health/efficacy risk, origin/factory wording, sale/ranking claims, and legal label handling.
+
+Write updates only when they are reusable:
+- Model behavior -> `references/model-capabilities.md`.
+- Visual/style pattern -> `references/trend-watch.md` or `references/pattern-library.md`.
+- Workflow/process improvement -> `references/production-loop.md`.
+- Category-specific rule -> `references/category-playbook.md`.
+- Platform/spec change -> `references/image-specs.md`.
+- External source trail -> `references/source-log.md`.
+
+Do not update the skill for hype, one-off examples, unverified social posts, or copied brand layouts. Prefer official model releases, platform documentation, credible ecommerce/design analysis, and repeated cross-source patterns.
+
 Useful update examples:
 - "For transparent pouches, identity lock works better when front and back packaging photos are both provided."
 - "For skincare, request texture swatch separately from product packshot to avoid distorted labels."
@@ -126,6 +143,8 @@ When the user asks for latest/current/hot styles:
 1. Browse current sources.
 2. Update `trend-watch.md` or `source-log.md` only if a reusable pattern is found.
 3. Mention whether the answer is refreshed live or based on local knowledge.
+
+For scheduled radar runs, use the same rule: no meaningful reusable change means no commit.
 
 ## Suggested Future Additions
 

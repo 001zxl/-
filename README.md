@@ -1,5 +1,7 @@
 # Ecommerce Image Director Skill
 
+提供素材生成需要的主图和详情图。
+
 面向电商商品主图、详情图、直播间封面、社交电商广告图的 Codex skill。
 
 ## 能力范围

@@ -1,0 +1,4 @@
+interface:
+  display_name: "电商图片生成总监"
+  short_description: "跨品类封装产品包装、平台尺寸、趋势风格、用途图片和生图流程。"
+  default_prompt: "用这个 skill 根据任意产品素材生成符合平台尺寸和当下风格的主图、详情图、轮播图或直播封面。"

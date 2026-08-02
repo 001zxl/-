@@ -98,6 +98,17 @@ Update:
 
 Only add concise, reusable lessons. Avoid storing one-off project details unless they reveal a general rule.
 
+## Autonomous Maintenance
+
+For this user's ecommerce visual work, Codex is responsible for judging when the skill should be improved. Do not wait for the user to supervise every update.
+
+After each relevant product-image, prompt-engineering, market-reference, QA, or generation task:
+- Decide whether the work produced a reusable lesson, not just a one-off result.
+- Update the local skill when a new pattern, category rule, platform rule, compliance risk, model behavior, or workflow improvement is likely to help future projects.
+- Sync the repository copy and push to GitHub when the user has asked for GitHub-backed continuity or when the change materially improves the shared skill.
+- Keep updates concise and evidence-based; do not add private product details unless they teach a general rule.
+- Mention in the final response whether the skill was updated and whether it was synced to GitHub.
+
 Useful update examples:
 - "For transparent pouches, identity lock works better when front and back packaging photos are both provided."
 - "For skincare, request texture swatch separately from product packshot to avoid distorted labels."

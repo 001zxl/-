@@ -38,6 +38,26 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
+## Verified Marketplace Listing Notes (Checked 2026-08-03)
+
+Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
+
+### TikTok Shop United States Product Detail Page
+
+- Upload up to 9 square images; all images must be at least 600 x 600 px.
+- Use a front physical view of the product on a pure white background as the main image.
+- Do not add overlay logos, text, borders, watermarks, or graphics to listing images. Preserve the real brand marks printed on the physical product.
+- Show only what the customer receives. Placeholders and digital renderings are not allowed as product-listing images.
+- Use additional images for other physical angles, details, accessories, usage scenes, variations, close-ups, and scale comparisons; do not repeat the same angle.
+
+This does not prohibit bold text, stickers, generated scenes, or creator-style hooks in separate promotional placements when those placements allow them. Never reuse a promotional cover as a PDP main image without a fresh compliance check.
+
+### Xiaohongshu Merchant Product Images
+
+- The current Xiaohongshu Open Platform product API documentation accepts 800 x 800 or 750 x 1000 product images in JPG, PNG, or JPEG, corresponding to 1:1 and 3:4.
+- Product-detail images must be 750-1242 px wide, no more than 1546 px high, and no more than 2 MB each.
+- Treat these as merchant product-listing specifications, not Xiaohongshu feed-post creative guidance.
+
 ## Export Checklist
 
 Before final delivery, report:

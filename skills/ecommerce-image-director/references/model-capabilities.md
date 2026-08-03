@@ -89,6 +89,24 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
+## Verified Model Notes (2026-08-03)
+
+Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
+
+### Wan 2.7 Image Pro
+
+- Prefer `wan2.7-image-pro` when a task needs multi-reference editing, bounded local edits, brand-color control, or a coherent image set.
+- The official Model Studio guide supports up to 9 input reference images for editing, bounding-box edits, and character-consistent multi-image generation.
+- Text-to-image can reach 4096 x 4096. Editing is limited to 2048 x 2048.
+- Sequential image-set mode can request up to 12 coherent outputs, but it cannot be combined with thinking mode or custom color palettes.
+- For ecommerce batches, assign each reference a role before upload and still compare every package, label, colorway, and included item against the real product photos.
+
+### Qwen Image 2.0 Pro And Z-Image Turbo
+
+- Use `qwen-image-2.0-pro` when negative prompts or up to 6 variants per request are more useful than Wan's sequential set workflow. Its documented maximum is 2048 x 2048 for generation and editing.
+- Use `z-image-turbo` only for fast, low-cost generation such as early product-photo concepts; the official capability table does not support editing.
+- Do not choose a fast generation-only model for a workflow that depends on local repair or repeated identity-preserving edits.
+
 ## Picell-Inspired Workflow
 
 Borrow this sequence from product-image platforms:

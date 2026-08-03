@@ -23,6 +23,17 @@ Do:
 - Separate market pattern from copyable design.
 - Note source and date in `source-log.md` when the reference meaningfully changes the skill.
 
+### 2A. Placement And Market Gate
+
+Classify every deliverable before choosing a style:
+- Marketplace PDP/listing image.
+- Paid or organic social creative.
+- Short-video or livestream cover.
+- In-video or in-livestream visual.
+- Storefront, banner, or independent-site module.
+
+Record the exact market or seller region when platform rules differ. Do not transfer a high-conversion ad style directly into a strict listing slot. A platform may allow bold text and generated scenes in promotional creative while requiring a plain physical product photo for the PDP main image.
+
 ### 3. Image Map
 
 Build before generation:
@@ -84,6 +95,15 @@ For listing-ready ecommerce assets, prefer one of two paths:
 - Draft generated text: allow large, simple Chinese text for exploration, but mark all text as needing final human/post-production review.
 
 For regulated or label-heavy categories such as food, supplements, beauty, baby, electronics, and appliances, small generated text should never be used as the final legal label.
+
+### 5B. AI Disclosure And Product-Truth Gate
+
+Before publishing AI-assisted ecommerce creative:
+- Check whether the specific platform, market, and placement requires AI disclosure or automatic labeling.
+- Preserve the physical product's size, color, shape, features, contents, and realistic result. Do not let a generated scene turn into a product-not-as-described claim.
+- Treat lighting, cleanup, noise reduction, restrained color correction, and background changes as lower-risk only when they do not change product information.
+- For TikTok Shop United States promotional content, disclose fully generated or significantly AI-altered content using the platform setting or an in-content notice. Do not create fake experts, endorsements, or unrealistic effects.
+- Keep the real product visible in promotional video. A cover or PDP screenshot does not satisfy in-video or LIVE requirements, and current TikTok Shop US guidance restricts static/PDP-image-heavy LIVE content.
 
 ### 6. Knowledge Update
 

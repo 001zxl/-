@@ -2,6 +2,17 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-03 Update
+
+- Alibaba Cloud Model Studio, image generation and editing: verified `wan2.7-image-pro` as the recommended generation/editing route, including up to 9 editing references, bounding-box edits, 4K text-to-image, 2K editing, and coherent image-set generation; also verified Qwen Image 2.0 Pro and Z-Image Turbo routing. https://www.alibabacloud.com/help/en/model-studio/image-model
+- Alibaba Cloud Model Studio, text-to-image: verified 4K/2K resolution limits, up to 12 sequential images, and the incompatibility between sequential mode, thinking mode, and custom color palettes. https://www.alibabacloud.com/help/en/model-studio/text-to-image
+- TikTok Shop US Product Listing Policy: verified square PDP images, 600 x 600 px minimum, pure-white physical-product main image, no added text/graphics, and no digital renderings as listing images. https://seller-us.tiktok.com/university/essay?knowledge_id=3196690250417921
+- TikTok Shop US AI-Generated Content Restrictions and Requirements: verified AI disclosure, product-truth, anti-impersonation, and anti-fabricated-effect rules. https://seller-us.tiktok.com/university/essay?knowledge_id=491489038501663
+- TikTok Shop US Requirements for High-Quality Videos and LIVEs: verified that promotional video/LIVE must show dynamic real-world product content and that static or PDP-image-heavy LIVE content is restricted. https://seller-us.tiktok.com/university/essay?knowledge_id=4581457528243969
+- TikTok Shop US Requirements for Responsible Health-Related Content: verified restrictions on medical, weight-management, GLP-1, manipulated-result, and before/after creative. https://seller-us.tiktok.com/university/essay?knowledge_id=4545471832983342
+- Xiaohongshu Open Platform product creation/update documentation: verified 800 x 800 and 750 x 1000 merchant product images, 1:1 and 3:4 ratios, and detail-image dimensions/file size. https://school.xiaohongshu.com/en/open/product/create-spl-item.html
+- OpenAI ChatGPT Images 2.0, Google Nano Banana 2, Canva 2026 Design Trends, Adobe 2026 Creative Trends, TikTok Creative Center, Amazon Seller Central image guidance, and Shopify help were checked for broader model/style/platform coverage. No additional skill update was added where the existing 2026-08-02 notes already captured the reusable pattern or where the source did not establish a new exact rule.
+
 ## 2026-08-02 Update
 
 - TikTok Shop Academy, product listing best practices and product image requirements: used to reinforce mobile-first product clarity, listing quality, accurate product representation, and the need to verify platform rules before final upload.

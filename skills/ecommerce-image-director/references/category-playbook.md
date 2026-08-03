@@ -153,3 +153,10 @@ Capture packaging details before prompt writing:
 - For beauty/health/baby/pet, use stricter copy and avoid outcome guarantees.
 - For electronics, do not invent ports, UI screens, certifications, or technical specs.
 - For apparel, protect color accuracy and avoid misleading body/fit assumptions.
+
+### TikTok Shop United States Health And AI Visual Risks (Checked 2026-08-03)
+
+- For beauty, supplements, wellness, and body-related products, do not use AI-edited before/after images, filters, transformation graphics, or synthetic results that imply medical treatment, weight change, fat reduction, or unrealistic efficacy.
+- Do not create AI doctors, experts, research institutions, or other fabricated authority figures to endorse efficacy.
+- Keep claims neutral, factual, consistent with the product detail page, and supported by verified packaging or evidence.
+- Treat baby, maternity, pet, supplements, and medical-adjacent products as qualification-sensitive categories. Visual approval does not replace required seller or product documentation.

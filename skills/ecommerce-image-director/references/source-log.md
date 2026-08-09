@@ -2,6 +2,14 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-09 Update
+
+- Google Gemini API image-generation guide: verified the four current Nano Banana routes, model-specific reference-image limits, 1K/2K/4K and Lite 1K routing, Gemini 3.1 Flash Image video-to-image support, SynthID, and the August 17, 2026 Imagen shutdown. https://ai.google.dev/gemini-api/docs/image-generation
+- TikTok Shop US, How to Create Shoppable Photos: verified the select-seller beta as a distinct photo-commerce placement with at least 2 images, optional music, up to 10 linked products, and distribution across For You, Search, and Shop surfaces. https://seller-us.tiktok.com/university/essay?knowledge_id=6866148174104334&lang=en
+- Shopify Help Center, Product media types: verified image limits of 5000 x 5000 px or 25 megapixels, files under 20 MB, accepted formats, 2048 x 2048 square guidance, and consistent-aspect-ratio behavior. https://help.shopify.com/en/manual/products/product-media/product-media-types
+- Amazon public seller guidance: verified at least 1 image, at least 6 recommended, 500-10,000 px on the longest side, supported image formats, and up to 9 listing photos. https://sell.amazon.com/blog/product-photos and https://sell.amazon.com/blog/amazon-product-listings
+- Rechecked OpenAI ChatGPT Images 2.0, Alibaba Model Studio image routes, TikTok Shop US listing/AIGC rules, Xiaohongshu merchant specs, Douyin learning-center updates, and Canva/Adobe 2026 trend materials. No newer post-August-3 model or platform rule was found; the broader tactile, human, local, surreal, and evidence-led style findings were already represented in the skill and were not duplicated.
+
 ## 2026-08-03 Update
 
 - Alibaba Cloud Model Studio, image generation and editing: verified `wan2.7-image-pro` as the recommended generation/editing route, including up to 9 editing references, bounding-box edits, 4K text-to-image, 2K editing, and coherent image-set generation; also verified Qwen Image 2.0 Pro and Z-Image Turbo routing. https://www.alibabacloud.com/help/en/model-studio/image-model

@@ -82,6 +82,16 @@ Looks like an authentic phone-shot or creator scene but cleaned up with strong p
 
 Use for: social commerce, Xiaohongshu, TikTok/Douyin, local services.
 
+### Shoppable Photo Carousel
+
+Treat photo-first commerce posts as their own placement, not as a recycled PDP gallery or a substitute video cover. TikTok Shop United States currently offers Shoppable Photos as a beta for select sellers: a post needs at least 2 images and can link up to 10 products across For You, Search, and Shop surfaces.
+
+Use for: outfits, bundles, complementary products, high-sample-cost categories, and sellers who need lower-production-cost social commerce content.
+
+Sequence cue: open with a strong product/use hook, then rotate through real detail proof, use scene, scale or fit, and variant/bundle logic. Keep every linked product visible and recognizable; do not tag unrelated products.
+
+Risk: availability and limits may change during beta. Verify account access and current rules before production. This placement can use post-native text, stickers, and music, but product truth, IP, claim safety, and AI-disclosure requirements still apply.
+
 ### Reality Warp / Surreal Product Moment
 
 Slightly surreal lighting, scale play, warped background, or cinematic product world while keeping the product itself accurate.

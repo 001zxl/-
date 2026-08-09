@@ -58,6 +58,19 @@ This does not prohibit bold text, stickers, generated scenes, or creator-style h
 - Product-detail images must be 750-1242 px wide, no more than 1546 px high, and no more than 2 MB each.
 - Treat these as merchant product-listing specifications, not Xiaohongshu feed-post creative guidance.
 
+### Amazon Product Images
+
+- Current public Amazon seller guidance requires at least 1 product image and recommends at least 6; the listing workflow supports up to 9 photos.
+- Keep the longest side between 500 and 10,000 px. Accepted public-guidance formats are JPEG, TIFF, PNG, and non-animated GIF.
+- Use clear, unpixelated product views without jagged edges. Verify the current marketplace, category, and main-image background/content rules in Seller Central before upload because the public guidance is not a complete category policy.
+
+### Shopify Product And Collection Images
+
+- Product and collection images can be up to 5000 x 5000 px or 25 megapixels and must be smaller than 20 MB.
+- Prefer PNG, followed by JPEG, for most product images. Shopify also accepts PSD, TIFF, BMP, GIF, SVG, HEIC, and WebP, including animated GIF/WebP where appropriate.
+- Use 2048 x 2048 px as the usual square product-image target and keep featured images at a consistent aspect ratio so collection grids align.
+- Shopify creates multiple delivery sizes and the active theme controls display behavior. Check the theme crop, focal point, zoom, and mobile layout instead of exporting one universal storefront crop.
+
 ## Export Checklist
 
 Before final delivery, report:

@@ -107,6 +107,29 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Use `z-image-turbo` only for fast, low-cost generation such as early product-photo concepts; the official capability table does not support editing.
 - Do not choose a fast generation-only model for a workflow that depends on local repair or repeated identity-preserving edits.
 
+## Google Gemini Image Routing (Checked 2026-08-09)
+
+Use the exact model route instead of treating every Nano Banana workflow as equivalent. These are official capability limits, not guarantees that generated packaging, labels, or claims are accurate.
+
+### Nano Banana 2 And Pro
+
+- Use `gemini-3.1-flash-image` as the general production route when ecommerce work needs multiple product/style references, multi-turn editing, reliable display-text exploration, 1K-4K output, or a speed/quality balance. It supports up to 10 high-fidelity object references plus up to 4 character references within the 14-image limit.
+- Use `gemini-3-pro-image` for the most complex professional assets when brand consistency, localization, search grounding, and precise creative control matter more than speed. It supports up to 6 object references, 5 character references, and 3 style references within the 14-image limit.
+- Assign every reference a role before generation. More references can improve coverage, but irrelevant or conflicting references can weaken the product lock.
+- Treat model-rendered marketing text as a layout draft until spelling, claims, prices, and legal copy are verified and composited deterministically.
+
+### Nano Banana 2 Lite And Legacy Routes
+
+- Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation or simple edits. It only outputs 1K and Google does not optimize it for multi-reference or multi-turn sequential editing, so do not make it the default for packaging-critical repair loops.
+- Treat `gemini-2.5-flash-image` as a legacy 1024 px route. Google recommends moving workloads to the Nano Banana 2 family.
+- Migrate any Imagen API workflow before August 17, 2026. Google marks Imagen models deprecated and scheduled for shutdown on that date.
+- All Nano Banana outputs include a SynthID watermark; do not promise a watermark-free master without checking the actual delivery route and platform requirements.
+
+### Video-To-Cover Handoff
+
+- `gemini-3.1-flash-image` can use a video as context to generate a thumbnail, poster, or summary image. Use this when a short-video or livestream cover should reflect the actual footage rather than a disconnected prompt.
+- Still compare the generated cover against the real SKU, on-screen claims, featured people, and footage. Video context reduces creative drift but does not make product details or claims automatically final.
+
 ## Picell-Inspired Workflow
 
 Borrow this sequence from product-image platforms:

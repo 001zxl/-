@@ -90,6 +90,8 @@ Use for: outfits, bundles, complementary products, high-sample-cost categories, 
 
 Sequence cue: open with a strong product/use hook, then rotate through real detail proof, use scene, scale or fit, and variant/bundle logic. Keep every linked product visible and recognizable; do not tag unrelated products.
 
+Measurement cue: log the opening hook, slide roles, style territory, and linked SKU for each variant. Where Shoppable Photo Analytics is available, judge reach with views/impressions and conversion with CTR, SKU orders or CTOR, GMV, and product-level sales; use those results to repeat the visual pattern that converts rather than the one that only attracts views.
+
 Risk: availability and limits may change during beta. Verify account access and current rules before production. This placement can use post-native text, stickers, and music, but product truth, IP, claim safety, and AI-disclosure requirements still apply.
 
 ### Reality Warp / Surreal Product Moment

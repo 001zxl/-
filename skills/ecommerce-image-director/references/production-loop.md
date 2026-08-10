@@ -76,6 +76,15 @@ For each generated image, record:
 - Claim confidence notes.
 - Recommended use: main image, detail module, livestream cover, carousel, ad test, or experiment only.
 
+### 4A. Editable-Master Handoff
+
+When the tool supports structured or layered output, preserve a reusable campaign master instead of keeping only a flattened AI image:
+
+- Keep the verified product photo or product lock separate from generated background, lighting, props, text, badges, and legal copy.
+- Keep headlines, prices, claims, specifications, and logos as editable objects so they can be corrected or localized without regenerating the product.
+- Export platform-ready raster files from the approved master, but archive the layered source, source product photos, font information, and copy version together.
+- Treat layer-native generation as an emerging workflow, not a guarantee. Canva AI 2.0 currently describes fully layered, locally editable output as a research preview, so verify access, export behavior, and fidelity before depending on it in production.
+
 ### 5. QA Score
 
 Score from 1-5:
@@ -104,6 +113,17 @@ Before publishing AI-assisted ecommerce creative:
 - Treat lighting, cleanup, noise reduction, restrained color correction, and background changes as lower-risk only when they do not change product information.
 - For TikTok Shop United States promotional content, disclose fully generated or significantly AI-altered content using the platform setting or an in-content notice. Do not create fake experts, endorsements, or unrealistic effects.
 - Keep the real product visible in promotional video. A cover or PDP screenshot does not satisfy in-video or LIVE requirements, and current TikTok Shop US guidance restricts static/PDP-image-heavy LIVE content.
+
+### 5C. Photo-Commerce Measurement Loop
+
+For placements with photo-level analytics, connect visual decisions to performance instead of treating a carousel as one undifferentiated asset:
+
+1. Record the placement, linked product or shop, opening-image hook, slide roles, style territory, and publication date for each variant.
+2. Compare views and product impressions first, then CTR, SKU orders or CTOR, GMV, and product-level sales. Do not call a visual style successful from views alone.
+3. Use product-level detail to identify which pictured SKU actually converted; do not attribute a multi-product post's result equally to every slide.
+4. Compare photo and video formats over matched windows, and preserve the platform's timezone and attribution definitions in the experiment note.
+
+TikTok Shop US currently exposes these metrics in Shoppable Photo Analytics for selected beta sellers. Its navigation is in transition and the beta currently reports timing in UTC, so verify account access and the current interface before building an automated reporting flow.
 
 ### 6. Knowledge Update
 

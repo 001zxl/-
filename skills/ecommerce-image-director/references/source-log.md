@@ -2,6 +2,14 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-10 Update
+
+- Alibaba Cloud Model Studio model lifecycle and updates: verified the `qwen-image-2.0-pro-2026-06-22` snapshot, released June 25 for international and mainland China regions, with improved text rendering, instructions up to 1k tokens, refined photorealistic detail, and stronger semantic adherence over the April 22 snapshot. https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+- TikTok Shop US, Shoppable Photo Analytics: verified the selected-seller beta's photo-level and product-level views, impressions, CTR, CTOR, orders, GMV, engagement, comparison, export, and UTC-reporting workflow. This turns photo-commerce style choices into measurable experiments rather than subjective trend guesses. https://seller-us.tiktok.com/university/essay?knowledge_id=8100242739300110
+- Canva AI 2.0 announcement: verified fully layered, editable-object generation, local object changes, brand context, and campaign orchestration as a research preview. Added a guarded editable-master handoff rule; did not treat preview capability as a production guarantee. https://www.canva.com/newsroom/news/canva-create-2026-ai/
+- Shopify Help Center, media generation: verified the built-in editor's approximately 1 MP generated output behavior, one-scene-at-a-time workflow, transparent-PNG handling, and non-removable invisible watermark. https://help.shopify.com/en/manual/ai-powered-tools/shopify-magic/media-generation
+- Rechecked current Google Gemini image routing and Imagen shutdown guidance, OpenAI image-generation surfaces, Alibaba image routes, TikTok Shop listing/AIGC/Shoppable Photos materials, Amazon and Shopify product-media guidance, and official/searchable Douyin, Xiaohongshu, Taobao/Tmall, and JD surfaces. No post-August-9 exact listing-image rule or broader cross-platform style shift was validated, so existing platform specs and 2026 style directions were not duplicated.
+
 ## 2026-08-09 Update
 
 - Google Gemini API image-generation guide: verified the four current Nano Banana routes, model-specific reference-image limits, 1K/2K/4K and Lite 1K routing, Gemini 3.1 Flash Image video-to-image support, SynthID, and the August 17, 2026 Imagen shutdown. https://ai.google.dev/gemini-api/docs/image-generation

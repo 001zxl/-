@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (2026-08-03)
+## Verified Model Notes (Checked through 2026-08-10)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -104,8 +104,18 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 ### Qwen Image 2.0 Pro And Z-Image Turbo
 
 - Use `qwen-image-2.0-pro` when negative prompts or up to 6 variants per request are more useful than Wan's sequential set workflow. Its documented maximum is 2048 x 2048 for generation and editing.
+- Pin `qwen-image-2.0-pro-2026-06-22` when a production campaign needs repeatable model behavior. Alibaba's June 25 release note says this snapshot improves text rendering, supports instructions up to 1k tokens, and improves photorealistic detail and semantic adherence over the April 22 snapshot.
+- Before moving a catalog from the rolling `qwen-image-2.0-pro` alias to the pinned snapshot, regression-test real packaging, Chinese/English display text, material texture, and local edits on representative SKUs. Better text rendering does not make labels, claims, prices, or legal copy final.
 - Use `z-image-turbo` only for fast, low-cost generation such as early product-photo concepts; the official capability table does not support editing.
 - Do not choose a fast generation-only model for a workflow that depends on local repair or repeated identity-preserving edits.
+
+## Shopify Native Media Editing (Checked 2026-08-10)
+
+- Use Shopify's built-in AI media generation for quick background, lighting, or scene variations inside the merchant workflow, not as the only high-resolution production master.
+- The current help guide says generated edits default to about 1 megapixel: larger inputs are scaled down and smaller inputs are scaled up. Re-check final pixel dimensions and product detail before storefront use, especially when zoom or packaging text matters.
+- The editor produces one AI-generated scene at a time. Save promising variants before closing because unused scenes can be discarded.
+- Modified images keep the original format; save transparent-background outputs as PNG. Shopify applies a non-removable invisible watermark to generated images, although the guide says it does not restrict commercial use.
+- Keep the original product photo and an editable master outside the generated scene. Composite exact packaging, labels, prices, and legal copy deterministically when the native edit cannot preserve them.
 
 ## Google Gemini Image Routing (Checked 2026-08-09)
 

@@ -125,6 +125,18 @@ For placements with photo-level analytics, connect visual decisions to performan
 
 TikTok Shop US currently exposes these metrics in Shoppable Photo Analytics for selected beta sellers. Its navigation is in transition and the beta currently reports timing in UTC, so verify account access and the current interface before building an automated reporting flow.
 
+### 5D. Product-Image-To-Video Handoff
+
+When a platform can turn PDP images into shoppable or carousel video, treat still-image production as an upstream video input rather than a separate endpoint:
+
+1. Keep a clean, centered, high-resolution product view plus alternate angles and real use/detail shots in the source library. Do not rely on a typography-heavy cover as the only usable product asset.
+2. Preserve exact PDP attributes and descriptions. An automatic video may derive rotation, zoom, pan, overlay text, narration, or category styling from those fields, so a source-data error can spread into motion output.
+3. For controllable generation, review the script, overlay text, product truth, promotion dates, voiceover, and first-frame crop before publishing; save the source stills and prompt with the video record.
+4. For automatic generation that cannot be previewed or edited, audit the live PDP and account enrollment, then use the platform's product-level or account-level opt-out path when the result creates brand, claim, or accuracy risk.
+5. Keep platform-generated video distinct from seller-uploaded video and from feed creative. Record its placement, AI label, aspect ratio, moderation status, and whether it appears early in the PDP carousel.
+
+TikTok Shop US currently documents both a Seller Center AI Video Maker, which can use synced product images and lets sellers review or edit generated scripts, and a separate select-seller Auto-Generated Product Video feature that can publish from PDP images, attributes, and descriptions without pre-publication review. Verify account availability because both features are still account- and product-dependent.
+
 ### 6. Knowledge Update
 
 Update:

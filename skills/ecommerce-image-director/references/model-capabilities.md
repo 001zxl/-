@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-10)
+## Verified Model Notes (Checked through 2026-08-11)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -100,6 +100,21 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Text-to-image can reach 4096 x 4096. Editing is limited to 2048 x 2048.
 - Sequential image-set mode can request up to 12 coherent outputs, but it cannot be combined with thinking mode or custom color palettes.
 - For ecommerce batches, assign each reference a role before upload and still compare every package, label, colorway, and included item against the real product photos.
+
+### Qwen Image 3.0 And 3.0 Pro
+
+- Alibaba Cloud's current lifecycle log lists `qwen-image-3.0` and `qwen-image-3.0-pro` as globally released on August 6, 2026. The API reference supports both text-to-image and editing from 1-3 reference images, while the general model selector can lag or still describe Pro as invite-only; confirm actual console and regional access before promising delivery.
+- Route complex ecommerce layouts, multilingual display-type exploration, dense comparison cards, menu-like modules, and storyboard sheets to this family. The official release note advertises prompts up to 4.5k tokens, 10 px small-text rendering, 12-language typography, and realistic fine detail.
+- The documented output is PNG with total pixels between 512 x 512 and 2048 x 2048. Generate up to 6 variants where the selected endpoint supports it, then upscale or composite into the exact platform master rather than assuming a 4K final.
+- Stronger small-text rendering is a layout capability, not a compliance guarantee. Rebuild packaging copy, prices, claims, ingredients, warnings, barcodes, and legal text from verified source data.
+- Run a representative-SKU regression before replacing Qwen Image 2.0 in a catalog workflow: compare package geometry, logo spelling, colorway, multilingual type, material detail, local-edit drift, and batch consistency.
+
+### ViduQ3 Fast Reference-To-Image
+
+- Use `vidu/viduq3-fast_reference2image` as a candidate when a concept needs many product, scene, or style references at lower cost. Alibaba Cloud documents text-to-image, image editing, and reference-image generation with up to 14 references, 1K/2K/4K output, and one PNG result per task.
+- Assign references by role and remove conflicts before upload. A 14-image allowance does not mean that 14 equally weighted references improve product identity.
+- The current API guide is limited to the China (Beijing) region and requires model activation. Verify region, service access, pricing, and watermark settings before choosing it for a production batch.
+- Benchmark against the real SKU and a smaller-reference baseline. Treat product labels and embedded text as draft until deterministic compositing and QA are complete.
 
 ### Qwen Image 2.0 Pro And Z-Image Turbo
 

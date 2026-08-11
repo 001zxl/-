@@ -2,6 +2,13 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-11 Update
+
+- Alibaba Cloud Model Studio model lifecycle and Qwen Image 3.0 API reference: verified the August 6 global listing for `qwen-image-3.0` and `qwen-image-3.0-pro`, text-to-image plus 1-3-reference editing, 512 x 512 to 2048 x 2048 total-pixel output, and release claims for 4.5k-token prompts, 10 px small text, 12-language typography, and complex dense layouts. Official selector and API pages are not fully synchronized on Pro access, so the skill now requires a live region/console check. https://help.aliyun.com/zh/model-studio/newly-released-models and https://help.aliyun.com/en/model-studio/qwen-image-generation-and-editing-api-reference
+- Alibaba Cloud Model Studio Vidu image API: verified `vidu/viduq3-fast_reference2image` for generation, editing, and reference-to-image with up to 14 inputs, one PNG output, 1K/2K/4K sizes, and China (Beijing)-only documentation. Added it as a benchmarked many-reference route, not an automatic identity guarantee. https://help.aliyun.com/en/model-studio/vidu-image-generation-api-reference
+- TikTok Shop US Seller Center AI Video Maker and Auto-Generated Product Videos for PDP: verified synced product-image/video inputs, editable scripts for the controllable tool, and the separate select-seller PDP feature that can derive labeled motion output from images, attributes, and descriptions without pre-publication review. Added an image-to-video source-material and opt-out QA gate. https://seller-us.tiktok.com/university/essay?knowledge_id=7203789379143437 and https://seller-us.tiktok.com/university/essay?knowledge_id=4400501521516302
+- Rechecked Google Gemini/Imagen migration, OpenAI image surfaces, TikTok Shop listing/AIGC/Shoppable Photos, Shopify, Amazon, Canva, Adobe, and searchable official Douyin, Xiaohongshu, Taobao/Tmall, and JD materials. No post-August-10 exact listing-image rule or evidence-backed cross-platform visual-style shift was found, so `trend-watch.md`, `pattern-library.md`, and `image-specs.md` were not changed.
+
 ## 2026-08-10 Update
 
 - Alibaba Cloud Model Studio model lifecycle and updates: verified the `qwen-image-2.0-pro-2026-06-22` snapshot, released June 25 for international and mainland China regions, with improved text rendering, instructions up to 1k tokens, refined photorealistic detail, and stronger semantic adherence over the April 22 snapshot. https://www.alibabacloud.com/help/en/model-studio/newly-released-models

@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-11)
+## Verified Model Notes (Checked through 2026-08-12)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -103,11 +103,18 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 
 ### Qwen Image 3.0 And 3.0 Pro
 
-- Alibaba Cloud's current lifecycle log lists `qwen-image-3.0` and `qwen-image-3.0-pro` as globally released on August 6, 2026. The API reference supports both text-to-image and editing from 1-3 reference images, while the general model selector can lag or still describe Pro as invite-only; confirm actual console and regional access before promising delivery.
+- Alibaba Cloud's current model selector now says to start with `qwen-image-3.0-pro` for image generation and editing. Use Pro for complex layouts and typography; use `qwen-image-3.0` when the same generation/editing workflow needs faster output.
+- Both routes support generation and editing, 1-3 input references, negative prompts, up to 6 outputs per call, and a documented maximum of 2048 x 2048. Availability can still differ by region or account, so confirm the live console before promising delivery.
 - Route complex ecommerce layouts, multilingual display-type exploration, dense comparison cards, menu-like modules, and storyboard sheets to this family. The official release note advertises prompts up to 4.5k tokens, 10 px small-text rendering, 12-language typography, and realistic fine detail.
-- The documented output is PNG with total pixels between 512 x 512 and 2048 x 2048. Generate up to 6 variants where the selected endpoint supports it, then upscale or composite into the exact platform master rather than assuming a 4K final.
+- The API reference documents PNG output with total pixels between 512 x 512 and 2048 x 2048. Upscale or composite into the exact platform master rather than assuming a 4K final.
 - Stronger small-text rendering is a layout capability, not a compliance guarantee. Rebuild packaging copy, prices, claims, ingredients, warnings, barcodes, and legal text from verified source data.
 - Run a representative-SKU regression before replacing Qwen Image 2.0 in a catalog workflow: compare package geometry, logo spelling, colorway, multilingual type, material detail, local-edit drift, and batch consistency.
+
+### Alibaba Cloud Image-Model Retirement Gate
+
+- Do not start new production dependencies on `qwen-image`, `qwen-image-edit`, `qwen-image-edit-max`, `qwen-image-edit-plus`, `qwen-image-max`, `qwen-image-plus`, their listed historical snapshots, or the other legacy image utilities in Alibaba Cloud's October 10, 2026 retirement batch.
+- The official retirement table routes the retiring Qwen image family to `qwen-image-2.0` and older background/editing utilities to `wan2.7-image`. Prefer the newer Qwen Image 3.0 family for a new complex-layout workflow, but benchmark it against the official replacement and the current production model rather than treating “newer” as automatic product-fidelity improvement.
+- Before migration, inventory model IDs and regions, save prompts and approved outputs, then regression-test real SKUs for package geometry, text, color, material, local-edit drift, batch consistency, latency, and cost. Retired endpoints fail after the cutoff, and rate limits may be reduced during the notice period.
 
 ### ViduQ3 Fast Reference-To-Image
 

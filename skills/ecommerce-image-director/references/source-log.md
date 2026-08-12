@@ -2,6 +2,12 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-12 Update
+
+- Alibaba Cloud Model Studio image-model selector: verified that the current selector now explicitly starts generation/editing with `qwen-image-3.0-pro`, routes `qwen-image-3.0` as its faster version, and documents generation plus editing, 1-3 input references, negative prompts, up to 6 outputs, and 2048 x 2048 maximum output for both. This resolves the selector/API uncertainty recorded on August 11, while live regional/account access still requires checking. https://help.aliyun.com/en/model-studio/image-model/
+- Alibaba Cloud Model Studio retirement policy: verified an October 10, 2026 retirement batch covering the legacy `qwen-image`, `qwen-image-edit`, `qwen-image-edit-max`, `qwen-image-edit-plus`, `qwen-image-max`, and `qwen-image-plus` families and listed snapshots. The official table routes the retiring Qwen image models to `qwen-image-2.0` and older image utilities to `wan2.7-image`; added an inventory-and-regression migration gate rather than incorrectly treating Qwen Image 2.0 as retiring. https://help.aliyun.com/en/model-studio/model-depreciation
+- Rechecked Google Gemini/Imagen migration, OpenAI image generation, TikTok Shop listing/AIGC/Shoppable Photos/Image-to-Listing/video tooling, Amazon, Shopify, Canva, Adobe, and searchable official Douyin, Xiaohongshu, Taobao/Tmall, and JD materials. No new exact platform-image rule or evidence-backed cross-platform style shift was found, so `trend-watch.md`, `pattern-library.md`, `image-specs.md`, and `production-loop.md` were not changed.
+
 ## 2026-08-11 Update
 
 - Alibaba Cloud Model Studio model lifecycle and Qwen Image 3.0 API reference: verified the August 6 global listing for `qwen-image-3.0` and `qwen-image-3.0-pro`, text-to-image plus 1-3-reference editing, 512 x 512 to 2048 x 2048 total-pixel output, and release claims for 4.5k-token prompts, 10 px small text, 12-language typography, and complex dense layouts. Official selector and API pages are not fully synchronized on Pro access, so the skill now requires a live region/console check. https://help.aliyun.com/zh/model-studio/newly-released-models and https://help.aliyun.com/en/model-studio/qwen-image-generation-and-editing-api-reference

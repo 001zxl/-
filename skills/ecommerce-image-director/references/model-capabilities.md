@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-12)
+## Verified Model Notes (Checked through 2026-08-13)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -122,6 +122,12 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Assign references by role and remove conflicts before upload. A 14-image allowance does not mean that 14 equally weighted references improve product identity.
 - The current API guide is limited to the China (Beijing) region and requires model activation. Verify region, service access, pricing, and watermark settings before choosing it for a production batch.
 - Benchmark against the real SKU and a smaller-reference baseline. Treat product labels and embedded text as draft until deterministic compositing and QA are complete.
+
+### Wan 3.0 Approved-Still-To-Video Handoff
+
+- Treat `wan3.0-video` as a candidate for turning an approved ecommerce still, first/last-frame pair, or product reference into motion. Alibaba Cloud's current lifecycle page lists it in China (Beijing) as an all-in-one text-to-video, image-to-video, and reference-to-video model with output up to 30 seconds.
+- Do not treat the 30-second allowance as a reason to skip shot-level control. For packaging-critical work, start from clean approved product views, prototype short shots first, and inspect logo, label, color, shape, included items, camera continuity, and every frame that carries a claim before assembly.
+- Verify the live console, region, API route, resolution, reference limits, price, watermark, and audio behavior before committing a production job. The lifecycle listing can precede full synchronization across overview and API pages.
 
 ### Qwen Image 2.0 Pro And Z-Image Turbo
 

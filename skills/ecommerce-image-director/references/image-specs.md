@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace Listing Notes (Checked 2026-08-03)
+## Verified Marketplace Listing Notes (Checked through 2026-08-13)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -49,6 +49,8 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 - Do not add overlay logos, text, borders, watermarks, or graphics to listing images. Preserve the real brand marks printed on the physical product.
 - Show only what the customer receives. Placeholders and digital renderings are not allowed as product-listing images.
 - Use additional images for other physical angles, details, accessories, usage scenes, variations, close-ups, and scale comparisons; do not repeat the same angle.
+- Show realistic product proportions and avoid backgrounds or compositions that exaggerate size, especially for home decor, toys, and festive or party supplies. Do not use generated or rendered dimensional, visual, or material effects that the physical product does not have.
+- For new Food & Beverage listings, the complete ingredient list must also appear as clear PDP text, in descending order by weight, and match the physical label. An ingredient photo or generated ingredient graphic does not replace this structured disclosure.
 
 This does not prohibit bold text, stickers, generated scenes, or creator-style hooks in separate promotional placements when those placements allow them. Never reuse a promotional cover as a PDP main image without a fresh compliance check.
 

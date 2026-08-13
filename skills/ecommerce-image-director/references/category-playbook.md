@@ -15,6 +15,8 @@ Useful images:
 - Packaging trust: seal, transparency, size, storage.
 - Bundle/variant/flavor lineup.
 
+Platform gate: for a new TikTok Shop United States Food & Beverage listing, transcribe the complete ingredient list from the physical label into clear PDP text in descending weight order. Do not rely on an ingredient image, AI-generated label, or mood graphic as the only disclosure.
+
 ### Beauty, Skincare, Personal Care
 
 Proof needs: texture, routine, ingredient mood, shade/color, packaging premium feel, compliant efficacy.
@@ -62,6 +64,8 @@ Useful images:
 - Installation or assembly steps.
 - Before/after organization.
 - Variant/color/size lineup.
+
+Scale gate: anchor room scenes and comparison graphics to verified dimensions or a real reference object. Do not enlarge the product through perspective, miniature surroundings, or generated 3D/material effects that imply features the delivered item does not have.
 
 ### Mother & Baby, Pet
 

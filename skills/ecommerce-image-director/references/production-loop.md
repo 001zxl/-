@@ -83,7 +83,7 @@ When the tool supports structured or layered output, preserve a reusable campaig
 - Keep the verified product photo or product lock separate from generated background, lighting, props, text, badges, and legal copy.
 - Keep headlines, prices, claims, specifications, and logos as editable objects so they can be corrected or localized without regenerating the product.
 - Export platform-ready raster files from the approved master, but archive the layered source, source product photos, font information, and copy version together.
-- Treat layer-native generation as an emerging workflow, not a guarantee. Canva AI 2.0 currently describes fully layered, locally editable output as a research preview, so verify access, export behavior, and fidelity before depending on it in production.
+- Canva now says Magic Layers is available to all users through its ChatGPT and Gemini connections and can convert a flat AI image into live text and selectable objects. Use it as an editable-master handoff when available, but inspect layer boundaries, background regeneration, product edges, packaging, and copy; availability does not make the decomposed result accurate or listing-ready.
 
 ### 5. QA Score
 

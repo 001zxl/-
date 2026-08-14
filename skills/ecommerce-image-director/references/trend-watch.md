@@ -82,6 +82,8 @@ Looks like an authentic phone-shot or creator scene but cleaned up with strong p
 
 Use for: social commerce, Xiaohongshu, TikTok/Douyin, local services.
 
+Trust cue: preserve a real person, real product, or recognizably human imperfection while using AI for cleanup, adaptation, or background support. A 2026 Canva/Harris Poll study found a broad preference for human-made advertising and, among surveyed Gen Z and Millennials, higher acceptance of AI involvement when real people are featured. Treat this as directional research, not a platform-wide conversion guarantee; A/B test the human-present version against a fully synthetic variant.
+
 ### Shoppable Photo Carousel
 
 Treat photo-first commerce posts as their own placement, not as a recycled PDP gallery or a substitute video cover. TikTok Shop United States currently offers Shoppable Photos as a beta for select sellers: a post needs at least 2 images and can link up to 10 products across For You, Search, and Shop surfaces.

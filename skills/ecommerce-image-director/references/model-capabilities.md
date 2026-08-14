@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-13)
+## Verified Model Notes (Checked through 2026-08-14)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -109,6 +109,7 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - The API reference documents PNG output with total pixels between 512 x 512 and 2048 x 2048. Upscale or composite into the exact platform master rather than assuming a 4K final.
 - Stronger small-text rendering is a layout capability, not a compliance guarantee. Rebuild packaging copy, prices, claims, ingredients, warnings, barcodes, and legal text from verified source data.
 - Run a representative-SKU regression before replacing Qwen Image 2.0 in a catalog workflow: compare package geometry, logo spelling, colorway, multilingual type, material detail, local-edit drift, and batch consistency.
+- Plan batch throughput by route instead of assuming Pro and fast aliases share the same capacity. Alibaba Cloud's current public default limit table lists 5 task submissions per minute for `qwen-image-3.0-pro` and 20 per minute for `qwen-image-3.0`, with 10 asynchronous tasks processing concurrently in Beijing, Singapore, Frankfurt, and Tokyo. Treat these as planning ceilings, not guaranteed account entitlement; re-check the live quota before a catalog run.
 
 ### Alibaba Cloud Image-Model Retirement Gate
 
@@ -129,6 +130,12 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Do not treat the 30-second allowance as a reason to skip shot-level control. For packaging-critical work, start from clean approved product views, prototype short shots first, and inspect logo, label, color, shape, included items, camera continuity, and every frame that carries a claim before assembly.
 - Verify the live console, region, API route, resolution, reference limits, price, watermark, and audio behavior before committing a production job. The lifecycle listing can precede full synchronization across overview and API pages.
 
+### PixVerse V6 R2V Omni Mixed-Reference Handoff
+
+- Treat `pixverse/pixverse-v6-r2v-omni` as a guarded China-mainland candidate when an approved ecommerce still must be combined with motion or scene cues from reference video. Alibaba Cloud's August 13 lifecycle entry says the route accepts mixed image and video references and fuses multiple subjects with motion information across multiple resolutions and aspect ratios.
+- Assign each still or clip one role: product identity, hand interaction, camera move, environment, or performance cue. Never let a motion reference replace verified packaging geometry, color, label, included items, or real product behavior.
+- Keep this route experimental until its dedicated API and pricing documentation is synchronized. Verify access, input counts and durations, output length, resolution, audio, watermark, price, and region before spending on a production task.
+
 ### Qwen Image 2.0 Pro And Z-Image Turbo
 
 - Use `qwen-image-2.0-pro` when negative prompts or up to 6 variants per request are more useful than Wan's sequential set workflow. Its documented maximum is 2048 x 2048 for generation and editing.
@@ -144,6 +151,12 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - The editor produces one AI-generated scene at a time. Save promising variants before closing because unused scenes can be discarded.
 - Modified images keep the original format; save transparent-background outputs as PNG. Shopify applies a non-removable invisible watermark to generated images, although the guide says it does not restrict commercial use.
 - Keep the original product photo and an editable master outside the generated scene. Composite exact packaging, labels, prices, and legal copy deterministically when the native edit cannot preserve them.
+
+## Canva Magic Layers Handoff (Checked 2026-08-14)
+
+- Canva says Magic Layers is now available to all users inside ChatGPT and Gemini through the Canva connection. It can turn a flat AI-generated image into a Canva design with live-editable text and separately selectable objects, then support repositioning, background repair, translation, resizing, and team handoff.
+- Use it after concept approval to recover an editable campaign master, localize copy, and adapt ratios without regenerating the entire product scene. Keep the original SKU photo and verified copy beside the layered file.
+- Layer extraction is an editing aid, not a fidelity guarantee. Inspect masks, regenerated gaps, product edges, logos, packaging text, color, and legal copy before export; rebuild critical product and claim layers from verified sources when decomposition is imperfect.
 
 ## Google Gemini Image Routing (Checked 2026-08-09)
 

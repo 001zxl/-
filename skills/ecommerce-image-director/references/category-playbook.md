@@ -164,3 +164,8 @@ Capture packaging details before prompt writing:
 - Do not create AI doctors, experts, research institutions, or other fabricated authority figures to endorse efficacy.
 - Keep claims neutral, factual, consistent with the product detail page, and supported by verified packaging or evidence.
 - Treat baby, maternity, pet, supplements, and medical-adjacent products as qualification-sensitive categories. Visual approval does not replace required seller or product documentation.
+
+### TikTok Shop United States Qualification Photo Pack (Checked 2026-08-15)
+
+- Keep qualification evidence separate from listing, feed, and ad creative for approval-sensitive beauty, food, beverage, medical-adjacent, baby, pet, and electronics products.
+- Use clear, unedited photos of the actual product and full packaging. Capture readable ingredients, directions, net contents, manufacturer or distributor name and address, plus applicable safety markings or expiration dates. Do not submit an AI-restaged packshot, generated label, or retouched evidence image as the qualification photo.

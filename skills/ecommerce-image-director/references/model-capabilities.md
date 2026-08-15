@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-14)
+## Verified Model Notes (Checked through 2026-08-15)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -110,6 +110,13 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Stronger small-text rendering is a layout capability, not a compliance guarantee. Rebuild packaging copy, prices, claims, ingredients, warnings, barcodes, and legal text from verified source data.
 - Run a representative-SKU regression before replacing Qwen Image 2.0 in a catalog workflow: compare package geometry, logo spelling, colorway, multilingual type, material detail, local-edit drift, and batch consistency.
 - Plan batch throughput by route instead of assuming Pro and fast aliases share the same capacity. Alibaba Cloud's current public default limit table lists 5 task submissions per minute for `qwen-image-3.0-pro` and 20 per minute for `qwen-image-3.0`, with 10 asynchronous tasks processing concurrently in Beijing, Singapore, Frankfurt, and Tokyo. Treat these as planning ceilings, not guaranteed account entitlement; re-check the live quota before a catalog run.
+
+### Ideogram 4.0 Structured Layout Route
+
+- Use Ideogram 4.0 as a candidate for typography-heavy campaign concepts, comparison cards, posters, and other layouts that benefit from explicit spatial control. Its hosted API accepts either a natural-language prompt or a structured JSON prompt, supports 1K and 2K generation, and exposes transparent-background, remix, and advertisement-resizing routes.
+- The structured prompt can assign bounding boxes, literal text elements, element descriptions, and color palettes. Use those controls to lock hierarchy and reserve a verified product zone instead of asking a single prose prompt to infer the entire layout.
+- Treat the model as a layout and display-type route, not proof that packaging or regulated copy is correct. Keep the approved packshot separate, compare product geometry and color against the real SKU, and rebuild logos, prices, claims, ingredients, warnings, and legal text from verified sources.
+- Choose the license path before production: hosted API use includes commercial production rights, while the freely downloadable quantized weights are research/prototyping only unless a self-serve commercial or enterprise license is obtained. Do not describe the open-weight download as unrestricted commercial open source.
 
 ### Alibaba Cloud Image-Model Retirement Gate
 

@@ -125,7 +125,18 @@ For placements with photo-level analytics, connect visual decisions to performan
 
 TikTok Shop US currently exposes these metrics in Shoppable Photo Analytics for selected beta sellers. Its navigation is in transition and the beta currently reports timing in UTC, so verify account access and the current interface before building an automated reporting flow.
 
-### 5D. Product-Image-To-Video Handoff
+### 5D. PDP-To-Image-Ad Handoff
+
+Treat product-listing images as possible paid-media source assets, not an isolated gallery. TikTok's current global Image Ads material says VSA Carousel can use catalog images and Product Shopping Ads can automatically use PDP images plus Seller Center information as ad creative.
+
+Before enabling or scaling catalog-driven image ads:
+- Keep the PDP first image clean and listing-compliant, then give each additional image one distinct benefit, proof, angle, bundle, or use-context job so an automated carousel does not become a repetitive gallery.
+- Verify the Seller Center title, attributes, price, offer, variant mapping, and linked SKU against the same physical product shown in the images; automation can amplify stale or mismatched data.
+- Preview the actual ad placement for crop, safe zones, sequence, mobile readability, product prominence, and claim context. Listing compliance does not guarantee ad effectiveness, and a persuasive feed image is not automatically suitable as a PDP main image.
+- Record market, ad format, catalog/PDP source, image order, linked SKU, creative ID, eligibility, and measurement window. Evaluate CTR, conversion, orders, and GMV by image role instead of assuming that automatic reuse saves production without a performance cost.
+- Treat TikTok's human-model, customer-POV, promotion, and before/after suggestions as optional creative guidance. Apply category and claims rules first; do not use restricted before/after or synthetic efficacy proof for health, beauty, body, baby, pet, or medical-adjacent products.
+
+### 5E. Product-Image-To-Video Handoff
 
 When a platform can turn PDP images into shoppable or carousel video, treat still-image production as an upstream video input rather than a separate endpoint:
 

@@ -2,6 +2,12 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-17 Update
+
+- TikTok for Business Image Ads Carousel Playbook: added a paid-media-only specification and sequencing gate. The official playbook distinguishes Standard Carousel (2-35 JPG/JPEG/PNG images) from catalog-driven VSA Carousel (2-20 displayed images), lists horizontal 1200 x 628, square 640 x 640, and vertical 720 x 1280 assets, requires music, recommends vertical 9:16 and 720p+, and treats 3 or 7-9 images plus Smart Order as performance practices rather than universal listing rules. https://ads.tiktok.com/business/library/Image_Ads_Carousel_Ads_Playbook.pdf
+- Rechecked the Google Gemini deprecation table and image-generation guide on the scheduled Imagen 4 shutdown date. Both still state that Imagen 4 "will be shut down" on August 17, 2026; no authenticated endpoint test was available in this run, so the skill retains the migration rule and does not claim that shutdown has been operationally confirmed. https://ai.google.dev/gemini-api/docs/deprecations and https://ai.google.dev/gemini-api/docs/image-generation
+- Rechecked Alibaba Cloud Model Studio image release/routing pages, OpenAI image-generation materials, TikTok Shop US listing and policy surfaces, Amazon, Shopify, Canva, Adobe, Recraft, Ideogram, and searchable official Douyin, Xiaohongshu, Taobao/Tmall, and JD sources. No post-August-16 image-model release, marketplace PDP rule, category-specific compliance change, or independently validated cross-platform visual-style shift was found, so `model-capabilities.md`, `category-playbook.md`, `trend-watch.md`, and `pattern-library.md` were not changed.
+
 ## 2026-08-15 Update
 
 - Ideogram 4.0 official model, API, prompting, and licensing materials: added a guarded structured-layout route for typography-heavy ecommerce concepts. The API accepts natural-language or structured JSON prompts and supports 1K/2K output; the structured contract can use bounding boxes, literal text elements, and color palettes. Kept packaging/legal text under deterministic QA and recorded that hosted API production use differs from the non-commercial default license on downloaded quantized weights. https://ideogram.ai/blog/ideogram-4.0/ and https://developer.ideogram.ai/api-reference/api-reference/generate-v4 and https://ideogram.ai/licensing/

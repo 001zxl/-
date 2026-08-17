@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace Listing Notes (Checked through 2026-08-15)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-17)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -53,6 +53,16 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 - For new Food & Beverage listings, the complete ingredient list must also appear as clear PDP text, in descending order by weight, and match the physical label. An ingredient photo or generated ingredient graphic does not replace this structured disclosure.
 
 This does not prohibit bold text, stickers, generated scenes, or creator-style hooks in separate promotional placements when those placements allow them. Never reuse a promotional cover as a PDP main image without a fresh compliance check.
+
+### TikTok Image Ads Carousels
+
+Keep these paid-media specifications separate from TikTok Shop PDP requirements. Verify the live Ads Manager account and market before export because format availability can vary.
+
+- Standard Carousel accepts 2-35 JPG/JPEG or PNG images. TikTok's current playbook lists 1200 x 628 px horizontal, 640 x 640 px square, and 720 x 1280 px vertical assets; a file size of 100 KB or less is suggested rather than stated as a universal hard upload limit.
+- VSA Carousel displays 2-20 catalog-driven product images. It uses one caption and one call to action for the carousel, while each product image can lead to its own catalog product link.
+- Both formats require music in the cited playbook. Record the audio source and rights with the creative even though the visual team may hand off still images separately.
+- Prefer vertical 9:16 and at least 720p for TikTok-first delivery. Keep the product, verified copy, offer, and other critical elements inside the placement safe zone; horizontal or square sources can show black cut-off areas in feed.
+- Treat 3 or 7-9 images per carousel as TikTok's current performance-oriented best practice, not an upload rule. Test the count, order, and opening image against the specific product and objective.
 
 ### Xiaohongshu Merchant Product Images
 

@@ -165,7 +165,7 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Use it after concept approval to recover an editable campaign master, localize copy, and adapt ratios without regenerating the entire product scene. Keep the original SKU photo and verified copy beside the layered file.
 - Layer extraction is an editing aid, not a fidelity guarantee. Inspect masks, regenerated gaps, product edges, logos, packaging text, color, and legal copy before export; rebuild critical product and claim layers from verified sources when decomposition is imperfect.
 
-## Google Gemini Image Routing (Checked 2026-08-09)
+## Google Gemini Image Routing (Checked 2026-08-18)
 
 Use the exact model route instead of treating every Nano Banana workflow as equivalent. These are official capability limits, not guarantees that generated packaging, labels, or claims are accurate.
 
@@ -180,7 +180,8 @@ Use the exact model route instead of treating every Nano Banana workflow as equi
 
 - Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation or simple edits. It only outputs 1K and Google does not optimize it for multi-reference or multi-turn sequential editing, so do not make it the default for packaging-critical repair loops.
 - Treat `gemini-2.5-flash-image` as a legacy 1024 px route. Google recommends moving workloads to the Nano Banana 2 family.
-- Migrate any Imagen API workflow before August 17, 2026. Google marks Imagen models deprecated and scheduled for shutdown on that date.
+- Do not start new production on Imagen 4. Google's Gemini API deprecation table has reached its August 17, 2026 earliest shutdown date and names `gemini-3.1-flash-image` as the replacement for all three Imagen 4 GA routes.
+- Treat any Imagen 4 endpoint that still responds as transition-only and migrate immediately. Google's table says listed dates are the earliest possible shutdown dates; without an authenticated endpoint check or a newer explicit status notice, do not claim that operational shutdown has been independently confirmed.
 - All Nano Banana outputs include a SynthID watermark; do not promise a watermark-free master without checking the actual delivery route and platform requirements.
 
 ### Video-To-Cover Handoff

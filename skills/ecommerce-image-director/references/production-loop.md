@@ -109,9 +109,11 @@ For regulated or label-heavy categories such as food, supplements, beauty, baby,
 
 Before publishing AI-assisted ecommerce creative:
 - Check whether the specific platform, market, and placement requires AI disclosure or automatic labeling.
+- Check whether disclosure is carried in visible copy, an upload control, or embedded file metadata. Record the required field and value in the export manifest instead of treating a visual label as a universal solution.
 - Preserve the physical product's size, color, shape, features, contents, and realistic result. Do not let a generated scene turn into a product-not-as-described claim.
 - Treat lighting, cleanup, noise reduction, restrained color correction, and background changes as lower-risk only when they do not change product information.
 - For TikTok Shop United States promotional content, disclose fully generated or significantly AI-altered content using the platform setting or an in-content notice. Do not create fake experts, endorsements, or unrealistic effects.
+- For Amazon listing and A+ media in worldwide stores, tag a final export containing a photorealistic person generated entirely by AI with `contains-synthetic-performer` in the `dc:subject` XMP field. Read the metadata back after resize, compression, or conversion and before upload; keep the verified tagged derivative distinct from the editable master.
 - Keep the real product visible in promotional video. A cover or PDP screenshot does not satisfy in-video or LIVE requirements, and current TikTok Shop US guidance restricts static/PDP-image-heavy LIVE content.
 
 ### 5C. Photo-Commerce Measurement Loop

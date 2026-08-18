@@ -38,6 +38,7 @@ Use this when the user asks for popular market design, competitor learning, fres
 
 5. Avoid imitation.
    Do not reproduce one competitor's exact composition, text, palette, or props. Borrow structural logic and adapt it to the user's product.
+   When competitor references contain visible brands, packaging, labels, or legal text, use them for analysis only unless the user explicitly requests close style transfer. Do not pass competitor packshots as generation references when product identity preservation matters; describe the extracted style patterns in the prompt instead to reduce brand, logo, packaging, and claim contamination.
 
 ## Design Pattern Extraction Template
 

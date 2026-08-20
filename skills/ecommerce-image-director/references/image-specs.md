@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-18)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-20)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -75,8 +75,10 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - Current public Amazon seller guidance requires at least 1 product image and recommends at least 6; the listing workflow supports up to 9 photos.
 - Keep the longest side between 500 and 10,000 px. Accepted public-guidance formats are JPEG, TIFF, PNG, and non-animated GIF.
 - Use clear, unpixelated product views without jagged edges. Verify the current marketplace, category, and main-image background/content rules in Seller Central before upload because the public guidance is not a complete category policy.
-- For any listing or A+ image or video in Amazon's worldwide stores that contains a photorealistic person generated entirely by AI, use an IPTC-compatible metadata editor before upload and add the exact keyword `contains-synthetic-performer` to the `dc:subject` XMP field. Amazon says it can use this metadata to display a customer-facing indicator where applicable.
-- This exact metadata requirement does not apply when the media only shows real people, even if they were AI-altered, or when it has no people or no photorealistic people. Do not generalize those exceptions beyond this tag; image accuracy, rights, advertising, and other disclosure rules still apply.
+- For any buyer-facing image or video in Amazon's worldwide stores that contains a photorealistic person generated entirely by AI, add the exact keyword `contains-synthetic-performer` to the `dc:subject` XMP field. Amazon's official clarification says the scope includes product listings, A+ Content, Brand Story, Store media, product and A+ videos, Store videos, and advertising videos.
+- Treat a partially visible person as in scope when the visible human is still photorealistic and entirely AI-generated. This exact metadata requirement does not apply when the media only shows real people, even if AI-altered, characters from expressive works, no people, or no photorealistic people. Do not generalize those exceptions beyond this tag; image accuracy, rights, advertising, and other disclosure rules still apply.
+- For A+ Content, either embed the XMP keyword before upload or use the `AI-generated people` checkbox in A+ Content Manager Creative Assets; Amazon says that checkbox applies the metadata, and its A+ Creative Studio-generated images are tagged automatically. For non-A+ product-listing, Store, and advertising media, tag the delivery file before upload rather than assuming an upload control will do it.
+- Amazon's official forum clarification says compliance has been mandatory since June 6, 2026 and recommends retroactively updating older affected media. Inventory existing buyer-facing assets, preserve the original-to-derivative mapping, and re-upload the tagged derivative through the relevant tool; do not limit the check to newly produced files.
 - Verify the metadata on the final exported file after resizing, optimization, or format conversion, because those steps can strip XMP. Upload that verified derivative rather than assuming the layered master and delivery file carry the same metadata.
 
 ### Shopify Product And Collection Images

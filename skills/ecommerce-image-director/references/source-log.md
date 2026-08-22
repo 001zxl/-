@@ -2,6 +2,11 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-22 Update
+
+- TikTok for Business's August 2026 Catalog Ads overview now lists **Image Catalog Carousel** separately from the existing Standard and VSA carousel guidance. It automatically pulls 2-10 cards from a product catalog and is available for the Traffic objective in the upgraded Smart+ experience. Added a format-and-objective routing gate so production teams do not reuse VSA's 2-20-card range or assume account availability. https://ads.tiktok.com/resources/help/article/about-catalog-ads-in-tiktok-ads-manager?lang=en
+- Rechecked Alibaba Cloud Model Studio image releases/routing, Google Gemini image release and Imagen deprecation pages, OpenAI image materials, Volcengine Seedream, Ideogram, Recraft, TikTok Shop US, Amazon, Shopify, Canva, Adobe, and searchable official Douyin, Xiaohongshu, Taobao/Tmall, and JD sources. No post-August-20 image-model release, exact domestic-platform listing rule, category-specific requirement, or independently validated cross-platform style shift cleared the update gate, so `model-capabilities.md`, `category-playbook.md`, `trend-watch.md`, and `pattern-library.md` were not changed.
+
 ## 2026-08-20 Update
 
 - An official `Yujiro_Amazon` forum reply clarified the global AI-person metadata requirement after the earlier announcement. It covers all buyer-facing media, including listings, A+ Content, Brand Story, Store media, product/A+/Store videos, and advertising videos; applies to partially visible photorealistic people generated entirely by AI; and has been mandatory since June 6, 2026, with older affected media recommended for retroactive updates. For A+ Content, sellers may embed `contains-synthetic-performer` in the `dc:subject` XMP field or use the `AI-generated people` checkbox, while A+ Creative Studio output is tagged automatically. Non-A+ product-listing, Store, and advertising media must carry the tag in the uploaded file. Added placement routing and a retroactive asset-audit gate. https://sellercentral.amazon.com/seller-forums/discussions/t/0a4cc223-413e-4d1f-b8d7-d614aa047e9a

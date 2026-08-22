@@ -134,6 +134,7 @@ TikTok Shop US currently exposes these metrics in Shoppable Photo Analytics for 
 Treat product-listing images as possible paid-media source assets, not an isolated gallery. TikTok's current global Image Ads material says VSA Carousel can use catalog images and Product Shopping Ads can automatically use PDP images plus Seller Center information as ad creative.
 
 Before enabling or scaling catalog-driven image ads:
+- Record the exact catalog format and campaign objective before choosing asset count. For TikTok's Image Catalog Carousel in the upgraded Smart+ Traffic flow, QA a 2-10-card eligible catalog pool; do not substitute the 2-20-card VSA specification or assume the format is available in every account.
 - Keep the PDP first image clean and listing-compliant, then give each additional image one distinct benefit, proof, angle, bundle, or use-context job so an automated carousel does not become a repetitive gallery.
 - Verify the Seller Center title, attributes, price, offer, variant mapping, and linked SKU against the same physical product shown in the images; automation can amplify stale or mismatched data.
 - Preview the actual ad placement for crop, safe zones, sequence, mobile readability, product prominence, and claim context. Listing compliance does not guarantee ad effectiveness, and a persuasive feed image is not automatically suitable as a PDP main image.

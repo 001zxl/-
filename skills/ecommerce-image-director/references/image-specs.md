@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-20)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-22)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -60,6 +60,7 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 
 - Standard Carousel accepts 2-35 JPG/JPEG or PNG images. TikTok's current playbook lists 1200 x 628 px horizontal, 640 x 640 px square, and 720 x 1280 px vertical assets; a file size of 100 KB or less is suggested rather than stated as a universal hard upload limit.
 - VSA Carousel displays 2-20 catalog-driven product images. It uses one caption and one call to action for the carousel, while each product image can lead to its own catalog product link.
+- TikTok's August 2026 Catalog Ads overview separately lists **Image Catalog Carousel**: it automatically pulls 2-10 cards from the product catalog and is available for the Traffic objective in the upgraded Smart+ experience. Do not apply the VSA 2-20 range or objective assumptions to this placement; name the exact format and campaign objective in the export brief and verify availability in the live Ads Manager account.
 - Both formats require music in the cited playbook. Record the audio source and rights with the creative even though the visual team may hand off still images separately.
 - Prefer vertical 9:16 and at least 720p for TikTok-first delivery. Keep the product, verified copy, offer, and other critical elements inside the placement safe zone; horizontal or square sources can show black cut-off areas in feed.
 - Treat 3 or 7-9 images per carousel as TikTok's current performance-oriented best practice, not an upload rule. Test the count, order, and opening image against the specific product and objective.

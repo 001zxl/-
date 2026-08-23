@@ -85,6 +85,15 @@ When the tool supports structured or layered output, preserve a reusable campaig
 - Export platform-ready raster files from the approved master, but archive the layered source, source product photos, font information, and copy version together.
 - Canva now says Magic Layers is available to all users through its ChatGPT and Gemini connections and can convert a flat AI image into live text and selectable objects. Use it as an editable-master handoff when available, but inspect layer boundaries, background regeneration, product edges, packaging, and copy; availability does not make the decomposed result accurate or listing-ready.
 
+### 4B. Revision Lineage And Recipe Reuse
+
+When a generation is close to approval, continue from that asset and its exact recipe instead of rebuilding the concept from a fresh prompt:
+
+- Save the parent output, full prompt and negative prompt, model and version, reference files and their roles, aspect ratio, resolution, seed or other exposed settings, and the specific edit request. A prompt summary alone is not enough to reproduce a packaging-sensitive result.
+- Change one deliberate variable per revision when diagnosing product drift, layout changes, or style changes. Link every child output to its parent so the approved product lock and the cause of regressions remain visible.
+- Separate creation from finalization. Record the approved generation before upscaling, cropping, format conversion, metadata insertion, or export, then run product, text, claim, and metadata QA on the final delivery derivative.
+- Prefer tools that expose the recipe behind a selected image and can reuse it for a new generation. Recraft Studio's August 2026 interface surfaces the prompt, model, and settings through Modify, copies them through Reuse, and separates upscaling/export under Finalize. Treat this as a convenient implementation of the lineage rule, not a substitute for an external campaign manifest.
+
 ### 5. QA Score
 
 Score from 1-5:

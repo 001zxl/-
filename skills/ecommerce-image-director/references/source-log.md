@@ -2,6 +2,11 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-24 Update
+
+- Douyin E-commerce's current Douyin Mall management rule treats heavy watermarks, excessive text that obscures the product, stitched/collage images, compression distortion, and other low-quality or misleading main-image presentation as recommendation-surface failures. It also prohibits real-person try-on in the first image for underwear products in the Guess You Like module. Added a clean listing-versus-promotional-creative split and a category-specific first-image gate. https://school.jinritemai.com/doudian/web/articlev0/aHRK3WaAk7AN
+- Rechecked Alibaba Cloud Model Studio image releases and retirement, Google Gemini image release/deprecation pages, OpenAI image materials, Volcengine Seedream, Ideogram, Recraft, TikTok Shop US and TikTok for Business, Amazon, Shopify, Canva, Adobe, and searchable official Douyin, Xiaohongshu, Taobao/Tmall, and JD surfaces. No post-August-23 image-model release or independently validated cross-platform style shift cleared the update gate, so `model-capabilities.md`, `trend-watch.md`, and `pattern-library.md` were not changed.
+
 ## 2026-08-23 Update
 
 - Recraft's official August 21 Studio interface update now exposes the prompt, model, and settings that produced a selected image, lets creators copy that recipe into a new generation, and separates final upscaling/export. Added a tool-agnostic revision-lineage gate so ecommerce teams preserve the approved parent, exact recipe, reference roles, one-variable edit, and final-export QA instead of restarting packaging-sensitive work from a fresh prompt. https://feedback.recraft.ai/changelog

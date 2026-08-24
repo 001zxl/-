@@ -41,6 +41,8 @@ Useful images:
 - Styling combinations.
 - Colorway/variant lineup.
 
+Platform gate: for underwear products intended for Douyin Mall's Guess You Like module, do not use a real-person try-on as the first image. Prepare a clean product-only first image, then verify the current category and content rules before assigning model, fit, or lifestyle images to later slots or promotional placements.
+
 ### Electronics, Digital Accessories
 
 Proof needs: feature clarity, compatibility, ports, screen/interface, scale, use scenario, performance specs.

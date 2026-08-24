@@ -38,9 +38,15 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-22)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-24)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
+
+### Douyin Mall Product Images
+
+- For products entering Douyin Mall recommendation surfaces, keep the main image and detail page clear and undistorted. The current Douyin Mall rule lists heavy watermarks, text that obscures the product, stitched/collage images, compression distortion, and other low-quality or misleading presentation as image-quality failures.
+- Treat this as a listing-surface gate, not a ban on bold typography in every Douyin placement. Produce a clean recommendation-eligible main-image version separately from livestream covers, short-video thumbnails, and promotional graphics.
+- Verify the live category rules before using a human model. In Douyin Mall's Guess You Like module, the current underwear-category rule prohibits a real person wearing the product in the first image.
 
 ### TikTok Shop United States Product Detail Page
 

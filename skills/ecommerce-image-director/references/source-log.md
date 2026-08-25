@@ -2,6 +2,11 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-25 Update
+
+- Douyin E-commerce's official consultation for a revision to the `Brand` badge rules closes August 25 and proposes a September 2, 2026 effective date. The draft adds a reusable product-asset consistency check: prominent product information such as the title and main image should identify the brand, multiple brand signals must not conflict, and the displayed brand must match the physical product and authorization. Added this only as a pending rule with a final-publication recheck; it is not recorded as already effective. https://school.jinritemai.com/doudian/wap/article/aJpATNzewtG1
+- Rechecked Alibaba Cloud Model Studio image releases/lifecycle, Google Gemini image release/deprecation pages, OpenAI image materials, Volcengine Seedream, Ideogram, Recraft, TikTok Shop US and TikTok for Business, Amazon's AI-person disclosure thread, Shopify, Canva, Adobe, and searchable official Douyin, Xiaohongshu, Taobao/Tmall, and JD surfaces. No post-August-24 image-model release, final platform-image rule, category-specific requirement, or independently validated cross-platform style shift cleared the update gate, so `model-capabilities.md`, `category-playbook.md`, `trend-watch.md`, and `pattern-library.md` were not changed.
+
 ## 2026-08-24 Update
 
 - Douyin E-commerce's current Douyin Mall management rule treats heavy watermarks, excessive text that obscures the product, stitched/collage images, compression distortion, and other low-quality or misleading main-image presentation as recommendation-surface failures. It also prohibits real-person try-on in the first image for underwear products in the Guess You Like module. Added a clean listing-versus-promotional-creative split and a category-specific first-image gate. https://school.jinritemai.com/doudian/web/articlev0/aHRK3WaAk7AN

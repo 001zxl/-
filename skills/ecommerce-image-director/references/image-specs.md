@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-24)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-25)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -47,6 +47,8 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 - For products entering Douyin Mall recommendation surfaces, keep the main image and detail page clear and undistorted. The current Douyin Mall rule lists heavy watermarks, text that obscures the product, stitched/collage images, compression distortion, and other low-quality or misleading presentation as image-quality failures.
 - Treat this as a listing-surface gate, not a ban on bold typography in every Douyin placement. Produce a clean recommendation-eligible main-image version separately from livestream covers, short-video thumbnails, and promotional graphics.
 - Verify the live category rules before using a human model. In Douyin Mall's Guess You Like module, the current underwear-category rule prohibits a real person wearing the product in the first image.
+- Prepare a brand-consistency QA gate for Douyin product assets, but do not treat it as a final rule until the live policy is rechecked. An official consultation closing August 25 proposes a September 2, 2026 revision to the `Brand` badge rules: the brand should be explicit in prominent product information such as the title and main image, multiple brand signals must not conflict, and the displayed brand must match the physical product and authorization.
+- Keep this pending badge rule distinct from adding an arbitrary overlay logo. Prefer the real on-pack brand mark or verified brand copy, compare title, main image, SKU packaging, store authorization, and delivered product, and recheck the final published rule on or after September 2 before claiming badge eligibility.
 
 ### TikTok Shop United States Product Detail Page
 

@@ -43,6 +43,8 @@ Useful images:
 
 Platform gate: for underwear products intended for Douyin Mall's Guess You Like module, do not use a real-person try-on as the first image. Prepare a clean product-only first image, then verify the current category and content rules before assigning model, fit, or lifestyle images to later slots or promotional placements.
 
+Brand gate: for branded apparel, shoes, bags, and accessories on Douyin, do not hide, erase, crop away, or retouch the real product's brand name, trademark, or logo in listing images, SKU images, detail modules, video, or livestream presentation. Keep the identifier clear and consistent with the physical product and authorization; do not solve the rule by adding an unrelated overlay brand.
+
 ### Electronics, Digital Accessories
 
 Proof needs: feature clarity, compatibility, ports, screen/interface, scale, use scenario, performance specs.

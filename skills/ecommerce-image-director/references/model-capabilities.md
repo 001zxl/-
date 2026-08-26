@@ -165,20 +165,23 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Use it after concept approval to recover an editable campaign master, localize copy, and adapt ratios without regenerating the entire product scene. Keep the original SKU photo and verified copy beside the layered file.
 - Layer extraction is an editing aid, not a fidelity guarantee. Inspect masks, regenerated gaps, product edges, logos, packaging text, color, and legal copy before export; rebuild critical product and claim layers from verified sources when decomposition is imperfect.
 
-## Google Gemini Image Routing (Checked 2026-08-18)
+## Google Gemini Image Routing (Checked 2026-08-26)
 
 Use the exact model route instead of treating every Nano Banana workflow as equivalent. These are official capability limits, not guarantees that generated packaging, labels, or claims are accurate.
 
 ### Nano Banana 2 And Pro
 
 - Use `gemini-3.1-flash-image` as the general production route when ecommerce work needs multiple product/style references, multi-turn editing, reliable display-text exploration, 1K-4K output, or a speed/quality balance. It supports up to 10 high-fidelity object references plus up to 4 character references within the 14-image limit.
+- `gemini-3.1-flash-image` can also use Google Web Search and Image Search together, with retrieved web images passed as visual context. Use this as a research-grounded route for current category, ingredient, location, or scene context; do not let search results replace the real SKU as the product-identity source or silently import a competitor's packaging, logo, protected design, or unlicensed person.
+- Preserve the returned citations and attribution metadata and display Google's required search suggestions in any user-facing grounded result. Google's current guide says real-world images of people from web search are not supported in this image-generation route, so supply properly authorized person references directly when a human likeness matters.
 - Use `gemini-3-pro-image` for the most complex professional assets when brand consistency, localization, search grounding, and precise creative control matter more than speed. It supports up to 6 object references, 5 character references, and 3 style references within the 14-image limit.
 - Assign every reference a role before generation. More references can improve coverage, but irrelevant or conflicting references can weaken the product lock.
 - Treat model-rendered marketing text as a layout draft until spelling, claims, prices, and legal copy are verified and composited deterministically.
 
 ### Nano Banana 2 Lite And Legacy Routes
 
-- Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation or simple edits. It only outputs 1K and Google does not optimize it for multi-reference or multi-turn sequential editing, so do not make it the default for packaging-critical repair loops.
+- Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation, catalog variations, or fast local edits. Google's current guide lists up to 14 high-fidelity object references and the model card explicitly supports fast multi-turn edits such as color swaps, stickers, and background adjustments.
+- Lite only outputs 1K, has no separate character- or style-reference allocation in the official 14-reference table, and does not support Google Search grounding. Benchmark identity drift on representative SKUs before using it for packaging-critical batches, then upscale or composite into the exact delivery master rather than treating 1K output as final.
 - Treat `gemini-2.5-flash-image` as a legacy 1024 px route. Google recommends moving workloads to the Nano Banana 2 family.
 - Do not start new production on Imagen 4. Google's Gemini API deprecation table has reached its August 17, 2026 earliest shutdown date and names `gemini-3.1-flash-image` as the replacement for all three Imagen 4 GA routes.
 - Treat any Imagen 4 endpoint that still responds as transition-only and migrate immediately. Google's table says listed dates are the earliest possible shutdown dates; without an authenticated endpoint check or a newer explicit status notice, do not claim that operational shutdown has been independently confirmed.

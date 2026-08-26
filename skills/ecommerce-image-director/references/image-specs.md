@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-25)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-26)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -46,7 +46,10 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 
 - For products entering Douyin Mall recommendation surfaces, keep the main image and detail page clear and undistorted. The current Douyin Mall rule lists heavy watermarks, text that obscures the product, stitched/collage images, compression distortion, and other low-quality or misleading presentation as image-quality failures.
 - Treat this as a listing-surface gate, not a ban on bold typography in every Douyin placement. Produce a clean recommendation-eligible main-image version separately from livestream covers, short-video thumbnails, and promotional graphics.
+- For the separate Douyin Mall `Guess You Like` high-quality-main-image program, reject obvious AI or cutout artifacts, deformed products or people, cluttered backgrounds, frames, and incomplete subjects. Its current quality guide flags 3 or more text clusters, more than 60 characters of copy, colored copy/sticker blocks covering more than 30% of the image, click-bait prompts such as urgent-buy language, and grids containing more than 3 images.
+- Treat those numeric thresholds as recommendation-quality gates for that program, not universal upload limits for every Douyin image. For apparel, its guide favors real scenes and natural, complete on-body presentation, but category-specific rules still override that preference.
 - Verify the live category rules before using a human model. In Douyin Mall's Guess You Like module, the current underwear-category rule prohibits a real person wearing the product in the first image.
+- For branded apparel, shoes, bags, and accessories, keep the actual brand name, trademark, and logo unobscured across the main image, main-image video, SKU images, detail-page long images, short video, and livestream presentation. Douyin's July 24, 2026 governance notice prohibits covering or erasing those identifiers with props, stickers, limbs, cropping, grinding, retouching, or similar treatment; use only brand signals that belong to the delivered product and authorization.
 - Prepare a brand-consistency QA gate for Douyin product assets, but do not treat it as a final rule until the live policy is rechecked. An official consultation closing August 25 proposes a September 2, 2026 revision to the `Brand` badge rules: the brand should be explicit in prominent product information such as the title and main image, multiple brand signals must not conflict, and the displayed brand must match the physical product and authorization.
 - Keep this pending badge rule distinct from adding an arbitrary overlay logo. Prefer the real on-pack brand mark or verified brand copy, compare title, main image, SKU packaging, store authorization, and delivered product, and recheck the final published rule on or after September 2 before claiming badge eligibility.
 

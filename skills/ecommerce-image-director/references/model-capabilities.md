@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-15)
+## Verified Model Notes (Checked through 2026-08-27)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -130,6 +130,21 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Assign references by role and remove conflicts before upload. A 14-image allowance does not mean that 14 equally weighted references improve product identity.
 - The current API guide is limited to the China (Beijing) region and requires model activation. Verify region, service access, pricing, and watermark settings before choosing it for a production batch.
 - Benchmark against the real SKU and a smaller-reference baseline. Treat product labels and embedded text as draft until deterministic compositing and QA are complete.
+
+### Vidu Image Pro And Lite Reference-To-Image
+
+- Alibaba Cloud's August 24 China (Beijing) release adds `vidu/vidu-image-pro_reference2image` and `vidu/vidu-image-lite_reference2image`. Both accept text or up to 14 reference images for text-to-image, reference-to-image, and editing, and the current API guide lists one PNG output at 1K, 2K, or 4K.
+- Treat the pair as a benchmark route for reference-heavy ecommerce posters, information cards, and bilingual display-type concepts. The official description highlights Chinese/English text plus UI/chart detail, but this is not proof that packaging, prices, ingredients, claims, warnings, barcodes, or legal copy are accurate; rebuild critical copy from verified source data.
+- Use Lite as the cost-sensitive batch candidate and include Pro as the quality-ceiling comparison rather than assuming the model names establish product-fidelity performance. The published Beijing list price is time-specific and materially different: Lite is CNY 0.3125/0.34375/0.40625 per 1K/2K/4K image, while Pro is CNY 1.6875/3.1875/5.125. Re-check the live console and run a representative-SKU A/B before selecting either route.
+- Assign every reference a role and start with the smallest sufficient set. The API accepts PNG, JPG, or WEBP inputs from 1:4 to 4:1, with all reference files totaling no more than 50 MB; a 14-image allowance does not make conflicting packaging, style, and layout references safe.
+- The current route is asynchronous, limited to China (Beijing), requires model activation and a regional API key, and shares a five-task processing-concurrency pool across the Vidu reference-image family. Verify live access, price, quota, seed behavior, watermark setting, output size, and the 24-hour download-link window before a catalog batch.
+
+### Kling V3 Image And Omni Sequence Route
+
+- Use `kling/kling-v3-image-generation` as a China (Beijing) candidate for text-to-image or a single-reference concept when 1K/2K output and up to 9 independent variants are sufficient. Use `kling/kling-v3-omni-image-generation` when the task needs multiple references, 4K output, or a 2-9-image storyboard with narrative and visual continuity.
+- Route coherent campaign sequences to Omni's `series` mode only after defining each frame's job and shared product anchors. The API distinguishes independent `single` outputs, which are only style-similar, from `series` outputs intended to preserve scene and narrative continuity; neither mode guarantees exact packaging or SKU consistency.
+- The current operational API overview limits the standard model's reference-image route to one input, while the broader lifecycle description advertises up to 10 references. For production, follow the live API/console contract and use Omni for multi-reference work; the total of Omni reference images plus saved subject IDs must not exceed 10.
+- Both routes are asynchronous and require Beijing-region activation. Verify account access, reference count, aspect ratio, resolution, watermark setting, price, and the shared Kling image/video concurrency pool before a batch, then compare every logo, label, colorway, included item, and frame against the real product source.
 
 ### Wan 3.0 Approved-Still-To-Video Handoff
 

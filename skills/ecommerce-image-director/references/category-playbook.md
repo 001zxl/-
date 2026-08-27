@@ -116,6 +116,14 @@ Useful images:
 - Testimonial/review only if provided.
 - Before/after or case study only if verified.
 
+### Books, Magazines, Newspapers
+
+Proof needs: exact edition, cover/printing identity, copyright page, physical condition, completeness, and visible defects when sold as damaged or imperfect stock.
+
+Pending Douyin gate (recheck on or after 2026-08-28): the current public notice for the revised Mother & Baby, Books, Toys, and Pets category rule proposes that damaged-stock or appearance-defect books be identified as `库存书` or `外观瑕疵书` and clearly show the cover, back cover, spine, page edges, corners, and copyright page; sets should also show the overall set. The detail page would additionally show the real storage environment, condition grade, and specific defect examples. Keep this as a preflight candidate, not an effective hard rule, until Douyin publishes the final effective notice because the same page references both August 27 and a proposed August 28 revision date.
+
+Do not generate, beautify away, or substitute evidence of edition, copyright information, storage conditions, wear, or defects. Capture those views from the actual sellable stock and keep every SKU's condition grade consistent.
+
 ## Packaging Checklist
 
 Capture packaging details before prompt writing:

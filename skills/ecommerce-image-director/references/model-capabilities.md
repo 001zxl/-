@@ -89,7 +89,7 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
-## Verified Model Notes (Checked through 2026-08-27)
+## Verified Model Notes (Checked through 2026-08-28)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -179,6 +179,20 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Canva says Magic Layers is now available to all users inside ChatGPT and Gemini through the Canva connection. It can turn a flat AI-generated image into a Canva design with live-editable text and separately selectable objects, then support repositioning, background repair, translation, resizing, and team handoff.
 - Use it after concept approval to recover an editable campaign master, localize copy, and adapt ratios without regenerating the entire product scene. Keep the original SKU photo and verified copy beside the layered file.
 - Layer extraction is an editing aid, not a fidelity guarantee. Inspect masks, regenerated gaps, product edges, logos, packaging text, color, and legal copy before export; rebuild critical product and claim layers from verified sources when decomposition is imperfect.
+
+## Recraft V4 Styles Routing (Checked 2026-08-28)
+
+- Use Recraft V4 Styles as a candidate when a campaign needs repeatable art direction across many different compositions. The current API documentation supports one to ten style-reference images and dedicated raster/vector, standard/Pro routes; a saved `style_id` or references attached directly to a generation can carry the style into later requests.
+- Choose `precise` when rendering technique, palette, composition, and lighting should stay tightly aligned; choose `flexible` when the campaign needs more variation around the same mood. Start with one clean, rights-cleared reference, then add similar references to sharpen the match or deliberately diverse references to widen its range.
+- Keep style consistency separate from product identity. A style reference may govern lighting, texture, color, and composition, but the real SKU photos still govern package shape, logo, label, colorway, included items, and claims. Benchmark both locks together before scaling a catalog batch.
+- Record the resolved `style_id`, compatible model, match mode, reference files, and rights status in the campaign manifest. The API rejects simultaneous `style_id` and inline style references, and a custom style must be reused with a compatible model.
+
+## Adobe Photoshop Protected Local Editing (Checked 2026-08-28)
+
+- Use Photoshop's Firefly Image 5 `Instruct Edit with Masks` as a candidate for narrow production repairs when approved faces, logos, or brand assets outside the change region must remain untouched. Keep those verified elements unmasked, describe one precise change, and preserve the result as a separate generative layer.
+- Use Markup when text alone is ambiguous: point to the exact recolor, move, addition, or removal with a region, arrow, or rough shape. This is especially useful for background and prop repair around a locked product.
+- Treat protected-area behavior as an editing control, not proof of SKU fidelity. Compare the final derivative with the original packshot at pixel level around mask edges, packaging text, logo, color, and product geometry; retain the original and layered master for rollback.
+- Verify the live Photoshop surface and entitlement before committing a production job. Adobe labels the AI Assisted Editor as beta and Firefly Image 5 as Preview in the August 27 announcement, so availability and behavior can change.
 
 ## Google Gemini Image Routing (Checked 2026-08-26)
 

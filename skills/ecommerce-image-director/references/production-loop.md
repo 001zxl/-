@@ -94,6 +94,15 @@ When a generation is close to approval, continue from that asset and its exact r
 - Separate creation from finalization. Record the approved generation before upscaling, cropping, format conversion, metadata insertion, or export, then run product, text, claim, and metadata QA on the final delivery derivative.
 - Prefer tools that expose the recipe behind a selected image and can reuse it for a new generation. Recraft Studio's August 2026 interface surfaces the prompt, model, and settings through Modify, copies them through Reuse, and separates upscaling/export under Finalize. Treat this as a convenient implementation of the lineage rule, not a substitute for an external campaign manifest.
 
+### 4C. Style-Locked Batch And Protected Local Edit
+
+When a campaign needs a stable visual system across different products or placements, maintain two independent locks:
+
+- Product lock: real SKU photos and verified copy control package geometry, logo, label, colorway, included items, and claims.
+- Style lock: rights-cleared references control rendering technique, palette, texture, composition, and lighting. For Recraft V4 Styles, begin with one clean reference; add similar references to narrow the look or diverse references to widen it, then save the `style_id`, compatible model, and `precise` or `flexible` match mode.
+- Batch gate: generate a small set with deliberately different compositions before scaling. Reject the style route if it preserves the look but weakens SKU identity, text accuracy, category proof, or placement diversity.
+- Repair gate: once a product asset is approved, edit only the intended region. A masked instruction or visual markup should leave verified logos, faces, packaging, and legal copy outside the mask; keep the edit as a separate layer and inspect mask edges plus the final flattened derivative before export.
+
 ### 5. QA Score
 
 Score from 1-5:

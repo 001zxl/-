@@ -2,6 +2,11 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-29 Update
+
+- Google's updated Gemini 3.1 Flash Image model page: added the 0.5K output and 1:4, 4:1, 1:8, and 8:1 aspect-ratio route, plus the documented gains in aspect-ratio adherence, image consistency, and internationalized text rendering. Routed 0.5K to cheap layout rehearsal only, and the extreme ratios to deliberate banner/shelf-strip/long-module prototypes with final crop, packaging, text, and delivery-pixel QA. The existing multi-reference, search-grounding, video-to-cover, SynthID, and deterministic-copy safeguards remain in force. https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image and https://ai.google.dev/gemini-api/docs/image-generation
+- Rechecked Alibaba Cloud Model Studio's image release table, TikTok Ads Catalog/Image Carousel and Collage Carousel surfaces, Shopify media-generation guidance, Amazon's AI-person disclosure thread, OpenAI image-generation materials, and searchable Douyin policy surfaces. No post-August-28 image-model release, final Douyin Brand-badge publication, Amazon disclosure change, Shopify production-spec change, or independently validated cross-platform visual trend cleared the gate. The existing pending-Douyin and platform QA rules remain unchanged.
+
 ## 2026-08-28 Update
 
 - Recraft's V4 Styles announcement and synchronized API documentation: added a reusable style-lock route for batch art direction. The current contract accepts one to ten style references, supports reusable `style_id` or inline style references, exposes `precise` versus `flexible` matching, and includes dedicated V4 Styles raster/vector and standard/Pro model routes. Kept this separate from product identity: consistent palette, texture, composition, and lighting do not prove packaging, label, or SKU accuracy. https://www.recraft.ai/blog/meet-recraft-v4-styles and https://www.recraft.ai/docs/api-reference/styles

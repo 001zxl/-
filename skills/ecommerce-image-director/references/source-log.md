@@ -2,6 +2,13 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-08-30 Update
+
+- Google Merchant Center, 2026 product-data specification update and `image_link` documentation: the new `video_link` attribute is eligible for serving and policy/quality validation from 2026-06-30. All product images move to a 500 × 500 minimum on 2027-01-31, with warnings already surfacing for affected assets. Use 1500 × 1500 or higher where practical; do not upscale a thumbnail as a substitute for a real source.
+- Google Merchant Center, AI-generated content and image-link documentation: generative images must retain IPTC `DigitalSourceType` provenance metadata. Added a final-export metadata readback gate because delivery transformations can strip fields.
+- OpenAI Help Center, GPT Image API update: current GPT Image offers stronger instruction following, text rendering, detailed editing, and real-world knowledge. Keep the existing rule that packaging/legal microtext still needs source verification or deterministic compositing.
+- Amazon Sell, current listing and product-photo guidance: a listing supports up to nine photos; Amazon continues to favor a sharp, accurate, simple-backdrop hero plus supplementary detail/lifestyle proof. This confirms the existing placement split rather than creating a new style rule.
+
 ## 2026-08-29 Update
 
 - Google's updated Gemini 3.1 Flash Image model page: added the 0.5K output and 1:4, 4:1, 1:8, and 8:1 aspect-ratio route, plus the documented gains in aspect-ratio adherence, image consistency, and internationalized text rendering. Routed 0.5K to cheap layout rehearsal only, and the extreme ratios to deliberate banner/shelf-strip/long-module prototypes with final crop, packaging, text, and delivery-pixel QA. The existing multi-reference, search-grounding, video-to-cover, SynthID, and deterministic-copy safeguards remain in force. https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image and https://ai.google.dev/gemini-api/docs/image-generation

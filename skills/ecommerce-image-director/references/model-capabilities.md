@@ -89,6 +89,20 @@ Workflow:
 2. Rotate style territories: loud hook, clean trust, macro proof, lifestyle, comparison.
 3. Keep one visual language thread across the set.
 
+### AI Asset Provenance For Commerce Feeds
+
+Goal: keep an AI-assisted asset publishable where a commerce feed requires provenance or AI disclosure.
+
+Use when: exporting AI-generated or materially AI-edited product images to Google Merchant Center, Google Ads, or another channel with an equivalent disclosure rule.
+
+Workflow:
+1. Keep the source product image and the final delivery derivative separate; do not confuse a working canvas with the uploaded file.
+2. Preserve or add the platform-required provenance field at the final export stage. For Google Merchant Center, generative images require IPTC `DigitalSourceType` metadata (for example, `TrainedAlgorithmicMedia`; composites may use `CompositeSynthetic`).
+3. Read the final compressed/resized file back before upload: conversion, export optimization, and some DAM/CDN paths can strip metadata.
+4. Save the asset ID, destination, metadata value, export date, and source-product reference in the delivery manifest.
+
+QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
+
 ## Verified Model Notes (Checked through 2026-08-28)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.

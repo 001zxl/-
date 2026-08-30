@@ -125,6 +125,8 @@ For regulated or label-heavy categories such as food, supplements, beauty, baby,
 
 ### 5B. AI Disclosure And Product-Truth Gate
 
+For Google Merchant Center and Google advertising derivatives, retain the required AI provenance on the final file: generative images require IPTC `DigitalSourceType` metadata (for example, `TrainedAlgorithmicMedia`; a composite may use `CompositeSynthetic`). Verify the field after every resize, compression, format conversion, DAM, or CDN step. This requirement and any visible AI label are separate checks; neither removes the need for an accurate, unobstructed product image.
+
 Before publishing AI-assisted ecommerce creative:
 - Check whether the specific platform, market, and placement requires AI disclosure or automatic labeling.
 - Check whether disclosure is carried in visible copy, an upload control, or embedded file metadata. Record the required field and value in the export manifest instead of treating a visual label as a universal solution.

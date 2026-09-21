@@ -103,9 +103,17 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-08-28)
+## Verified Model Notes (Checked through 2026-09-21)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
+
+### GPT Image 2.5: Fast Concepts Versus Precise Edits
+
+- OpenAI's September 8 release exposes `gpt-image-2.5-flare` and `gpt-image-2.5-sunburst` in the Image API and Responses API image-generation tool. Use Flare for fast, everyday concept or batch-variant exploration; reserve Sunburst for detail-sensitive editing and final-candidate comparison. This is a routing hypothesis to benchmark on the actual SKU, not a measured guarantee of package or text fidelity.
+- Both accept text and image inputs for generation/editing and add `xhigh` and `max` to the usual quality choices. Start with a lower-cost/latency setting for composition experiments, then test a higher setting only where it changes observable product, material, or display-type quality. Do not assume a higher setting repairs wrong packaging or legal text.
+- The current Image API supports custom `WIDTHxHEIGHT` sizes with both dimensions divisible by 16 and aspect ratios from 1:3 to 3:1; sizes above 2560 x 1440 are experimental and the documented maximum is 3840 x 2160, subject to pixel/edge limits. Use a final platform crop and pixel check rather than assuming an arbitrary request is accepted or delivered exactly.
+- Both routes support transparent background with PNG or WebP output. Inspect cutout edges, translucency, shadows, package text, and the final composited delivery file; transparent output is not an identity lock. OpenAI describes improved edit consistency and infographic layout, but verify every brand mark, SKU, claim, and tiny label from the physical source.
+- Pin a dated model snapshot when reproducibility matters, and compare Flare/Sunburst against one approved packshot and a small representative SKU set before switching a production catalog. ChatGPT's template, sketch, and comment interfaces are product features; do not imply that they are separate Image API parameters.
 
 ### Wan 2.7 Image Pro
 
@@ -224,8 +232,8 @@ Use the exact model route instead of treating every Nano Banana workflow as equi
 
 ### Nano Banana 2 Lite And Legacy Routes
 
-- Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation, catalog variations, or fast local edits. Google's current guide lists up to 14 high-fidelity object references and the model card explicitly supports fast multi-turn edits such as color swaps, stickers, and background adjustments.
-- Lite only outputs 1K, has no separate character- or style-reference allocation in the official 14-reference table, and does not support Google Search grounding. Benchmark identity drift on representative SKUs before using it for packaging-critical batches, then upscale or composite into the exact delivery master rather than treating 1K output as final.
+- Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation and simple single-step variations. Although the guide lists up to 14 high-fidelity object references and the model card describes fast local edits, Google's updated image-generation guide explicitly says Lite is **not optimized for multiple reference inputs or multi-turn sequential editing**. Route reference-heavy product locks and chained repair to Flash Image or a benchmarked alternative; do not treat a supported input count as recommended production behavior.
+- Lite only outputs 1K, has no separate character- or style-reference allocation in the official 14-reference table, and does not support Google Search grounding. Benchmark identity drift on representative SKUs and upscale or composite into the exact delivery master rather than treating 1K output as final.
 - Treat `gemini-2.5-flash-image` as a legacy 1024 px route. Google recommends moving workloads to the Nano Banana 2 family.
 - Do not start new production on Imagen 4. Google's Gemini API deprecation table has reached its August 17, 2026 earliest shutdown date and names `gemini-3.1-flash-image` as the replacement for all three Imagen 4 GA routes.
 - Treat any Imagen 4 endpoint that still responds as transition-only and migrate immediately. Google's table says listed dates are the earliest possible shutdown dates; without an authenticated endpoint check or a newer explicit status notice, do not claim that operational shutdown has been independently confirmed.

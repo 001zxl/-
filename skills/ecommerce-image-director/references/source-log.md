@@ -2,6 +2,14 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-09-21 Update
+
+- OpenAI's September 8 ChatGPT Images 2.5 release, API model list, and Image API reference: added Flare for fast concepts and Sunburst for precision-edit candidates, the new `xhigh`/`max` quality settings, transparent PNG/WebP, custom-size constraints, and dated snapshot/representative-SKU QA. These are documented capabilities, not a production test or a guarantee that packaging/legal copy is correct. https://openai.com/index/introducing-chatgpt-images-2-5/ and https://developers.openai.com/api/docs/models/gpt-image-2.5-flare and https://developers.openai.com/api/reference/cli/resources/images/methods/generate
+- Google Gemini's image-generation guide now explicitly cautions that Nano Banana 2 Lite is not optimized for multiple references or multi-turn sequential editing. Corrected the prior workflow recommendation without denying the separately documented reference-input allowance or simple-edit examples. https://ai.google.dev/gemini-api/docs/image-generation
+- TikTok Shop US AIGC and Content Policy pages dated September 2/1: added a disclosure routing check for official effects, third-party tools, automatic metadata labeling, missing automatic labels, and false disclosure, plus a PDP-to-promotion product-truth comparison. https://seller-us.tiktok.com/university/essay?knowledge_id=491489038501663 and https://seller-us.tiktok.com/university/essay?default_language=en&knowledge_id=6837891779151617
+- TikTok for Business's September 2026 Carousel Ads overview: added objective, placement, and Spark versus Non-Spark selection to the paid-image brief while preserving the distinct Standard, VSA, Image Catalog, and Collage Carousel specifications. https://ads.tiktok.com/resources/help/article/carousel-ads?lang=en-GB
+- Reviewed available Alibaba Model Studio, Shopify, Amazon, Google Merchant Center, and Canva/Adobe research results. Search for current Douyin/Xiaohongshu/Taobao/Tmall/JD rules did not return a reliable new official rule in this run; no domestic-platform change is asserted. The repeated authenticity/tactile style direction did not clear the cross-brand novelty gate, so `trend-watch.md` and the pre-existing user edit in `pattern-library.md` were left untouched.
+
 ## 2026-08-30 Update
 
 - Google Merchant Center, 2026 product-data specification update and `image_link` documentation: the new `video_link` attribute is eligible for serving and policy/quality validation from 2026-06-30. All product images move to a 500 × 500 minimum on 2027-01-31, with warnings already surfacing for affected assets. Use 1500 × 1500 or higher where practical; do not upscale a thumbnail as a substitute for a real source.

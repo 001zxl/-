@@ -84,6 +84,8 @@ Useful images:
 - Cleaning and storage.
 - Safety/trust badges only if verified.
 
+Douyin pet gate: the current Pet Life category rule requires at least three main images, each at least 600 x 600 px, recommends 1:1, and requires real-product photography. Use a complete physical front view first; use later images for real angles, outer packaging, and readable domestic Chinese or imported simplified-Chinese labels. For pet staple food, medicine, and preparations, the detail page also needs the applicable real test-report cover and conclusion. Show complete formula, feeding/use amount, applicable age, storage/use-period, instructions, cautions, and required allergy, vomiting, or diarrhea risk and emergency handling according to the subcategory. Do not generate, retouch into existence, or substitute these evidence modules. Gift boxes must identify their actual contents; live fish and turtle listings additionally need measured size/method, care guidance, and after-sales terms. Recheck the live subcategory rule before export.
+
 ### Health, Wellness, Supplements
 
 Proof needs: routine, packaging clarity, ingredient display, dosage/use context, strict compliance.

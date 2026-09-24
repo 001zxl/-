@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-08-26)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-24)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -52,6 +52,7 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 - For branded apparel, shoes, bags, and accessories, keep the actual brand name, trademark, and logo unobscured across the main image, main-image video, SKU images, detail-page long images, short video, and livestream presentation. Douyin's July 24, 2026 governance notice prohibits covering or erasing those identifiers with props, stickers, limbs, cropping, grinding, retouching, or similar treatment; use only brand signals that belong to the delivered product and authorization.
 - Prepare a brand-consistency QA gate for Douyin product assets, but do not treat it as a final rule until the live policy is rechecked. An official consultation closing August 25 proposes a September 2, 2026 revision to the `Brand` badge rules: the brand should be explicit in prominent product information such as the title and main image, multiple brand signals must not conflict, and the displayed brand must match the physical product and authorization.
 - Keep this pending badge rule distinct from adding an arbitrary overlay logo. Prefer the real on-pack brand mark or verified brand copy, compare title, main image, SKU packaging, store authorization, and delivered product, and recheck the final published rule on or after September 2 before claiming badge eligibility.
+- For Douyin's 3C digital-products category, the rule revised effective September 16, 2026 requires five main images, each at least 600 x 600 px, and recommends 1:1. Slot 1 should show the complete physical product from the front; if compulsory CCC certification applies, slot 3 must show the CCC mark; if an energy-efficiency label is required, slot 4 must show it. Use actual-SKU evidence for those fixed slots and verify the live subcategory, certification, and label obligations before upload rather than inventing or recreating compliance marks with AI.
 
 ### TikTok Shop United States Product Detail Page
 

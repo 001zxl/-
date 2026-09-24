@@ -103,7 +103,7 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-09-21)
+## Verified Model Notes (Checked through 2026-09-24)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -209,6 +209,13 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Keep style consistency separate from product identity. A style reference may govern lighting, texture, color, and composition, but the real SKU photos still govern package shape, logo, label, colorway, included items, and claims. Benchmark both locks together before scaling a catalog batch.
 - Record the resolved `style_id`, compatible model, match mode, reference files, and rights status in the campaign manifest. The API rejects simultaneous `style_id` and inline style references, and a custom style must be reused with a compatible model.
 
+## Recraft V4.1 Flash Draft-To-Refine Route (Checked 2026-09-24)
+
+- Use Recraft V4.1 Flash as a candidate for high-volume composition, mood, prop, and headline-placement exploration when iteration speed matters. Recraft announced the separate Flash model on September 23 and says it is live in Studio and available through its API; confirm the live model identifier, account access, price, and supported controls before automating a batch.
+- When a direction is approved, use the Studio `Refine` handoff to Recraft V4.1 Pro at 2048 x 2048 instead of regenerating the brief from scratch. Choose Subtle when noise and contrast cleanup should stay close to the draft, or Moderate when small details can be rebuilt more actively. Treat the claimed composition and lighting preservation as vendor-described behavior and compare the refined derivative with the approved draft.
+- Do not use Flash speed, the vendor's exact-count examples, or Refine as proof of SKU fidelity. Benchmark a real representative product for package geometry, logo, label, colorway, included items, display text, edge detail, and edit drift; composite packaging and regulated copy from verified source data.
+- Recraft's published latency comparison is its own September 21 test under default settings and selected providers. Record actual end-to-end latency, queueing, download time, output size, and cost in the production environment before routing a catalog workload.
+
 ## Adobe Photoshop Protected Local Editing (Checked 2026-08-28)
 
 - Use Photoshop's Firefly Image 5 `Instruct Edit with Masks` as a candidate for narrow production repairs when approved faces, logos, or brand assets outside the change region must remain untouched. Keep those verified elements unmasked, describe one precise change, and preserve the result as a separate generative layer.
@@ -216,7 +223,7 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Treat protected-area behavior as an editing control, not proof of SKU fidelity. Compare the final derivative with the original packshot at pixel level around mask edges, packaging text, logo, color, and product geometry; retain the original and layered master for rollback.
 - Verify the live Photoshop surface and entitlement before committing a production job. Adobe labels the AI Assisted Editor as beta and Firefly Image 5 as Preview in the August 27 announcement, so availability and behavior can change.
 
-## Google Gemini Image Routing (Checked 2026-08-26)
+## Google Gemini Image Routing (Checked 2026-09-24)
 
 Use the exact model route instead of treating every Nano Banana workflow as equivalent. These are official capability limits, not guarantees that generated packaging, labels, or claims are accurate.
 
@@ -235,8 +242,7 @@ Use the exact model route instead of treating every Nano Banana workflow as equi
 - Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation and simple single-step variations. Although the guide lists up to 14 high-fidelity object references and the model card describes fast local edits, Google's updated image-generation guide explicitly says Lite is **not optimized for multiple reference inputs or multi-turn sequential editing**. Route reference-heavy product locks and chained repair to Flash Image or a benchmarked alternative; do not treat a supported input count as recommended production behavior.
 - Lite only outputs 1K, has no separate character- or style-reference allocation in the official 14-reference table, and does not support Google Search grounding. Benchmark identity drift on representative SKUs and upscale or composite into the exact delivery master rather than treating 1K output as final.
 - Treat `gemini-2.5-flash-image` as a legacy 1024 px route. Google recommends moving workloads to the Nano Banana 2 family.
-- Do not start new production on Imagen 4. Google's Gemini API deprecation table has reached its August 17, 2026 earliest shutdown date and names `gemini-3.1-flash-image` as the replacement for all three Imagen 4 GA routes.
-- Treat any Imagen 4 endpoint that still responds as transition-only and migrate immediately. Google's table says listed dates are the earliest possible shutdown dates; without an authenticated endpoint check or a newer explicit status notice, do not claim that operational shutdown has been independently confirmed.
+- Do not start or continue Gemini API production on Imagen. Google's image-generation guide, last updated September 23, now states that Imagen models are shut down and no longer available through the Gemini API; route generation and editing to the Nano Banana family and regression-test real SKUs before switching.
 - All Nano Banana outputs include a SynthID watermark; do not promise a watermark-free master without checking the actual delivery route and platform requirements.
 
 ### Video-To-Cover Handoff

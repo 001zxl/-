@@ -57,6 +57,8 @@ Useful images:
 - Comparison table or "what's included".
 - Compatibility image.
 
+Douyin 3C gate: the category rule revised effective September 16, 2026 requires five main images at 600 x 600 px or larger and recommends 1:1. Use an actual complete front view in slot 1. For products subject to compulsory CCC certification, reserve slot 3 for the CCC mark; for products subject to an energy-efficiency label, reserve slot 4 for that label. Use the remaining slots for real angles, verified brand and model information, ports/details, certification evidence, included accessories, outer packaging, and a readable complete Chinese label for domestic goods or simplified-Chinese label plus origin for imports. Do not generate or beautify certification marks, energy labels, manufacturer/address data, model numbers, or included-item evidence; capture them from the actual sellable SKU and verify the live category mapping before export.
+
 ### Home, Furniture, Storage, Decor
 
 Proof needs: scale, room fit, material, storage method, installation, before/after organization.

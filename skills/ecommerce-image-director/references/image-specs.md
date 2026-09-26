@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-24)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-26)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -63,6 +63,10 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 - Show only what the customer receives. Placeholders and digital renderings are not allowed as product-listing images.
 - Build the recommended 5-image baseline around distinct evidence roles: front, back, another physical angle, feature/detail, and included accessories or use/scale context. Use remaining slots for variations or additional proof; do not repeat the same angle.
 - Show realistic product proportions and avoid backgrounds or compositions that exaggerate size, especially for home decor, toys, and festive or party supplies. Do not use generated or rendered dimensional, visual, or material effects that the physical product does not have.
+- TikTok Shop US's September 24, 2026 listing-image AIGC rule allows generated or edited visuals only when they accurately represent the delivered product. Reject an AI-assisted listing image if it changes the product's size, color, material, shape, features, performance, quantity, bundle contents, included accessories, installation position, or supported compatibility.
+- Add a geometry-and-scene gate before upload: do not turn a flat print, sticker, poster, acrylic item, wall art, banner, or decorative painting into a raised, carved, layered, embossed, wood-grain, rotating, or otherwise false 3D object. Do not use people, furniture, vehicles, walls, lighting, shadows, arrows, or perspective to create a false sense of scale or thickness.
+- Keep the sold product as the unmistakable main subject. Do not replace a toy or plush product with a real animal, hide the product behind a more attractive lifestyle subject, duplicate units to inflate count, show a bundle sold separately, or reuse one SKU image for another variation.
+- Match every AI-assisted image to the selected SKU's title, description, category, attributes, and delivery contents. Material, dimensions, volume, density, specifications, compatible devices/vehicles/surfaces/parts, accessories, effects, animation, and performance must be supported by product data or real evidence; special effects must not imply a function the physical product lacks.
 - For new Food & Beverage listings, the complete ingredient list must also appear as clear PDP text, in descending order by weight, and match the physical label. An ingredient photo or generated ingredient graphic does not replace this structured disclosure.
 
 This does not prohibit bold text, stickers, generated scenes, or creator-style hooks in separate promotional placements when those placements allow them. Never reuse a promotional cover as a PDP main image without a fresh compliance check.

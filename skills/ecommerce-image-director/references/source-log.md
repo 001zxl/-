@@ -2,6 +2,12 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-09-26 Update
+
+- TikTok Shop US's September 24 product-listing-image AIGC rule: expanded the generic product-truth gate into an exact-SKU preflight covering geometry, scale, thickness, material, color, count, bundle contents, accessories, installation, compatibility, supported environments, performance, fake 3D treatment of flat goods, substituted main subjects, duplicated units, and unsupported motion or special effects. The rule allows AIGC when it accurately represents the delivered product; disclosure does not cure a misleading image. https://seller-us.tiktok.com/university/essay?knowledge_id=5892224899909383
+- TikTok Shop US's September 23 Originality Protection program: added an eligibility-gated first-publication and rights-evidence workflow for seller-created main product images. The program covers qualifying clear main images first published on TikTok Shop for one year, not secondary images, detail shots, or videos; enrollment, verification, and IPPC records must be confirmed in the live account. https://seller-us.tiktok.com/university/essay?knowledge_id=5459556890052373
+- Rechecked current OpenAI, Google Gemini, Alibaba Model Studio, Recraft, Adobe, Canva, TikTok Shop/TikTok Ads, Google Merchant Center, Amazon, Shopify, and searchable Douyin/Xiaohongshu/Taobao/Tmall/JD materials. No post-September-24 image-model release or independently validated cross-platform visual-style shift cleared the update gate, so `model-capabilities.md`, `trend-watch.md`, and the user's pre-existing `pattern-library.md` edit were not changed.
+
 ## 2026-09-24 Update
 
 - Recraft's September 23 V4.1 Flash announcement: added a guarded fast-draft route plus a Studio `Refine` handoff to V4.1 Pro at 2048 x 2048. The vendor describes Subtle and Moderate refinement levels and publishes its own latency comparison; the skill treats those results as a benchmark candidate, not independent proof of product, package, quantity, or text fidelity. Live API identifier, access, price, and representative-SKU behavior still require verification. https://www.recraft.ai/blog/meet-recraft-v4-1-flash

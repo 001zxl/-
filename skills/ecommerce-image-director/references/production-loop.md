@@ -94,6 +94,15 @@ When a generation is close to approval, continue from that asset and its exact r
 - Separate creation from finalization. Record the approved generation before upscaling, cropping, format conversion, metadata insertion, or export, then run product, text, claim, and metadata QA on the final delivery derivative.
 - Prefer tools that expose the recipe behind a selected image and can reuse it for a new generation. Recraft Studio's August 2026 interface surfaces the prompt, model, and settings through Modify, copies them through Reuse, and separates upscaling/export under Finalize. Treat this as a convenient implementation of the lineage rule, not a substitute for an external campaign manifest.
 
+### 4B.1 Conversational Adobe Batch-Finishing Handoff
+
+Adobe's September 2026 Gemini and Claude integrations add a guarded finishing route after the product identity and copy are approved:
+
+- Use Adobe in Gemini to normalize lighting, color, and crop across a rights-cleared product-photo set, then derive storefront, website, and social-channel variants from the approved master. Do not ask the connector to invent missing pack views, labels, accessories, or SKU facts.
+- Use the Adobe for Claude layer-based Express editor when a channel variant needs direct control over images, copy, colors, or fonts without regenerating the entire design. Keep the canonical packshot and approved copy version linked to every derivative.
+- Treat conversational orchestration as a production convenience, not an approval step. Record the Adobe surface, connected account, source assets, requested operations, output dimensions, and derivative lineage; then rerun product, text, claim, crop, color, and metadata QA on every exported channel file.
+- Verify live setup, entitlement, compatibility, and availability before scheduling a batch. Adobe says both integrations began a global rollout on September 24, but compatibility and availability can vary.
+
 ### 4C. Style-Locked Batch And Protected Local Edit
 
 When a campaign needs a stable visual system across different products or placements, maintain two independent locks:

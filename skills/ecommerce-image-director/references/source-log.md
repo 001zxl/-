@@ -2,6 +2,11 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-09-27 Update
+
+- Adobe's September 24 Gemini and Claude integration announcement: added a guarded conversational finishing handoff for ecommerce production. Adobe in Gemini can normalize lighting, color, and crop across uploaded product photos and create channel-ready variants; Adobe for Claude adds a layer-based Express editor for direct image, copy, color, and font changes without full regeneration. The workflow keeps the approved packshot and copy as canonical sources, records derivative lineage, and requires final product/text/claim/crop/color/metadata QA. Availability, compatibility, setup, and entitlements still require a live check. https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude
+- Rechecked current OpenAI, Google Gemini, Alibaba Model Studio, Recraft, Ideogram, Canva, TikTok Shop/TikTok Ads, Google Merchant Center, Amazon, Shopify, Douyin, and searchable Xiaohongshu/Taobao/Tmall/JD surfaces. No post-September-24 image-model release, new exact listing-image rule, or independently validated cross-platform visual-style shift cleared the update gate. The September 25 TikTok Shop US Content Policy restates the existing cross-placement product-truth gate rather than adding a distinct production rule, so `model-capabilities.md`, `image-specs.md`, `trend-watch.md`, and the user's pre-existing `pattern-library.md` edit were not changed.
+
 ## 2026-09-26 Update
 
 - TikTok Shop US's September 24 product-listing-image AIGC rule: expanded the generic product-truth gate into an exact-SKU preflight covering geometry, scale, thickness, material, color, count, bundle contents, accessories, installation, compatibility, supported environments, performance, fake 3D treatment of flat goods, substituted main subjects, duplicated units, and unsupported motion or special effects. The rule allows AIGC when it accurately represents the delivered product; disclosure does not cure a misleading image. https://seller-us.tiktok.com/university/essay?knowledge_id=5892224899909383

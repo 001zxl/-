@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-26)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-28)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -83,6 +83,13 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - Both formats require music in the cited playbook. Record the audio source and rights with the creative even though the visual team may hand off still images separately.
 - Prefer vertical 9:16 and at least 720p for TikTok-first delivery. Keep the product, verified copy, offer, and other critical elements inside the placement safe zone; horizontal or square sources can show black cut-off areas in feed.
 - Treat 3 or 7-9 images per carousel as TikTok's current performance-oriented best practice, not an upload rule. Test the count, order, and opening image against the specific product and objective.
+
+### Google Advertising AI Labels
+
+- For Google Ads, Display & Video 360, Campaign Manager 360, Merchant Center, and Google Ads Editor assets, make a separate AI-label decision from the Merchant Center IPTC provenance check. Use the platform AI-label setting or a compliant label applied in the creative when the targeted market or applicable law requires disclosure.
+- Google currently says designated AI-created or AI-edited assets are disclosed in the global `How this ad was made` panel, while campaigns targeting the European Union, India, or New York can also receive a visible overlay. Confirm the live campaign geography and label status before launch; using the Google setting does not by itself prove legal compliance.
+- If applying a visible label in the creative, keep it away from corners and edges, preview every responsive crop, and disable image-enhancement options that could crop the label. Record the final label route and status with each derivative rather than assuming one source file covers every placement.
+- Keep disclosure separate from asset truth and provenance: a label does not cure an inaccurate SKU, and Google-applied SynthID/C2PA or Merchant Center IPTC `DigitalSourceType` does not replace a required visible or platform-controlled disclosure.
 
 ### Xiaohongshu Merchant Product Images
 

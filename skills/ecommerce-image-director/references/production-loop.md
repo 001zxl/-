@@ -136,6 +136,8 @@ For regulated or label-heavy categories such as food, supplements, beauty, baby,
 
 For Google Merchant Center and Google advertising derivatives, retain the required AI provenance on the final file: generative images require IPTC `DigitalSourceType` metadata (for example, `TrainedAlgorithmicMedia`; a composite may use `CompositeSynthetic`). Verify the field after every resize, compression, format conversion, DAM, or CDN step. This requirement and any visible AI label are separate checks; neither removes the need for an accurate, unobstructed product image.
 
+For Google advertising delivery, also record the AI-label decision per campaign, asset, and target geography. Google exposes a platform AI-label setting across Google Ads, Display & Video 360, Campaign Manager 360, Merchant Center, and Google Ads Editor; designated assets appear in the global `How this ad was made` panel, and ads targeting the European Union, India, or New York can receive a visible overlay. If the label is composited into the creative, keep it clear of responsive-crop edges and turn off enhancement options that can crop it. Verify the final label status in the live asset library or report because the setting, visible overlay, SynthID/C2PA, and Merchant Center IPTC provenance are distinct controls.
+
 Before publishing AI-assisted ecommerce creative:
 - Check whether the specific platform, market, and placement requires AI disclosure or automatic labeling.
 - Check whether disclosure is carried in visible copy, an upload control, or embedded file metadata. Record the required field and value in the export manifest instead of treating a visual label as a universal solution.

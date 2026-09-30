@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-28)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-30)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -84,12 +84,26 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - Prefer vertical 9:16 and at least 720p for TikTok-first delivery. Keep the product, verified copy, offer, and other critical elements inside the placement safe zone; horizontal or square sources can show black cut-off areas in feed.
 - Treat 3 or 7-9 images per carousel as TikTok's current performance-oriented best practice, not an upload rule. Test the count, order, and opening image against the specific product and objective.
 
+### TikTok Automated Creative And Placement Resizing
+
+- TikTok's September 2026 Automated Creative workflow can upscale uploaded creative and resize images to full-screen width. It is available only for supported objectives, placements, and ad types; the selected optimization features cannot be changed after the campaign is published. Record the enabled feature set before launch and create a new campaign when a different automation policy is required.
+- Treat automatic resizing as a derivative that needs product, text, logo, disclosure, safe-zone, and image-quality QA. For TikTok Ad Network (formerly Pangle), the separate intelligent image-size optimizer fills vacant areas with black edges or Gaussian blur rather than cropping the source; preview the actual square and vertical placements and supply native-ratio variants when those fills weaken brand quality or product prominence.
+
 ### Google Advertising AI Labels
 
+- For Merchant Center product images created with a trained generative model, preserve IPTC `DigitalSourceType=TrainedAlgorithmicMedia`; use `CompositeSynthetic` when the delivery file is a composite that includes synthetic elements. Google's current specification also lists `AlgorithmicMedia` for imagery created purely by an algorithm that is not based on sampled training data. Select the value from the actual creation process rather than treating the three codes as interchangeable or labeling trained-model output as purely algorithmic.
+- Preserve the selected field through every derivative for `image_link`, `additional_image_link`, and `lifestyle_image_link`, then read it back from the final upload file. A visible AI label or Google-applied SynthID/C2PA does not replace this Merchant Center file-metadata requirement.
 - For Google Ads, Display & Video 360, Campaign Manager 360, Merchant Center, and Google Ads Editor assets, make a separate AI-label decision from the Merchant Center IPTC provenance check. Use the platform AI-label setting or a compliant label applied in the creative when the targeted market or applicable law requires disclosure.
 - Google currently says designated AI-created or AI-edited assets are disclosed in the global `How this ad was made` panel, while campaigns targeting the European Union, India, or New York can also receive a visible overlay. Confirm the live campaign geography and label status before launch; using the Google setting does not by itself prove legal compliance.
 - If applying a visible label in the creative, keep it away from corners and edges, preview every responsive crop, and disable image-enhancement options that could crop the label. Record the final label route and status with each derivative rather than assuming one source file covers every placement.
 - Keep disclosure separate from asset truth and provenance: a label does not cure an inaccurate SKU, and Google-applied SynthID/C2PA or Merchant Center IPTC `DigitalSourceType` does not replace a required visible or platform-controlled disclosure.
+
+### Google Ads Suggested Assets And Demand Gen Images
+
+- Google Ads Suggested assets are available to advertisers by default when Google AI has a suggestion. Keep the review-only path separate from asset optimization: suggestions can be reviewed and added or dismissed, but enabled optimization controls such as text customization or image enhancements can add derivatives directly to campaigns without passing through the Suggested assets review tab.
+- Before adding a suggested image, preserve its source, prompt or landing-page/feed lineage, preview, and approval record. Once added through the Suggested assets tab, Google treats it as advertiser-created in reporting, counts it against the asset-group limit, and shows `Advertiser` as its source; do not rely on the later source column to reconstruct AI provenance.
+- Audit automated results in the Asset report for exact SKU, logo, copy, claim, crop, disclosure, and policy compliance. Google may suggest landing-page-derived images, resized versions, removal of text overlays, or new generated images; advertiser ownership and an `Advertiser` report label do not replace creative QA.
+- For Demand Gen image ads on YouTube Shorts, export and preview a dedicated 9:16 full-bleed asset for the current one-click landing-page experience. Keep this paid-placement derivative separate from square PDP imagery and do not treat Google's reported Gmail performance average as a guaranteed result for a specific account or category.
 
 ### Xiaohongshu Merchant Product Images
 

@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-09-30)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-10-01)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -58,6 +58,7 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 ### TikTok Shop United States Product Detail Page
 
 - The technical upload floor is 1 image, but TikTok Shop's current listing course recommends at least 5 high-resolution images for a strong listing; upload no more than 9 square images. All images must be at least 600 x 600 px.
+- Do not use another seller's original product image, or an AI-modified version of it, in a listing without written authorization. Cropping, background replacement, retouching, style transfer, and generative restaging do not convert a competitor image into a rights-cleared asset. Use competitor imagery only to extract non-copying patterns; build production assets from seller-owned or explicitly licensed product photography and retain the written authorization with the asset record.
 - Use a front physical view of the product on a pure white background as the main image.
 - Do not add overlay logos, text, borders, watermarks, or graphics to listing images. Preserve the real brand marks printed on the physical product.
 - Show only what the customer receives. Placeholders and digital renderings are not allowed as product-listing images.

@@ -2,6 +2,11 @@
 
 Use this as a lightweight trail of external references consulted for trend/spec updates. Refresh links before current-trend projects because platform rules and visual trends change.
 
+## 2026-10-01 Update
+
+- TikTok Shop US's current Intellectual Property Policy explicitly prohibits using another seller's original product image, or an AI-modified version of it, in a listing without written authorization. Added a derivative-rights gate: cropping, background replacement, retouching, style transfer, or generative restaging does not clear image rights; production must start from seller-owned or explicitly licensed product photography, with the authorization scope archived in the asset record. This complements, rather than replaces, the September 23 Originality Protection workflow. https://seller-us.tiktok.com/university/course?content_id=6837901778306818&learning_id=6037851293763342
+- Rechecked official/current OpenAI, Google Gemini/Ads/Merchant Center, Alibaba Model Studio, Recraft/Ideogram/Adobe, TikTok Shop/TikTok Ads, Amazon, Shopify, Douyin, Canva, and searchable Xiaohongshu/Taobao/Tmall/JD surfaces. No post-September-30 image-model release, exact domestic listing-image rule, category-specific image change, or independently supported visual-style shift cleared the update gate, so `model-capabilities.md`, `category-playbook.md`, `trend-watch.md`, and the user's pre-existing `pattern-library.md` edit were not changed. `bl search web` was attempted first but failed with `ENOTFOUND dashscope.aliyuncs.com`, so the review used official web sources.
+
 ## 2026-09-30 Update
 
 - Alibaba Cloud's Model Inference Service SLA amendment took effect September 28, 2026 and excludes service errors caused by officially deprecated models from the availability calculation. Added a lifecycle-and-reliability gate: record the live model state, avoid new recurring production on deprecated image endpoints even if they still respond, and complete representative-SKU migration QA before relying on a supported replacement. https://www.alibabacloud.com/en/notice/announcement_on_amendments_to_the_service_level_agreement_sla_for_model_inference_service_of_aliba_856?_p_lc=1

@@ -103,7 +103,7 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-09-24)
+## Verified Model Notes (Checked through 2026-10-04)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -139,6 +139,14 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - The structured prompt can assign bounding boxes, literal text elements, element descriptions, and color palettes. Use those controls to lock hierarchy and reserve a verified product zone instead of asking a single prose prompt to infer the entire layout.
 - Treat the model as a layout and display-type route, not proof that packaging or regulated copy is correct. Keep the approved packshot separate, compare product geometry and color against the real SKU, and rebuild logos, prices, claims, ingredients, warnings, and legal text from verified sources.
 - Choose the license path before production: hosted API use includes commercial production rights, while the freely downloadable quantized weights are research/prototyping only unless a self-serve commercial or enterprise license is obtained. Do not describe the open-weight download as unrestricted commercial open source.
+
+### Ideogram 4.5 Precise-Edit Route
+
+- Use Ideogram 4.5 as a candidate when an approved ecommerce asset needs several narrow revisions without re-generating the whole frame: colorway or material changes, lighting cleanup, packaging-detail repair, background changes, localization drafts, and other product-photo edits where cumulative drift matters.
+- The dedicated `precise-edit` endpoint returns the source image's width and height and says pixels not meaningfully changed are copied exactly from the input. Use a mask when the change can be bounded; black marks the edit area and white marks protected content. Archive the source, mask, prompt, seed, and output so the untouched area and mask boundary can be verified rather than trusted from appearance alone.
+- Add up to four product, material, or style references without a mask, or up to three when a mask occupies one reference slot. References guide the edit but are not themselves edited. Assign each reference one role and do not treat the allowance as an identity guarantee.
+- The current API accepts JPEG, PNG, or WebP inputs up to 25 MB each and source aspect ratios from 1:6 to 6:1. Oversized inputs may be scaled for the model even though the returned canvas keeps the source dimensions; inspect fine texture, typography, edges, and effective detail instead of describing the route as lossless native-resolution editing.
+- Keep critical logos, package geometry, labels, claims, prices, ingredients, warnings, barcodes, and legal copy outside the edit region when possible. Even with exact-copy behavior outside the intended change, compare the full derivative with the approved packshot and rebuild regulated copy from verified source data.
 
 ### Alibaba Cloud Image-Model Retirement Gate
 

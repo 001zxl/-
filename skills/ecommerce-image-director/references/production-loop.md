@@ -110,7 +110,7 @@ When a campaign needs a stable visual system across different products or placem
 - Product lock: real SKU photos and verified copy control package geometry, logo, label, colorway, included items, and claims.
 - Style lock: rights-cleared references control rendering technique, palette, texture, composition, and lighting. For Recraft V4 Styles, begin with one clean reference; add similar references to narrow the look or diverse references to widen it, then save the `style_id`, compatible model, and `precise` or `flexible` match mode.
 - Batch gate: generate a small set with deliberately different compositions before scaling. Reject the style route if it preserves the look but weakens SKU identity, text accuracy, category proof, or placement diversity.
-- Repair gate: once a product asset is approved, edit only the intended region. A masked instruction or visual markup should leave verified logos, faces, packaging, and legal copy outside the mask; keep the edit as a separate layer and inspect mask edges plus the final flattened derivative before export.
+- Repair gate: once a product asset is approved, edit only the intended region. A masked instruction or visual markup should leave verified logos, faces, packaging, and legal copy outside the mask; keep the edit as a separate layer and inspect mask edges plus the final flattened derivative before export. When a route promises exact copying outside the edited area, such as Ideogram 4.5 Precise Edit, archive the source and mask, compare the protected region pixel by pixel, and separately inspect fine detail because oversized inputs may still be internally scaled.
 
 ### 5. QA Score
 

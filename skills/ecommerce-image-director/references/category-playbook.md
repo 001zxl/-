@@ -109,6 +109,21 @@ Useful images:
 - Size and included accessories.
 - Comparison/proof module.
 
+### Agriculture, Gardening, Flowers, Seeds
+
+Proof needs: actual growth or shipping state, variety and color, measured size, front/back packaging, contents, label and certificate evidence, planting or care conditions, and category-specific risk notices.
+
+Useful images:
+- Real full-product or plant view in the state the buyer will receive.
+- Shipping-package or bud/opening-state evidence for flowers and live plants.
+- Measured height, crown width, stem/flower-head size, contents, or unpacked seed close-up when applicable.
+- Front/back package and readable label views for seeds, fertilizer, pesticide, and veterinary products.
+- Verified certificate, formula, ingredient, dosage, planting, storage, care, and risk modules required by the exact subcategory.
+
+Douyin agriculture-and-gardening gate: the current rule requires at least three main images at 600 x 600 px or larger and recommends 1:1. Images must be clear and complete, without alteration, watermarks, obscured product-name information, unrelated brands, or unrelated content. Use the fixed evidence sequence for the listed category: flowers need the full item first and its real shipping/flowering state second; potted plants need a real scene or white-background view first and shipping-package state second; fertilizer, pesticide, veterinary non-prescription, and other agricultural goods need the real front package with name/spec first, the applicable label second, and required certificate evidence later; seeds need the front package first, back/manufacturer information second, and the unpacked real seed third. Recheck the live leaf category before export.
+
+Do not generate or beautify variety color, plant size, flowering state, seed contents, toxicity labels, registration/license numbers, certificates, formula, dosage, or manufacturer data. Keep detail copy consistent with the actual SKU and sales unit; disclose special planting conditions and care risks, and reject unsupported flower colors, guaranteed yield, `100% germination`, or `guaranteed survival` claims.
+
 ### Digital Products, Courses, Services, Local Services
 
 Proof needs: result preview, process clarity, trust, social proof, transformation, interface.

@@ -103,7 +103,7 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-10-04)
+## Verified Model Notes (Checked through 2026-10-06)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -154,6 +154,13 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - The official retirement table routes the retiring Qwen image family to `qwen-image-2.0` and older background/editing utilities to `wan2.7-image`. Prefer the newer Qwen Image 3.0 family for a new complex-layout workflow, but benchmark it against the official replacement and the current production model rather than treating “newer” as automatic product-fidelity improvement.
 - Before migration, inventory model IDs and regions, save prompts and approved outputs, then regression-test real SKUs for package geometry, text, color, material, local-edit drift, batch consistency, latency, and cost. Retired endpoints fail after the cutoff, and rate limits may be reduced during the notice period.
 - Treat a model's deprecation state as a reliability gate before its retirement date. Alibaba Cloud's Model Inference Service SLA amendment effective September 28, 2026 excludes errors caused by officially deprecated models from the service-availability calculation, so an endpoint may still respond while no longer carrying the normal availability commitment. Record the live lifecycle state with every production model ID, migrate recurring catalog jobs off deprecated routes, and do not use the SLA to justify continued production dependence on them.
+
+### Alibaba Cloud Asset Center Lineage Gate
+
+- Treat Model Studio's Asset Center as an optional provider-side asset registry, not the sole campaign archive. The current invite-only beta records the prompt, generation parameters, model, generation time, and a unique `asset_id`; supported image and video APIs can reuse that ID instead of a URL or Base64 payload.
+- Use `asset_id` to reduce expiring-URL and repeated-upload friction for approved references, but preserve the original SKU photo, approved derivative, prompt, parameters, rights record, and file hash in the external campaign manifest. An asset ID identifies the provider object; it does not prove product fidelity, approval, ownership, or final-delivery metadata.
+- Verify collection before relying on the registry. The current supported-model list is limited and does not include Qwen Image 3.0, and an API-generated asset may not appear when the call does not save it to platform storage. Record the workspace and model with every asset ID instead of assuming all generation routes are captured.
+- When using automatic OSS transfer, keep the workspace in the object path, review transfer logs, and confirm the object in OSS before releasing platform storage. The transfer configuration is global across workspaces, while the Asset Center view is workspace-scoped; a successful provider-side transfer is not a substitute for campaign-level access, retention, and rollback checks.
 
 ### ViduQ3 Fast Reference-To-Image
 

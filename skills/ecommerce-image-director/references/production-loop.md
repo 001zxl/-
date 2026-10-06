@@ -103,6 +103,15 @@ Adobe's September 2026 Gemini and Claude integrations add a guarded finishing ro
 - Treat conversational orchestration as a production convenience, not an approval step. Record the Adobe surface, connected account, source assets, requested operations, output dimensions, and derivative lineage; then rerun product, text, claim, crop, color, and metadata QA on every exported channel file.
 - Verify live setup, entitlement, compatibility, and availability before scheduling a batch. Adobe says both integrations began a global rollout on September 24, but compatibility and availability can vary.
 
+### 4B.2 Provider Asset-Registry Handoff
+
+When a generation provider exposes a reusable asset registry, link it to the campaign manifest instead of replacing the campaign archive with it:
+
+- Record provider, workspace, asset ID, model, source SKU, prompt/parameter record, rights basis, approval state, and file hash. Reusing an ID is an input convenience, not evidence that the asset is correct or approved.
+- Confirm that API output was actually saved to provider storage before another job depends on it. Alibaba Cloud's current Asset Center beta collects only supported models and may omit API outputs that were not saved to platform storage.
+- For automatic provider-to-object-storage transfer, include the workspace in the destination path, review failures, and verify the destination object before releasing the provider copy. Alibaba's OSS transfer setting is global across workspaces even though Asset Center browsing is workspace-scoped.
+- Keep the original product source, approved editable master, final delivery derivative, and disclosure/provenance metadata under the campaign's own retention policy. Provider recycle-bin or beta-storage behavior is not the rollback plan.
+
 ### 4C. Style-Locked Batch And Protected Local Edit
 
 When a campaign needs a stable visual system across different products or placements, maintain two independent locks:

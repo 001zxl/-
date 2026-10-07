@@ -45,6 +45,8 @@ Platform gate: for underwear products intended for Douyin Mall's Guess You Like 
 
 Brand gate: for branded apparel, shoes, bags, and accessories on Douyin, do not hide, erase, crop away, or retouch the real product's brand name, trademark, or logo in listing images, SKU images, detail modules, video, or livestream presentation. Keep the identifier clear and consistent with the physical product and authorization; do not solve the rule by adding an unrelated overlay brand.
 
+Douyin category gate: the current Apparel, Shoes, Bags, and Accessories rule requires PNG/JPG/JPEG main images at 600 x 600 px or larger and recommends 1:1. Use the first image for the complete front view, then assign later images to other angles, use scenes, and construction/material details. If underwear, sports underwear, or swimwear uses an on-body first image, preserve the rule's minimum framing: top garments from head to waist, bottoms from waist to feet or head to legs, and sets from head to feet or head to legs. Keep this upload rule separate from Douyin Mall recommendation modules that may prohibit a real-person underwear first image, and recheck the dedicated underwear-image rule before export.
+
 ### Electronics, Digital Accessories
 
 Proof needs: feature clarity, compatibility, ports, screen/interface, scale, use scenario, performance specs.

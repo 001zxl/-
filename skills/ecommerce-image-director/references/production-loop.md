@@ -121,6 +121,14 @@ When a campaign needs a stable visual system across different products or placem
 - Batch gate: generate a small set with deliberately different compositions before scaling. Reject the style route if it preserves the look but weakens SKU identity, text accuracy, category proof, or placement diversity.
 - Repair gate: once a product asset is approved, edit only the intended region. A masked instruction or visual markup should leave verified logos, faces, packaging, and legal copy outside the mask; keep the edit as a separate layer and inspect mask edges plus the final flattened derivative before export. When a route promises exact copying outside the edited area, such as Ideogram 4.5 Precise Edit, archive the source and mask, compare the protected region pixel by pixel, and separately inspect fine detail because oversized inputs may still be internally scaled.
 
+### 4D. Shopify Agentic Storefront Syndication Gate
+
+When a Shopify store is eligible for Agentic Storefronts, treat the product-media library as a multi-channel feed rather than a theme-only gallery:
+
+- Record the Shopify product, variant or option mapping, source image ID, rights basis, approved claims, alt text, and channel availability for every syndicated image. Shopify Catalog can send product images together with structured product data to supported AI shopping channels, so a correct storefront crop is not proof that the image is mapped or presented correctly elsewhere.
+- Preview the product card or conversational result in each available channel when possible. Check exact SKU, selected color or size, product identity, crop, stale price/offer text baked into the image, and whether an image intended only for a secondary explanation is being promoted as the lead visual.
+- Keep visibility governance separate from image editing. Turning off Shopify Catalog access for a channel does not prevent public web crawling or other external feeds from discovering the product. If the product or its images must be hidden, escalate the product-status and indexing decision; do not represent a Catalog toggle as universal removal.
+
 ### 5. QA Score
 
 Score from 1-5:

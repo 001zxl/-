@@ -103,7 +103,7 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-10-06)
+## Verified Model Notes (Checked through 2026-10-08)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -157,10 +157,11 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 
 ### Alibaba Cloud Asset Center Lineage Gate
 
-- Treat Model Studio's Asset Center as an optional provider-side asset registry, not the sole campaign archive. The current invite-only beta records the prompt, generation parameters, model, generation time, and a unique `asset_id`; supported image and video APIs can reuse that ID instead of a URL or Base64 payload.
+- Treat Model Studio's Asset Center as an optional provider-side asset registry, not the sole campaign archive. It is now open to all users and records the prompt, generation parameters, model, generation time, and a unique `asset_id`; supported image and video APIs can reuse that ID instead of a URL or Base64 payload.
 - Use `asset_id` to reduce expiring-URL and repeated-upload friction for approved references, but preserve the original SKU photo, approved derivative, prompt, parameters, rights record, and file hash in the external campaign manifest. An asset ID identifies the provider object; it does not prove product fidelity, approval, ownership, or final-delivery metadata.
-- Verify collection before relying on the registry. The current supported-model list is limited and does not include Qwen Image 3.0, and an API-generated asset may not appear when the call does not save it to platform storage. Record the workspace and model with every asset ID instead of assuming all generation routes are captured.
-- When using automatic OSS transfer, keep the workspace in the object path, review transfer logs, and confirm the object in OSS before releasing platform storage. The transfer configuration is global across workspaces, while the Asset Center view is workspace-scoped; a successful provider-side transfer is not a substitute for campaign-level access, retention, and rollback checks.
+- Verify collection before relying on the registry. The current list includes Qwen Image 3.0/3.0 Pro and selected Qwen Image 2.0, Z-Image Turbo, and Wan 2.7 image/video routes, but the list can change and the console remains authoritative. Record the workspace and model with every asset ID instead of assuming every generation route is captured.
+- Treat provider storage as a cache with explicit retention and access controls. The current page advertises 5 GB of free platform storage and says future overage pricing will be CNY 0.15/GB/month; recycle-bin assets remain billable during their 30-day retention. Assign the Reader and Admin RAM roles deliberately, verify restoration and deletion procedures, and do not confuse a provider recycle bin with the campaign archive.
+- When using automatic OSS transfer, keep the workspace in the object path, review transfer logs and retries, and confirm the object in OSS before releasing platform storage. The transfer configuration is global across workspaces, while the Asset Center view is workspace-scoped; a successful provider-side transfer is not a substitute for campaign-level access, retention, and rollback checks.
 
 ### ViduQ3 Fast Reference-To-Image
 
@@ -239,24 +240,26 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Treat protected-area behavior as an editing control, not proof of SKU fidelity. Compare the final derivative with the original packshot at pixel level around mask edges, packaging text, logo, color, and product geometry; retain the original and layered master for rollback.
 - Verify the live Photoshop surface and entitlement before committing a production job. Adobe labels the AI Assisted Editor as beta and Firefly Image 5 as Preview in the August 27 announcement, so availability and behavior can change.
 
-## Google Gemini Image Routing (Checked 2026-09-24)
+## Google Gemini Image Routing (Checked 2026-10-08)
 
 Use the exact model route instead of treating every Nano Banana workflow as equivalent. These are official capability limits, not guarantees that generated packaging, labels, or claims are accurate.
 
-### Nano Banana 2 And Pro
+### Nano Banana 2.1 And Pro
 
-- Use `gemini-3.1-flash-image` as the general production route when ecommerce work needs multiple product/style references, multi-turn editing, reliable display-text exploration, 1K-4K output, or a speed/quality balance. It supports up to 10 high-fidelity object references plus up to 4 character references within the 14-image limit.
-- Google's current model page also adds 0.5K output and the 1:4, 4:1, 1:8, and 8:1 aspect ratios to this route, alongside improved aspect-ratio adherence, image consistency, and internationalized text rendering. Use 0.5K only for inexpensive layout/proportion rehearsal; use the extreme ratios for a deliberate banner, shelf-strip, or long-form module prototype, then inspect crop, legibility, and final platform pixel requirements before delivery.
-- `gemini-3.1-flash-image` can also use Google Web Search and Image Search together, with retrieved web images passed as visual context. Use this as a research-grounded route for current category, ingredient, location, or scene context; do not let search results replace the real SKU as the product-identity source or silently import a competitor's packaging, logo, protected design, or unlicensed person.
+- Use `gemini-nano-banana-2.1` as the primary high-efficiency route for new ecommerce generation and conversational editing that needs multiple product/style references, multi-turn consistency, display-text exploration, 1K-4K output, or a speed/quality balance. Google positions it as the successor to `gemini-3.1-flash-image`, not as a replacement for the heavier Pro route.
+- The October update specifically fixes tiling artifacts on 1:4, 4:1, 1:8, and 8:1 output at 2K and 4K and improves visual quality, realism, prompt adherence, text, and infographic layout. Use it as the first benchmark for wide store banners, shelf strips, and long detail modules, then inspect repeated texture, seams, edge continuity, crop safety, legibility, and the exact delivery pixels rather than treating the fix as a blanket guarantee.
+- The model accepts up to 10 high-fidelity object references plus up to 4 character references within the 14-image limit. Assign each reference a role, keep the real SKU packshot first in the identity hierarchy, and start with the smallest sufficient set; the published allowance does not guarantee packaging, logo, or colorway fidelity.
+- `gemini-nano-banana-2.1` can use Google Web Search and Image Search together, with retrieved web images passed as visual context. Use this as a research-grounded route for current category, ingredient, location, or scene context; do not let search results replace the real SKU as the product-identity source or silently import a competitor's packaging, logo, protected design, or unlicensed person.
 - Preserve the returned citations and attribution metadata and display Google's required search suggestions in any user-facing grounded result. Google's current guide says real-world images of people from web search are not supported in this image-generation route, so supply properly authorized person references directly when a human likeness matters.
 - Use `gemini-3-pro-image` for the most complex professional assets when brand consistency, localization, search grounding, and precise creative control matter more than speed. It supports up to 6 object references, 5 character references, and 3 style references within the 14-image limit.
 - Assign every reference a role before generation. More references can improve coverage, but irrelevant or conflicting references can weaken the product lock.
 - Treat model-rendered marketing text as a layout draft until spelling, claims, prices, and legal copy are verified and composited deterministically.
 
-### Nano Banana 2 Lite And Legacy Routes
+### Nano Banana 2 Lite And Previous Routes
 
 - Use `gemini-3.1-flash-lite-image` for low-cost, high-volume ideation and simple single-step variations. Although the guide lists up to 14 high-fidelity object references and the model card describes fast local edits, Google's updated image-generation guide explicitly says Lite is **not optimized for multiple reference inputs or multi-turn sequential editing**. Route reference-heavy product locks and chained repair to Flash Image or a benchmarked alternative; do not treat a supported input count as recommended production behavior.
 - Lite only outputs 1K, has no separate character- or style-reference allocation in the official 14-reference table, and does not support Google Search grounding. Benchmark identity drift on representative SKUs and upscale or composite into the exact delivery master rather than treating 1K output as final.
+- Treat `gemini-3.1-flash-image` as the previous high-efficiency workhorse. Keep it only when a tested production workflow needs continuity or its 0.5K draft output; route new projects to Nano Banana 2.1 and run a representative-SKU regression before migrating an established catalog pipeline.
 - Treat `gemini-2.5-flash-image` as a legacy 1024 px route. Google recommends moving workloads to the Nano Banana 2 family.
 - Do not start or continue Gemini API production on Imagen. Google's image-generation guide, last updated September 23, now states that Imagen models are shut down and no longer available through the Gemini API; route generation and editing to the Nano Banana family and regression-test real SKUs before switching.
 - All Nano Banana outputs include a SynthID watermark; do not promise a watermark-free master without checking the actual delivery route and platform requirements.

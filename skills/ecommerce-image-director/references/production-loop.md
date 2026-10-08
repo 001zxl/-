@@ -108,9 +108,10 @@ Adobe's September 2026 Gemini and Claude integrations add a guarded finishing ro
 When a generation provider exposes a reusable asset registry, link it to the campaign manifest instead of replacing the campaign archive with it:
 
 - Record provider, workspace, asset ID, model, source SKU, prompt/parameter record, rights basis, approval state, and file hash. Reusing an ID is an input convenience, not evidence that the asset is correct or approved.
-- Confirm that API output was actually saved to provider storage before another job depends on it. Alibaba Cloud's current Asset Center beta collects only supported models and may omit API outputs that were not saved to platform storage.
-- For automatic provider-to-object-storage transfer, include the workspace in the destination path, review failures, and verify the destination object before releasing the provider copy. Alibaba's OSS transfer setting is global across workspaces even though Asset Center browsing is workspace-scoped.
-- Keep the original product source, approved editable master, final delivery derivative, and disclosure/provenance metadata under the campaign's own retention policy. Provider recycle-bin or beta-storage behavior is not the rollback plan.
+- Confirm that the output exists in the correct provider workspace before another job depends on it. Alibaba Cloud's Asset Center is now open to all users and includes Qwen Image 3.0/3.0 Pro plus selected Qwen Image 2.0, Z-Image Turbo, and Wan 2.7 routes, but the live console list still determines coverage.
+- Separate read/delete access from transfer administration. Alibaba's current Reader role can browse, inspect, and delete assets, while the Admin role additionally controls OSS transfer; grant the narrowest role that fits the operator and record who can release or permanently delete campaign assets.
+- For automatic provider-to-object-storage transfer, include the workspace in the destination path, review failures and retries, and verify the destination object before releasing the provider copy. Alibaba's OSS transfer setting is global across workspaces even though Asset Center browsing is workspace-scoped.
+- Keep the original product source, approved editable master, final delivery derivative, and disclosure/provenance metadata under the campaign's own retention policy. Platform storage is currently limited and may become billable above the advertised 5 GB free allowance; recycle-bin items remain stored for 30 days and are not the rollback plan.
 
 ### 4C. Style-Locked Batch And Protected Local Edit
 

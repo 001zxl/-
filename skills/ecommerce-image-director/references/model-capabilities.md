@@ -103,7 +103,7 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-10-08)
+## Verified Model Notes (Checked through 2026-10-11)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -167,10 +167,10 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 
 ### Alibaba Cloud Asset Center Lineage Gate
 
-- Treat Model Studio's Asset Center as an optional provider-side asset registry, not the sole campaign archive. It is now open to all users and records the prompt, generation parameters, model, generation time, and a unique `asset_id`; supported image and video APIs can reuse that ID instead of a URL or Base64 payload.
+- Treat Model Studio's Asset Center as an optional provider-side asset registry, not the sole campaign archive. Do not generalize availability or model coverage across regions: the current Chinese documentation says the service is open to all users and includes Qwen Image 3.0/3.0 Pro, while the English documentation updated October 11 still describes an invite-only beta and lists a narrower set led by dated Qwen Image 2.0 Pro, Z-Image, and Wan 2.7 routes. Resolve the target region, documentation locale, workspace, and live console before relying on it.
 - Use `asset_id` to reduce expiring-URL and repeated-upload friction for approved references, but preserve the original SKU photo, approved derivative, prompt, parameters, rights record, and file hash in the external campaign manifest. An asset ID identifies the provider object; it does not prove product fidelity, approval, ownership, or final-delivery metadata.
-- Verify collection before relying on the registry. The current list includes Qwen Image 3.0/3.0 Pro and selected Qwen Image 2.0, Z-Image Turbo, and Wan 2.7 image/video routes, but the list can change and the console remains authoritative. Record the workspace and model with every asset ID instead of assuming every generation route is captured.
-- Treat provider storage as a cache with explicit retention and access controls. The current page advertises 5 GB of free platform storage and says future overage pricing will be CNY 0.15/GB/month; recycle-bin assets remain billable during their 30-day retention. Assign the Reader and Admin RAM roles deliberately, verify restoration and deletion procedures, and do not confuse a provider recycle bin with the campaign archive.
+- Verify collection before relying on the registry. Record region, workspace, model, documentation locale, and collection result with every asset ID instead of assuming a model supported in one deployment is captured in another. Newly released Qwen Image 2.1 routes still require manual archival until the target console explicitly shows coverage.
+- Treat provider storage as a cache with region-specific terms and explicit retention and access controls. The Chinese page advertises 5 GB free platform storage and future CNY 0.15/GB/month overage, while the English page still describes free beta storage; both describe a 30-day recycle bin. Confirm live pricing and roles in the target account, verify restoration and deletion procedures, and do not confuse a provider recycle bin with the campaign archive.
 - When using automatic OSS transfer, keep the workspace in the object path, review transfer logs and retries, and confirm the object in OSS before releasing platform storage. The transfer configuration is global across workspaces, while the Asset Center view is workspace-scoped; a successful provider-side transfer is not a substitute for campaign-level access, retention, and rollback checks.
 
 ### ViduQ3 Fast Reference-To-Image

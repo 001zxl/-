@@ -63,6 +63,12 @@ Assign every claim a confidence level before it appears in a prompt or final not
 
 Never treat AI-generated labels, barcodes, nutrition tables, certifications, rankings, medical/health benefits, origin, factory-direct wording, or price/discount text as verified.
 
+### 3B. Demonstration Physics And Timing Gate
+
+For AI-assisted images, covers, and image-to-video that show a product working, verify the mechanism as well as the depicted result. Use the PDP and real SKU to record the input material, product configuration, required parts or hardware, hand position or operating method, effort or resistance, number of steps, contact or curing time, supported conditions, and realistic output range. A correct packshot does not make an impossible demonstration compliant.
+
+Reject instant, fictional, or exaggerated effects and demonstrations that hide necessary setup, charging, curing, waiting, or manual action. Do not use jump cuts, prop swaps, scale changes, impossible blade or part geometry, one-wipe transformations, synthetic ice/fog/glow, animated static patterns, or small disclaimers to create a stronger overall impression than the product evidence supports. When a claim boundary is unclear, remove the effect until it is verified. Preserve these conditions in the storyboard and final QA so later motion generation or platform automation cannot silently strengthen the claim.
+
 ### 4. Generation Notes
 
 For each generated image, record:

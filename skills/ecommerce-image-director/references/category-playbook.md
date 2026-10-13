@@ -75,6 +75,25 @@ Useful images:
 
 Scale gate: anchor room scenes and comparison graphics to verified dimensions or a real reference object. Do not enlarge the product through perspective, miniature surroundings, or generated 3D/material effects that imply features the delivered item does not have.
 
+#### Textiles And Soft Furnishings
+
+For bedding, fabric, rugs, curtains, blinds, and furniture covers, lock the actual pattern, stitching, composition, texture, thickness, density, pile height, dimensions, coverage, fit, and required hardware before generating a room scene or demonstration.
+
+TikTok Shop United States AIGC gate: use the PDP and real SKU as the source of truth for every scene. Do not stretch or resize a textile to create better coverage, invent hardware, make the material look thicker, softer, denser, or more luxurious, or add unsupported cotton, hypoallergenic, waterproof, stain-resistant, blackout, insulating, non-slip, washable, colorfast, or wrinkle-resistant claims. Match the degree and conditions of any demonstrated function to evidence. Reject instant one-wipe cleaning, visible cold breath, ice/fog/frost cooling effects, disappearing pain graphics, and animated movement in a static printed or woven pattern.
+
+### Kitchenware
+
+Proof needs: exact size, shape, material, capacity, configuration, included parts, heat resistance, blade or mechanism geometry, operating steps, effort, processing time, output, and cleaning conditions.
+
+Useful images:
+- Clean hero plus included-component layout.
+- Mechanism, blade, edge, handle, or control close-up.
+- Step-by-step use with realistic hand position, pressure, resistance, and timing.
+- Output proof that matches the actual blade, press, grater, crusher, sharpener, or bakeware mechanism.
+- Capacity, dimensions, heat-resistance, care, and safety evidence when verified.
+
+TikTok Shop United States AIGC gate: keep the same sellable product and configuration from the opening scene through the final result. Do not invent hands-free or automatic operation, impossible blade orientation, one-pass cubing that requires multiple directions, perfectly uniform tearing or grating, effortless cutting of unsuitable hard objects, instant ice crushing, exaggerated sharpening debris, or grease, rust, and baked-on residue disappearing in one wipe. Show the real food or surface, intended use, physical resistance, number of steps, contact time, and result range supported by the PDP.
+
 ### Mother & Baby, Pet
 
 Proof needs: safety, softness, material, ease of use, real-life scene, cleaning/storage.

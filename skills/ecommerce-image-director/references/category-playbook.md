@@ -17,6 +17,8 @@ Useful images:
 
 Platform gate: for a new TikTok Shop United States Food & Beverage listing, transcribe the complete ingredient list from the physical label into clear PDP text in descending weight order. Do not rely on an ingredient image, AI-generated label, or mood graphic as the only disclosure.
 
+Douyin selected-fresh-food badge gate: the `严选鲜食` mark is a platform-controlled store and product-page identifier, not a general food-quality claim. Use it in a main image, livestream visual, offline package, or shipping material only when the seller has current platform authorization, the exact SKU and Douyin order/channel are covered, and the mark follows the supplied size, color, material, placement, and design without modification. Remove it when eligibility or authorization ends. Do not expand the badge into claims such as `食安保障`, `平台质检每一件`, or `绝对新鲜`; the badge does not mean that the platform guarantees each product's safety, quality, or freshness.
+
 ### Beauty, Skincare, Personal Care
 
 Proof needs: texture, routine, ingredient mood, shade/color, packaging premium feel, compliant efficacy.

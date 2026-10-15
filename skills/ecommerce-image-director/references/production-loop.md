@@ -69,6 +69,15 @@ For AI-assisted images, covers, and image-to-video that show a product working, 
 
 Reject instant, fictional, or exaggerated effects and demonstrations that hide necessary setup, charging, curing, waiting, or manual action. Do not use jump cuts, prop swaps, scale changes, impossible blade or part geometry, one-wipe transformations, synthetic ice/fog/glow, animated static patterns, or small disclaimers to create a stronger overall impression than the product evidence supports. When a claim boundary is unclear, remove the effect until it is verified. Preserve these conditions in the storyboard and final QA so later motion generation or platform automation cannot silently strengthen the claim.
 
+### 3C. Platform Badge And Packaging Authorization Gate
+
+Before adding a platform badge, trust mark, certification, or program logo to a main image, livestream cover, detail module, package, or shipping material:
+
+- Record the issuing platform, exact authorized mark file, covered seller/store, SKU or category, channel, order scope, start date, expiry or removal condition, and required size/color/material/placement rules.
+- Keep the issued artwork as a protected deterministic layer. Do not regenerate, redraw, recolor, distort, split, obscure, or let an image model imitate it.
+- Separate what the mark actually means from nearby copy. Reject language that turns eligibility or service status into an unsupported product-quality, safety, freshness, efficacy, testing, or platform-guarantee claim.
+- Recheck authorization at export and campaign refresh. If eligibility ends, remove the mark from reusable templates, scheduled creative, listing images, livestream assets, and unsent packaging; preserve the approval and removal record.
+
 ### 4. Generation Notes
 
 For each generated image, record:

@@ -103,7 +103,7 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-10-11)
+## Verified Model Notes (Checked through 2026-10-15)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
 
@@ -114,6 +114,13 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - The current Image API supports custom `WIDTHxHEIGHT` sizes with both dimensions divisible by 16 and aspect ratios from 1:3 to 3:1; sizes above 2560 x 1440 are experimental and the documented maximum is 3840 x 2160, subject to pixel/edge limits. Use a final platform crop and pixel check rather than assuming an arbitrary request is accepted or delivered exactly.
 - Both routes support transparent background with PNG or WebP output. Inspect cutout edges, translucency, shadows, package text, and the final composited delivery file; transparent output is not an identity lock. OpenAI describes improved edit consistency and infographic layout, but verify every brand mark, SKU, claim, and tiny label from the physical source.
 - Pin a dated model snapshot when reproducibility matters, and compare Flare/Sunburst against one approved packshot and a small representative SKU set before switching a production catalog. ChatGPT's template, sketch, and comment interfaces are product features; do not imply that they are separate Image API parameters.
+
+### OpenAI Legacy GPT Image Retirement Gate
+
+- Treat `gpt-image-1` as migration-only: OpenAI schedules it to shut down on October 23, 2026, with `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` as the recommended replacement. Block new catalog templates, batch jobs, and long-running campaigns from starting on it.
+- Treat `gpt-image-1.5`, `gpt-image-1-mini`, and `chatgpt-image-latest` as migration-only as well; OpenAI schedules all three to shut down on December 1, 2026 and recommends the same 2.5 routes. Do not assume the ChatGPT-facing alias is a stable production pin.
+- Before changing a recurring ecommerce pipeline, run a representative-SKU regression on the exact replacement and quality setting. Compare package geometry, logo and label text, colorway, material, transparent edges, mask behavior, multi-reference fidelity, output dimensions, latency, and cost.
+- Fail fast when a saved manifest names a retired route. Preserve the requested model ID and source assets, then require an explicit replacement chosen from the approved migration matrix; do not silently switch models inside a catalog batch because a replacement can change composition, identity fidelity, typography, and edit behavior.
 
 ### Wan 2.7 Image Pro
 

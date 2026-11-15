@@ -31,6 +31,8 @@ Useful images:
 - Shade/color comparison when applicable.
 - Before/after only when user provides compliant proof.
 
+Douyin beauty evidence gate: the current Beauty industry rule requires the detail page to show the product's outer packaging and complete, readable label evidence. Keep product name, special-cosmetic registration number when applicable, registrant/filer and entrusted manufacturer names and addresses, domestic responsible party for an overseas registrant/filer, production-license number, executed standard, full ingredients, net content, use period, directions, and required safety warnings aligned with the actual registered or filed label. Imported cosmetics need a compliant Chinese label matching the original; children's cosmetics need the required mark; the smallest sales unit needs a Chinese label. Gifts, not-for-sale items, travel or trial packs, and products at or below 15 g or 15 mL still need complete label evidence in the detail page, including product name, registrant/filer, net content, and use period. Show and explain old/new packaging or missing outer seals when both versions may ship. Do not generate, beautify, translate by inference, or reconstruct this evidence; capture it from the actual sellable SKU and composite only verified text.
+
 ### Apparel, Shoes, Bags, Accessories
 
 Proof needs: fit, fabric, size, color accuracy, stitching, styling.

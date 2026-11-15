@@ -138,6 +138,17 @@ Before a large image-generation or editing run, make the cost behavior explicit:
 - For production batches that must continue, keep the stop switch off, set a cost alert, and enforce the campaign's own spend and retry limits. Alibaba bills image generation by successfully generated image, while console usage and quota views can lag; reconcile the campaign manifest with the bill rather than relying on a live dashboard alone.
 - Keep regional telemetry assumptions separate. The October 11 English usage page documents the console view for Singapore, while the Chinese console documentation describes workspace-level visual-model usage with delayed data and a 30-day window. Verify the target account's actual reporting surface before promising a real-time budget monitor.
 
+### 4B.4 Multi-Output Submission And Partial-Failure Gate
+
+Before using an image endpoint that can return several outputs in one request:
+
+- Record the request ID, model/version, references and their order, prompt plus any provider-revised prompt, expected output count, output indexes, per-item status, generated-image usage, and accepted file hashes. An HTTP success can still contain withheld or failed items.
+- Treat generation and editing as non-idempotent unless the provider explicitly documents otherwise. Disable automatic SDK retries, set a hard retry and spend ceiling, and never replay the whole request merely because one output failed; a replay can create duplicate assets and charges.
+- Preserve successful outputs before deciding whether to retry failed indexes. Submit any retry as a new child request with its own lineage and approval, then compare it with the original batch instead of pretending it is the missing deterministic result.
+- When streaming returns images in completion order, reconstruct the requested order from the provider's output index. Do not let arrival order silently change a planned carousel, SKU sequence, or variant mapping.
+
+MiniMax H3-Image is a current example: its API can return HTTP 200 when at least one requested image succeeds, exposes per-item errors plus `usage.generated_images`, and documents generation as non-idempotent. Apply this gate generically rather than assuming every provider shares the same error schema.
+
 ### 4C. Style-Locked Batch And Protected Local Edit
 
 When a campaign needs a stable visual system across different products or placements, maintain two independent locks:
@@ -152,6 +163,8 @@ When a campaign needs a stable visual system across different products or placem
 When a Shopify store is eligible for Agentic Storefronts, treat the product-media library as a multi-channel feed rather than a theme-only gallery:
 
 - Record the Shopify product, variant or option mapping, source image ID, rights basis, approved claims, alt text, and channel availability for every syndicated image. Shopify Catalog can send product images together with structured product data to supported AI shopping channels, so a correct storefront crop is not proof that the image is mapped or presented correctly elsewhere.
+- Use Shopify's channel-mapping page as a controlled publish layer, not a one-time setup screen. The current feature can map images and other product fields by sales channel, apply a changed default to every product on that channel, and override a field per product and channel. Before changing a default image source, export or record the current mapping, affected channels, coverage percentage, variant scope, and approved rollback; then inspect representative products before applying it broadly.
+- Use the channel preview to verify the exact image and accompanying title, category, color, price, and variant data that will leave Shopify. Fix missing coverage deliberately, but do not raise a coverage percentage by mapping one generic image across incompatible SKUs or colorways.
 - Preview the product card or conversational result in each available channel when possible. Check exact SKU, selected color or size, product identity, crop, stale price/offer text baked into the image, and whether an image intended only for a secondary explanation is being promoted as the lead visual.
 - Keep visibility governance separate from image editing. Turning off Shopify Catalog access for a channel does not prevent public web crawling or other external feeds from discovering the product. If the product or its images must be hidden, escalate the product-status and indexing decision; do not represent a Catalog toggle as universal removal.
 

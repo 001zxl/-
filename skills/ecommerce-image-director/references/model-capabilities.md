@@ -103,9 +103,18 @@ Workflow:
 
 QA: confirm that metadata survives the actual listing derivative; separately confirm that the image still accurately depicts the sold SKU. Metadata is not a substitute for product truth.
 
-## Verified Model Notes (Checked through 2026-10-15)
+## Verified Model Notes (Checked through 2026-11-16)
 
 Treat these as capability-routing notes, not guarantees of packaging fidelity. Re-check the live model documentation before production because model IDs, limits, and availability can change.
+
+### GPT Image 2.6: Complexity, Markup, SVG, And GIF Routes
+
+- Use `gpt-image-2.6-flare` for fast draft and interactive editing candidates; use `gpt-image-2.6-sunburst` for detail-sensitive generation and edit-consistency candidates. OpenAI describes Flare as the fast route and Sunburst as the higher-detail route, but benchmark both on a real representative SKU before replacing an approved catalog workflow.
+- Separate `complexity` from render `quality`. The 2.6 routes accept `low`, `medium`, or `high` complexity and default to `high`. Start focused background, sign, or prop edits at low complexity; try medium or high for dense layouts and multi-object relationships. Higher complexity can increase latency and introduce unwanted changes, so compare product geometry, packaging, text, and protected regions rather than assuming more planning is always safer.
+- Use Image API markup when a non-destructive annotation communicates the edit better than text alone. Keep the original as the first input and send a separate transparent PNG of circles, arrows, or sketches at the same oriented dimensions; additional inputs are references. Archive the source, markup, prompt, and output, and inspect both the marked region and everything that should remain unchanged. Markup cannot be combined with a mask.
+- Route simple icons, logos, and flat campaign graphics to the new SVG output only as a vector draft. SVG generation requires `n=1`, does not support editing, streaming, partial images, compression, external resources, scripts, or embedded raster images. Inspect paths, lettering, brand ownership, and print behavior; do not use a generated SVG as proof that a trademark, package, certification, or regulated mark is accurate or authorized.
+- Route short looping social or display experiments to GIF output only when the placement accepts GIF. The Image API supports 2-16 frames and 20-2000 ms per frame; frame count, dimensions, and number of outputs share a total pixel budget. Review every frame for product identity, motion physics, label stability, loop seam, disclosure, and platform support, then convert to a native video format when the target placement requires video rather than GIF.
+- The current guide prices image output at USD 30 per million billable output tokens and lists `low`, `medium`, `high`, `xhigh`, and `max` quality for both 2.6 routes. Record model, complexity, quality, size, input count, output token use, latency, and final accepted derivative; equal token rates do not guarantee equal per-image cost or ecommerce fidelity.
 
 ### GPT Image 2.5: Fast Concepts Versus Precise Edits
 
@@ -117,8 +126,9 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 
 ### OpenAI Legacy GPT Image Retirement Gate
 
-- Treat `gpt-image-1` as migration-only: OpenAI schedules it to shut down on October 23, 2026, with `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` as the recommended replacement. Block new catalog templates, batch jobs, and long-running campaigns from starting on it.
-- Treat `gpt-image-1.5`, `gpt-image-1-mini`, and `chatgpt-image-latest` as migration-only as well; OpenAI schedules all three to shut down on December 1, 2026 and recommends the same 2.5 routes. Do not assume the ChatGPT-facing alias is a stable production pin.
+- Treat `gpt-image-1` as shut down: OpenAI stopped standard API requests on October 23, 2026. Block saved jobs that still name it instead of retrying or silently substituting another route.
+- Treat `gpt-image-1.5`, `gpt-image-1-mini`, and `chatgpt-image-latest` as migration-only; OpenAI schedules all three to shut down on December 1, 2026 and now recommends `gpt-image-2.6-sunburst` or `gpt-image-2.6-flare`. Do not assume the ChatGPT-facing alias is a stable production pin.
+- Treat `gpt-image-2` and `gpt-image-2-2026-04-21` as migration-only for recurring work as well. OpenAI now schedules them to shut down on February 10, 2027 and recommends the 2.6 routes. Keep an existing approved job only long enough to complete an explicit regression-gated migration.
 - Before changing a recurring ecommerce pipeline, run a representative-SKU regression on the exact replacement and quality setting. Compare package geometry, logo and label text, colorway, material, transparent edges, mask behavior, multi-reference fidelity, output dimensions, latency, and cost.
 - Fail fast when a saved manifest names a retired route. Preserve the requested model ID and source assets, then require an explicit replacement chosen from the approved migration matrix; do not silently switch models inside a catalog batch because a replacement can change composition, identity fidelity, typography, and edit behavior.
 
@@ -149,6 +159,15 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - The 2.1 routes do not support the `negative_prompt` field that is available on Qwen Image 3.0. Put hard product-preservation and exclusion instructions in the positive prompt, then compare a representative SKU against 3.0 before changing an established catalog route.
 - Use Pro as the quality comparison and Turbo as the high-throughput/cost candidate rather than accepting the vendor labels as measured ecommerce performance. The current public tables list 20 requests per minute for Pro and 120 for Turbo, up to 10 asynchronous tasks concurrently, with list prices of CNY 0.25 and CNY 0.10 per image in mainland regions; verify live region, account quota, and price before a batch.
 - The current Asset Center support list does not yet name either Qwen Image 2.1 route. Until the live console explicitly includes them, download the 24-hour result URL immediately, hash the file, and store source references, prompt, parameters, model, region, workspace, approval, and rights data in the external campaign manifest instead of assuming automatic provider-side capture or `asset_id` reuse.
+
+### MiniMax H3-Image Reference-Heavy 4K Route
+
+- Use `MiniMax-H3-Image` as a candidate when a generation or edit needs many product, layout, style, or environment references, high-area output, or several variants in one request. Use `MiniMax-H3-Image-Highspeed` as the speed candidate with the same documented parameters and limits, then compare it with Standard on representative packaging, material, text, and local-edit tasks before scaling.
+- The official API supports text-to-image plus editing with 1-16 references, 1-10 outputs, JPEG/PNG/WebP, 1K/2K/4K area levels, custom dimensions from 655,360 through 20,000,000 pixels, and aspect ratios from 1:3 through 3:1. Assign every reference one role and keep the strongest real SKU photo first; a 16-reference allowance can also amplify conflicting packaging, variants, accessories, or style cues.
+- Treat the advertised 4K speed, prompt adherence, realism, and short-text rendering as vendor claims to benchmark, not proof of exact product identity. Verify logo, label, colorway, quantity, included parts, reflections, material texture, and every generated caption; keep long copy, ingredients, warnings, prices, and legal text as deterministic layers.
+- H3-Image does not currently support masks or transparent backgrounds. Do not route a precision-mask repair or alpha-cutout deliverable to it merely because it accepts image edits. Use a model with the required control or composite the verified product separately.
+- Prompt enhancement is on by default for generation and always on for edits; each result returns the revised prompt. Save that revised prompt in the recipe, and disable enhancement only for a controlled text-to-image comparison with an explicit size or aspect ratio. Do not assume the user's original wording is the complete reproducible instruction.
+- The endpoints are not idempotent. Disable automatic retries, set a campaign retry ceiling, and reconcile output indexes and charges. A multi-output request can return HTTP 200 when only some images succeed; inspect every item, `usage.generated_images`, safety failures, and final files rather than treating request success as batch success. Streaming events arrive in completion order, so use `image_index` to restore the requested order.
 
 ### Ideogram 4.0 Structured Layout Route
 
@@ -243,9 +262,10 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Keep style consistency separate from product identity. A style reference may govern lighting, texture, color, and composition, but the real SKU photos still govern package shape, logo, label, colorway, included items, and claims. Benchmark both locks together before scaling a catalog batch.
 - Record the resolved `style_id`, compatible model, match mode, reference files, and rights status in the campaign manifest. The API rejects simultaneous `style_id` and inline style references, and a custom style must be reused with a compatible model.
 
-## Recraft V4.1 Flash Draft-To-Refine Route (Checked 2026-09-24)
+## Recraft V4.1 Flash V2 Draft-To-Refine Route (Checked 2026-11-16)
 
-- Use Recraft V4.1 Flash as a candidate for high-volume composition, mood, prop, and headline-placement exploration when iteration speed matters. Recraft announced the separate Flash model on September 23 and says it is live in Studio and available through its API; confirm the live model identifier, account access, price, and supported controls before automating a batch.
+- Use Recraft V4.1 Flash V2 as a candidate for high-volume composition, mood, prop, packaging-headline, and product-shot exploration when iteration speed matters. Recraft says V2 replaces the first Flash model in its picker, improves image text, fine-detail retention, and photographic realism, and keeps the same per-image price. Treat the advertised 1.1-second generation time and quality gains as vendor claims to benchmark in the real account.
+- Pin the API model ID `recraftv4_1_flash_v2`; do not assume a saved API job using the original Flash identifier is automatically upgraded just because Studio replaces the picker entry. Run a representative-SKU comparison for packaging text, logo, small details, product material, scene realism, latency, price, and output dimensions before migrating a catalog batch.
 - When a direction is approved, use the Studio `Refine` handoff to Recraft V4.1 Pro at 2048 x 2048 instead of regenerating the brief from scratch. Choose Subtle when noise and contrast cleanup should stay close to the draft, or Moderate when small details can be rebuilt more actively. Treat the claimed composition and lighting preservation as vendor-described behavior and compare the refined derivative with the approved draft.
 - Do not use Flash speed, the vendor's exact-count examples, or Refine as proof of SKU fidelity. Benchmark a real representative product for package geometry, logo, label, colorway, included items, display text, edge detail, and edit drift; composite packaging and regulated copy from verified source data.
 - Recraft's published latency comparison is its own September 21 test under default settings and selected providers. Record actual end-to-end latency, queueing, download time, output size, and cost in the production environment before routing a catalog workload.

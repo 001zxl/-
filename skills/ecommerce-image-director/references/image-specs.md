@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-10-07)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-16)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -101,6 +101,13 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - Treat Auto-Crawl as a separate ingestion source in the campaign brief. Before enabling it, audit the canonical landing-page domain and media ownership; remove stale variants, expired offers, unsupported claims, unlicensed people or creator media, and images that do not match the catalog SKU. Record the source URL, crawl date, asset hash or ID, linked SKU, rights basis, and disclosure status for each accepted asset.
 - The same Smart+ update says Creative Upgrades lets advertisers review predicted-performance-ranked historical, trending, and AI-generated assets and exclude unwanted items during setup, while optional auto-add can introduce fresh creative after launch. Record whether auto-add is enabled, preserve the approved launch pool, and audit newly served assets after launch for product truth, rights, claims, crop, disclosure, and brand fit; setup review is not a permanent approval boundary.
 
+### TikTok Shop US Auto-Post Photos
+
+- TikTok Shop's November 12, 2026 Auto-post workflow is available only to selected sellers and can publish eligible live, in-stock products daily to the For You feed. Depending on account access, photo routes include direct PDP photos, PDP photos with automated cleanup and gradient backdrops, and AI-generated product scenes; keep each route distinct in the asset record because a source listing image and a generated scene do not share the same approval history.
+- Auto-post content is hidden from the TikTok profile by default but still reaches shoppers in feed. The seller can choose immediate publication or a 1-, 2-, 3-, or 7-day preview window; if no one acts before the deadline, the item publishes automatically. Treat the selected window as a real approval SLA, not as evidence that a reviewer saw the asset.
+- Before enabling a photo route, verify the source PDP, exact SKU, stock status, rights, packaging text, claims, disclosure, and destination account. Use a nonzero preview window for packaging-heavy, regulated, multi-variant, or claim-sensitive products, assign a named reviewer, and archive the scheduled preview plus linked product before approval or cancellation.
+- Turning Auto-post off stops new generation and removes scheduled unpublished items, but previously published posts require separate deletion in the TikTok app. Record the disable time, scheduled-item result, published-post IDs, and deletion status; a platform account-health exemption for removed Auto-post content is not a product-truth or brand-approval exemption.
+
 ### Google Advertising AI Labels
 
 - For Merchant Center product images created with a trained generative model, preserve IPTC `DigitalSourceType=TrainedAlgorithmicMedia`; use `CompositeSynthetic` when the delivery file is a composite that includes synthetic elements. Google's current specification also lists `AlgorithmicMedia` for imagery created purely by an algorithm that is not based on sampled training data. Select the value from the actual creation process rather than treating the three codes as interchangeable or labeling trained-model output as purely algorithmic.
@@ -133,6 +140,13 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - For A+ Content, either embed the XMP keyword before upload or use the `AI-generated people` checkbox in A+ Content Manager Creative Assets; Amazon says that checkbox applies the metadata, and its A+ Creative Studio-generated images are tagged automatically. For non-A+ product-listing, Store, and advertising media, tag the delivery file before upload rather than assuming an upload control will do it.
 - Amazon's official forum clarification says compliance has been mandatory since June 6, 2026 and recommends retroactively updating older affected media. Inventory existing buyer-facing assets, preserve the original-to-derivative mapping, and re-upload the tagged derivative through the relevant tool; do not limit the check to newly produced files.
 - Verify the metadata on the final exported file after resizing, optimization, or format conversion, because those steps can strip XMP. Upload that verified derivative rather than assuming the layered master and delivery file carry the same metadata.
+
+### Amazon Ads Responsive eCommerce Creative
+
+- Keep Responsive eCommerce Creative (REC) separate from Amazon listing-image rules. REC can combine PDP data, custom uploads, or AI-generated images/video with live price, deal, coupon, rating, and Prime elements, then produce responsive display placements across Amazon, third-party sites, and Amazon devices. A listing-approved main image is therefore only one possible input, not a preview of the served ad.
+- For responsive custom-image control, Amazon currently recommends three clean source assets: 1200 x 1200 px or 1:1, 900 x 1600 px or 9:16, and 1200 x 628 px or 1.91:1. The in-form cropper accepts a high-quality source of at least 600 x 600 px and at most 5 MB. Amazon states that these responsive images have no safe zone, so keep the subject and essential product evidence comfortably inside every native crop.
+- Responsive custom images may be product or lifestyle images but should not contain added text, logos, CTA, pricing/savings claims, white or transparent backgrounds, letterboxing, or crowded/poorly cropped elements. Put approved headline, logo, and required disclaimer in the dedicated components; keep naturally printed package text readable and verify that every pictured product matches the landing page.
+- One REC can rotate up to 20 ASINs, skip out-of-stock products, and continuously test combinations. When AI enhancement is enabled, Amazon may also select from PDP and campaign sources, generate backgrounds or contexts, modify headlines and product titles, and vary layouts; even with AI enhancement disabled, resizing can still occur. Record the ASIN pool, source assets, enhancement toggle, markets, placements, and actually served derivatives instead of approving only the setup screen.
 
 ### Shopify Product And Collection Images
 

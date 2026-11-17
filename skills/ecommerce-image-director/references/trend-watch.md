@@ -86,11 +86,11 @@ Trust cue: preserve a real person, real product, or recognizably human imperfect
 
 ### Shoppable Photo Carousel
 
-Treat photo-first commerce posts as their own placement, not as a recycled PDP gallery or a substitute video cover. TikTok Shop United States currently offers Shoppable Photos as a beta for select sellers: a post needs at least 2 images and can link up to 10 products across For You, Search, and Shop surfaces.
+Treat photo-first commerce posts as their own placement, not as a recycled PDP gallery or a substitute video cover. TikTok Shop United States currently offers Shoppable Carousels as a beta for select sellers: a post needs at least 2 images and can link one or multiple products across For You, Explore, and Search surfaces. Verify the live account before assuming the older 10-product ceiling or Shop-surface wording still applies.
 
 Use for: outfits, bundles, complementary products, high-sample-cost categories, and sellers who need lower-production-cost social commerce content.
 
-Sequence cue: open with a strong product/use hook, then rotate through real detail proof, use scene, scale or fit, and variant/bundle logic. Keep every linked product visible and recognizable; do not tag unrelated products.
+Sequence cue: start testing with 5-7 vertical 9:16 images. Let the product occupy roughly 40-60% of the frame, open with the strongest product/use hook, then rotate through real detail proof, use scene, scale or fit, and variant/bundle logic before a promotion or benefit recap. Use only 1-3 short benefit, size, material, or taste callouts across a frame; keep every linked product visible and recognizable and do not tag unrelated products.
 
 Measurement cue: log the opening hook, slide roles, style territory, and linked SKU for each variant. Where Shoppable Photo Analytics is available, judge reach with views/impressions and conversion with CTR, SKU orders or CTOR, GMV, and product-level sales; use those results to repeat the visual pattern that converts rather than the one that only attracts views.
 

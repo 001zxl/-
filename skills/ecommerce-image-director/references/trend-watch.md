@@ -12,7 +12,11 @@ Honest process, clear product details, review-like proof, and "why it is worth b
 
 Use for: TikTok/Douyin product detail pages, higher-consideration products, household goods, beauty, electronics.
 
-Prompt cue: show real product, real detail, practical use, community-trust tone, and avoid over-polished fake luxury.
+Forward-looking signal: Canva's 2027 forecast, based on millions of searches and template usage, centers "making it real" through a tangible source, visible process, working mechanism, and a clear point of view. Its Slow Burn direction makes effort itself visible. Translate this into commerce with real ingredients or materials, maker hands, assembly or operating steps, ritual/use sequences, source objects, and honest intermediate states rather than generic heritage props or synthetic perfection.
+
+Prompt cue: show real product, real detail, practical use, and the work or mechanism behind the result; keep decoration subordinate to verifiable evidence and avoid over-polished fake luxury.
+
+Risk: this is an early design forecast, not conversion proof. Use process-led frames as social, cover, or secondary-detail experiments, and do not let staged craft, invented provenance, compressed timing, or an aesthetic before/after imply evidence the seller does not have.
 
 ### AI-Enhanced Product Realism
 

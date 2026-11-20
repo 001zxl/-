@@ -12,7 +12,7 @@ Honest process, clear product details, review-like proof, and "why it is worth b
 
 Use for: TikTok/Douyin product detail pages, higher-consideration products, household goods, beauty, electronics.
 
-Forward-looking signal: Canva's 2027 forecast, based on millions of searches and template usage, centers "making it real" through a tangible source, visible process, working mechanism, and a clear point of view. Its Slow Burn direction makes effort itself visible. Translate this into commerce with real ingredients or materials, maker hands, assembly or operating steps, ritual/use sequences, source objects, and honest intermediate states rather than generic heritage props or synthetic perfection.
+Forward-looking signal: Canva's 2027 forecast, based on millions of searches and template usage, centers "making it real" through a tangible source, visible process, working mechanism, and a clear point of view. Its Slow Burn direction makes effort itself visible. TikTok's 2027 trend framing adds a social-commerce complement: build memory through lore, worlds, and recurring series rather than relying only on a three-second hook. Translate this into commerce with real ingredients or materials, maker hands, assembly or operating steps, ritual/use sequences, source objects, and a recognizable series container rather than generic heritage props or synthetic perfection.
 
 Prompt cue: show real product, real detail, practical use, and the work or mechanism behind the result; keep decoration subordinate to verifiable evidence and avoid over-polished fake luxury.
 

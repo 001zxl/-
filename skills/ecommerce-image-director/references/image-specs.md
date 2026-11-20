@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-16)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-20)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -110,6 +110,9 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - Selected sellers can also add merchant-owned JPG or PNG assets to the Auto-post library after Auto-post is enabled. Use single photos only when each image communicates independently; use a photo set when sequence carries the story. TikTok currently recommends 4-5 images with one consistent style for a set and vertical 9:16 for the best carousel experience.
 - Do not re-upload PDP photos into this merchant library. Prefer additional angles, model or use-scene photography, and coherent story sets. Attach an end date to seasonal or offer-bound creative, select `no expiration` only for evergreen assets, and tag the source or production route such as in-house photography, Meta Ads, or in-house AIGC so performance and rights can be traced.
 - An uploaded asset moves through Under review, Not approved, and Live states before becoming eligible for Auto-post. Archive the submitted file or ordered set, linked product, source/style tag, rights basis, end date, review outcome, and live status; upload does not equal approval or publication.
+- Auto-post uses both dynamic and scheduled carousel formats. Dynamic carousels are assembled from the active asset library when TikTok identifies product growth potential and enough creatives; scheduled carousels are prepared single-item posts with creative, caption, and music that can be previewed as a unit. Do not use one approval record for both formats.
+- In the dynamic product view, assets can appear as single photos or 2-10-photo groups and show AI, enhanced, or original source plus New or Expire soon status. Review by exact product ID, source, date, expiry, and group sequence; when removing one photo from a group, retain at least two, and archive whether a single asset or the whole group was removed.
+- The Carousel Performance view currently exposes the top 10 creatives used in dynamic Auto-post, while product-level Live/Performance and Analytics > Channel Analytics > Carousel Details provide additional reporting. Log which creative was eligible and shown, its exposure frequency, clicks or product views, and conversion outcome; a top-10 view is not proof that every served combination was reviewed or exported.
 
 ### Google Advertising AI Labels
 

@@ -51,6 +51,14 @@ Brand gate: for branded apparel, shoes, bags, and accessories on Douyin, do not 
 
 Douyin category gate: the current Apparel, Shoes, Bags, and Accessories rule requires PNG/JPG/JPEG main images at 600 x 600 px or larger and recommends 1:1. Use the first image for the complete front view, then assign later images to other angles, use scenes, and construction/material details. If underwear, sports underwear, or swimwear uses an on-body first image, preserve the rule's minimum framing: top garments from head to waist, bottoms from waist to feet or head to legs, and sets from head to feet or head to legs. Keep this upload rule separate from Douyin Mall recommendation modules that may prohibit a real-person underwear first image, and recheck the dedicated underwear-image rule before export.
 
+#### Secondhand Luxury And Resale
+
+Proof needs: the exact one-off item's identity, condition grade, every material defect, wear, repair history, functional defect, warranty state, included packaging, and included or missing accessories.
+
+Douyin secondhand-luxury gate: the current `潮奢` industry rule requires the actual sellable item and its packaging in main-image slot 1, a front white-background view in slot 2, and front, back, outer-packaging, and condition evidence across the remaining three slots. Except for items graded `准新`, include at least one clear image of real wear or abrasion. Keep the title grade, detail-page condition description, photos, short video, livestream, packaging, and delivered item consistent.
+
+Treat every listing as a unique-item evidence set. Capture defects instead of retouching them away, and disclose appearance, scratches, scuffs, oxidation, paint loss, deformation, functional defects, warranty state, repair history, packaging, and accessory completeness in a prominent detail module. Do not use an AI-restaged packshot, generic same-model photo, beauty retouch, or generated replacement as evidence of the item's condition. Preserve inspection or authenticity-report wording exactly; do not claim a conclusion the report does not state.
+
 ### Electronics, Digital Accessories
 
 Proof needs: feature clarity, compatibility, ports, screen/interface, scale, use scenario, performance specs.

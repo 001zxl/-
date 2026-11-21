@@ -78,6 +78,15 @@ Before adding a platform badge, trust mark, certification, or program logo to a 
 - Separate what the mark actually means from nearby copy. Reject language that turns eligibility or service status into an unsupported product-quality, safety, freshness, efficacy, testing, or platform-guarantee claim.
 - Recheck authorization at export and campaign refresh. If eligibility ends, remove the mark from reusable templates, scheduled creative, listing images, livestream assets, and unsent packaging; preserve the approval and removal record.
 
+### 3D. Unique-Item Condition Evidence Gate
+
+For secondhand, repaired, open-box, damaged-stock, collectible, and other condition-specific inventory, build the image map from the exact sellable unit rather than from a reusable model-level packshot:
+
+- Assign a unique inventory or listing ID and capture dated front, back, side, serial or identity detail where permitted, packaging, included accessories, and every material defect or wear area.
+- Keep grade, defects, function, warranty, repair history, packaging, accessories, title, detail copy, video, livestream presentation, and fulfillment record aligned to that unit. A cleaner item of the same model is not evidence for the listed unit.
+- Keep evidence photos ungenerated and materially unretouched. Cosmetic cleanup may normalize exposure or crop only when it does not hide scratches, oxidation, discoloration, paint loss, deformation, repair traces, missing parts, or scale.
+- Archive the approved evidence set with the listing ID and prevent reuse after the unit sells or the condition changes. If an AI lifestyle or promotional derivative is allowed, label it as a separate derivative and never use it to prove condition, authenticity, included items, or inspection findings.
+
 ### 4. Generation Notes
 
 For each generated image, record:

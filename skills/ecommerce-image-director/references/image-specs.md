@@ -115,6 +115,13 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - In the dynamic product view, assets can appear as single photos or 2-10-photo groups and show AI, enhanced, or original source plus New or Expire soon status. Review by exact product ID, source, date, expiry, and group sequence; when removing one photo from a group, retain at least two, and archive whether a single asset or the whole group was removed.
 - The Carousel Performance view currently exposes the top 10 creatives used in dynamic Auto-post, while product-level Live/Performance and Analytics > Channel Analytics > Carousel Details provide additional reporting. Log which creative was eligible and shown, its exposure frequency, clicks or product views, and conversion outcome; a top-10 view is not proof that every served combination was reviewed or exported.
 
+### Google Merchant Center Product Portfolio
+
+- Treat Google product imagery as a portfolio rather than one all-purpose square. For the primary `image_link`, use a sharp, complete hero at a recognizable front or three-quarter angle; aim for 1500 x 1500 px or larger and roughly 75%-90% product occupancy without cutting the silhouette.
+- Keep at least one white or light-neutral solid-background product image in the submitted portfolio. Where catalog depth justifies it, target five or more additional images across alternate clean angles, authentic use context, close details, packaging, and included accessories instead of repeating the same hero treatment.
+- Map the asset to the correct feed role: `image_link` is the default product image, `additional_image_link` accepts up to 10 supplementary views, and `lifestyle_image_link` carries authentic staged or in-use context. A lifestyle primary can be eligible, but it is not a substitute for an unobstructed exact-SKU view or the clean-background asset in the portfolio.
+- Keep promotional text, watermarks, borders, added retailer logos, unrelated products, and generic stand-ins out of the main product image. Preserve a unique image for every materially different variant, and keep all source URLs stable, public, and crawlable.
+
 ### Google Advertising AI Labels
 
 - For Merchant Center product images created with a trained generative model, preserve IPTC `DigitalSourceType=TrainedAlgorithmicMedia`; use `CompositeSynthetic` when the delivery file is a composite that includes synthetic elements. Google's current specification also lists `AlgorithmicMedia` for imagery created purely by an algorithm that is not based on sampled training data. Select the value from the actual creation process rather than treating the three codes as interchangeable or labeling trained-model output as purely algorithmic.

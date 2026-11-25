@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-20)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-25)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -58,6 +58,8 @@ Keep marketplace listing assets separate from feed posts, ads, livestream covers
 - For Douyin's Agriculture and Gardening category, use at least three clear main images at 600 x 600 px or larger and prefer 1:1. Do not alter the evidence image, add a watermark, obscure the product name, or introduce unrelated brands or content.
 - Follow the live subcategory's evidence order rather than applying one generic gardening template: flower and potted-plant listings lead with the real item and shipping state; agricultural packaged goods lead with the actual front package and applicable label; seed listings lead with the front package, then back/manufacturer information, then the unpacked real seed. Pesticide and veterinary non-prescription products also route required certificates to later main-image evidence.
 - For Douyin's secondhand-luxury `潮奢` category, export five PNG/JPG/JPEG main images at 600 x 600 px or larger, prefer 1:1, and keep each file at or below 1 MB. Slot 1 must be a real photo of the exact item with its packaging; slot 2 is its front white-background view; slots 3-5 cover the item's front and back, outer packaging, and condition. Except for `准新` items, at least one of those later images must clearly show actual wear or abrasion. Use the detail page to make the exact item's grade, visible defects, functional defects, warranty, repair history, packaging, and included or missing accessories prominent and consistent. Do not clone a cleaner same-model item, remove evidence, or generate a substitute condition photo.
+- For Douyin Beauty, use 3-5 PNG/JPG/JPEG main images at 600 x 600 px or larger and prefer 1:1. Put the complete actual front view or actual outer packaging in slot 1, a readable actual package-label view in slot 2 where applicable, and use later slots for other real package or inner-package sides. Keep the image clear, complete, unaltered, and free of watermarks, unrelated brands, and unrelated information; do not regenerate or beautify the label evidence.
+- Apply Douyin's final brand-confusion rule across main images, SKU images, detail-page graphics, short-video or livestream covers, backgrounds, and props. Reject multiple conflicting brand signals, another brand's logo or near-copy, altered or homophonic brand wording, comparisons that imply affiliation, a promoted component brand that could be mistaken for the whole-product brand, or any brand that does not match the physical SKU and current authorization.
 - Keep plant variety, color, growth/opening state, measured size, seed contents, package labels, toxicity marks, registration/license numbers, formula, dosage, and manufacturer information tied to the actual sellable SKU. Do not use AI to create a nonexistent flower color or to support guaranteed germination, survival, or yield claims; place required care, planting-condition, and risk information in the verified detail-page modules.
 
 ### TikTok Shop United States Product Detail Page
@@ -121,6 +123,8 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - Keep at least one white or light-neutral solid-background product image in the submitted portfolio. Where catalog depth justifies it, target five or more additional images across alternate clean angles, authentic use context, close details, packaging, and included accessories instead of repeating the same hero treatment.
 - Map the asset to the correct feed role: `image_link` is the default product image, `additional_image_link` accepts up to 10 supplementary views, and `lifestyle_image_link` carries authentic staged or in-use context. A lifestyle primary can be eligible, but it is not a substitute for an unobstructed exact-SKU view or the clean-background asset in the portfolio.
 - Keep promotional text, watermarks, borders, added retailer logos, unrelated products, and generic stand-ins out of the main product image. Preserve a unique image for every materially different variant, and keep all source URLs stable, public, and crawlable.
+- Treat an image replacement as a staged feed migration. Publish the approved derivative at a new direct image URL, verify a clean `200 OK`, matching extension/MIME type, Googlebot access, and the submitted thumbnail, then monitor `Products > Needs attention`, history, and the product detail page. Reusing the old URL can delay detection for up to 6 weeks; a new URL normally prompts a 24-72-hour recrawl.
+- Google can keep serving the previously approved image for up to 30 days while a replacement is reviewed. During that window, do not change color, pattern, bundle, count, packaging, or other attributes in a way that conflicts with the fallback image. If the mismatch is material, revert the attribute change or use a new item ID rather than knowingly serving an old visual against new product data.
 
 ### Google Advertising AI Labels
 
@@ -143,6 +147,8 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 - The current Xiaohongshu Open Platform product API documentation accepts 800 x 800 or 750 x 1000 product images in JPG, PNG, or JPEG, corresponding to 1:1 and 3:4.
 - Product-detail images must be 750-1242 px wide, no more than 1546 px high, and no more than 2 MB each.
 - Treat these as merchant product-listing specifications, not Xiaohongshu feed-post creative guidance.
+- For Xiaohongshu `闪拍` listings, the current November rules require the main image to be a screenshot from the live session that fully shows the exact item without unrelated products or hidden details. Match the visible unit count, color, and specification to the sale unit and the host's explanation, and disclose material attributes, defects, packaging, fulfillment, and included items consistently in the detail page.
+- Treat a `闪拍` screenshot as session-bound evidence, not a reusable catalog asset. After the live session ends, do not use that flash-sale product or its image for sales through another channel; archive the session, listing ID, screenshot timestamp, exact item/SKU, and teardown status.
 
 ### Amazon Product Images
 

@@ -258,11 +258,13 @@ Treat these as capability-routing notes, not guarantees of packaging fidelity. R
 - Modified images keep the original format; save transparent-background outputs as PNG. Shopify applies a non-removable invisible watermark to generated images, although the guide says it does not restrict commercial use.
 - Keep the original product photo and an editable master outside the generated scene. Composite exact packaging, labels, prices, and legal copy deterministically when the native edit cannot preserve them.
 
-## Canva Magic Layers Handoff (Checked 2026-08-14)
+## Canva Magic Layers And Automation Handoff (Checked 2026-11-25)
 
 - Canva says Magic Layers is now available to all users inside ChatGPT and Gemini through the Canva connection. It can turn a flat AI-generated image into a Canva design with live-editable text and separately selectable objects, then support repositioning, background repair, translation, resizing, and team handoff.
+- Canva's November 23 release also exposes image generation, background removal, Magic Layers, resizing, export, and template Autofill through its current MCP/API surface, with service-account support for higher-volume workflows. Treat this as an editable production route, not evidence that an automated output is product-accurate or publishable.
 - Use it after concept approval to recover an editable campaign master, localize copy, and adapt ratios without regenerating the entire product scene. Keep the original SKU photo and verified copy beside the layered file.
 - Layer extraction is an editing aid, not a fidelity guarantee. Inspect masks, regenerated gaps, product edges, logos, packaging text, color, and legal copy before export; rebuild critical product and claim layers from verified sources when decomposition is imperfect.
+- For template Autofill, bind fields to a locked SKU-and-copy manifest, render a small representative set first, and inspect overflow, font substitution, image crop, variant mapping, offer dates, and metadata on the exported derivative before allowing a batch to publish.
 
 ## Recraft V4 Styles Routing (Checked 2026-08-28)
 

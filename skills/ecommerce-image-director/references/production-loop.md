@@ -108,6 +108,7 @@ When the tool supports structured or layered output, preserve a reusable campaig
 - Keep headlines, prices, claims, specifications, and logos as editable objects so they can be corrected or localized without regenerating the product.
 - Export platform-ready raster files from the approved master, but archive the layered source, source product photos, font information, and copy version together.
 - Canva now says Magic Layers is available to all users through its ChatGPT and Gemini connections and can convert a flat AI image into live text and selectable objects. Use it as an editable-master handoff when available, but inspect layer boundaries, background regeneration, product edges, packaging, and copy; availability does not make the decomposed result accurate or listing-ready.
+- Canva's current MCP/API route can also generate images, remove backgrounds, convert a flat result into Magic Layers, resize, export, and Autofill templates, with service accounts for higher-volume workflows. Lock every Autofill field to the approved SKU/copy manifest, render a representative batch before scaling, and require human review plus final-file readback for product identity, variant mapping, text overflow, crop, offer dates, rights, disclosure, and metadata. An editable result or successful API call is not publish approval.
 - Seedream 5.5's current API can split one image into a background plus as many as 99 layers and return rich-text OCR for regular text layers. Use it as another editable-master candidate, but reconcile every returned layer against the flat source, inspect masks, gaps, z-order, transparency, OCR characters, and font substitution, and replace product, logo, price, claim, and legal-copy layers with canonical assets before export.
 
 ### 4B. Revision Lineage And Recipe Reuse
@@ -180,6 +181,11 @@ When a Shopify store is eligible for Agentic Storefronts, treat the product-medi
 - Use the channel preview to verify the exact image and accompanying title, category, color, price, and variant data that will leave Shopify. Fix missing coverage deliberately, but do not raise a coverage percentage by mapping one generic image across incompatible SKUs or colorways.
 - Preview the product card or conversational result in each available channel when possible. Check exact SKU, selected color or size, product identity, crop, stale price/offer text baked into the image, and whether an image intended only for a secondary explanation is being promoted as the lead visual.
 - Keep visibility governance separate from image editing. Turning off Shopify Catalog access for a channel does not prevent public web crawling or other external feeds from discovering the product. If the product or its images must be hidden, escalate the product-status and indexing decision; do not represent a Catalog toggle as universal removal.
+
+### 4E. Feed Image Migration And Session-Bound Evidence
+
+- For Google Merchant Center image replacements, publish the approved file at a new direct URL and verify crawler access, a clean response, format/MIME agreement, final metadata, and the submitted thumbnail. Keep the old approved asset and product attributes compatible during Google's transition because the old image may continue serving for up to 30 days; record the old/new URLs, submission time, crawl status, affected variants, and rollback decision.
+- For Xiaohongshu `闪拍`, create the main image from the actual live-session screenshot and bind it to the exact item, sale unit, color, specification, visible defects, host description, and session. Archive the screenshot timestamp and listing/session IDs, then remove the session-bound listing/image after the live ends instead of recycling it into another channel's catalog or evidence set.
 
 ### 5. QA Score
 

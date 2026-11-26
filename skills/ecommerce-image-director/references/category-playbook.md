@@ -59,6 +59,22 @@ Douyin secondhand-luxury gate: the current `潮奢` industry rule requires the a
 
 Treat every listing as a unique-item evidence set. Capture defects instead of retouching them away, and disclose appearance, scratches, scuffs, oxidation, paint loss, deformation, functional defects, warranty state, repair history, packaging, and accessory completeness in a prominent detail module. Do not use an AI-restaged packshot, generic same-model photo, beauty retouch, or generated replacement as evidence of the item's condition. Preserve inspection or authenticity-report wording exactly; do not claim a conclusion the report does not state.
 
+### Jewelry, Gemstones, Precious Metals
+
+Proof needs: the exact item's material and composition, main and secondary stones, artificial or synthetic components, color, size, weight, craftsmanship, treatment or optimization method, origin when claimed, visible defects, hallmark or label, and complete certificate evidence.
+
+Useful images:
+
+- Neutral-light actual-item hero with the jewelry centered and unobstructed.
+- Color- and surface-accurate macro views from multiple angles.
+- Actual hallmark, tag, weight or measurement, clasp, setting, and accessory views.
+- Unobstructed certificate or grading-report evidence when referenced.
+- Close-ups of cracks, internal fissures, inclusions, mineral spots, pearl pits, wear, repair, or other value-affecting defects.
+
+Xiaohongshu jewelry gate: the current `珠宝玉石商品发布及宣传规范` requires main images, detail pages, and promotional content to avoid beauty filters, color filters, abnormal-color lighting, excessive retouching, or partial concealment that could affect buyer judgment. Keep the item centered and disclose the actual main stone, setting material, and other material composition; identify every artificial gemstone by name, including an artificial secondary stone. Do not hide value-affecting defects or misstate origin, treatment, quality, color, size, weight, or craftsmanship. If a certificate or grading report is shown, keep it complete and unobstructed, and do not turn its wording into a stronger claim.
+
+Use an actual-item evidence set for final listing and promotion approval. AI-generated stages, reflections, background swaps, or polished campaign visuals may be secondary creative only after the real item's material, color, scale, settings, and defects have been locked and separately evidenced. Do not use a generated or filtered derivative as the sole proof of gemstone color, luster, transparency, treatment, origin, condition, hallmark, weight, or certification.
+
 ### Electronics, Digital Accessories
 
 Proof needs: feature clarity, compatibility, ports, screen/interface, scale, use scenario, performance specs.

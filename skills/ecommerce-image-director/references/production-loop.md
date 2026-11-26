@@ -187,6 +187,13 @@ When a Shopify store is eligible for Agentic Storefronts, treat the product-medi
 - For Google Merchant Center image replacements, publish the approved file at a new direct URL and verify crawler access, a clean response, format/MIME agreement, final metadata, and the submitted thumbnail. Keep the old approved asset and product attributes compatible during Google's transition because the old image may continue serving for up to 30 days; record the old/new URLs, submission time, crawl status, affected variants, and rollback decision.
 - For Xiaohongshu `闪拍`, create the main image from the actual live-session screenshot and bind it to the exact item, sale unit, color, specification, visible defects, host description, and session. Archive the screenshot timestamp and listing/session IDs, then remove the session-bound listing/image after the live ends instead of recycling it into another channel's catalog or evidence set.
 
+### 4F. Jewelry Color And Condition Evidence
+
+- Before generating or retouching a jewelry scene, capture the exact sellable item under neutral, documented lighting with a color reference when practical. Record material composition, main and secondary stones, artificial or synthetic components, treatment or optimization method, color, size, weight, setting, hallmark, certificate, and every value-affecting defect.
+- Keep two linked asset classes: actual-item evidence and campaign creative. The evidence set must remain unfiltered, unobstructed, traceable to the item, and sufficient to support the listing; generated stages, relighting, background replacement, or polished lifestyle imagery cannot replace it.
+- Compare every creative derivative against the evidence set for hue, saturation, translucency, luster, inclusions, surface texture, proportions, stone count, setting, wear, and defects. Reject the derivative if a filter, abnormal-color light, excessive retouch, crop, reflection, prop, hand, or overlay changes the buyer's likely judgment.
+- Show certificates and grading reports without blocked information, preserve their exact wording and item mapping, and prevent AI or layout tools from reconstructing numbers, seals, grades, origin, treatment, or conclusions. If the creative cannot retain those facts exactly, use the original evidence capture or verified typesetting instead.
+
 ### 5. QA Score
 
 Score from 1-5:

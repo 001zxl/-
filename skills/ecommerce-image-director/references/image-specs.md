@@ -38,9 +38,17 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-25)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-27)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
+
+### China Online Priority Industrial Product Sales Pages
+
+- From December 1, 2026, an in-scope product on the current national `网络销售重点工业产品清单` must have true, accurate, clear sales-page disclosure of its product name, producer name and address, model or specification, executed standard number, and necessary warnings.
+- For production-license or CCC products, expose the applicable production-license number, CCC certificate number, or supported certificate link identifier. For listed products governed instead by a mandatory national standard, expose the applicable inspection report or link identifier, with product information, inspection basis, and inspection result covered by the report.
+- Treat structured product fields and platform verification links as canonical data, not copy to be guessed by an image model. If the image set includes a label, certificate, warning, or report module, capture the exact SKU or compose from verified source text and preserve the full scope; do not generate a plausible-looking credential or crop away qualifiers.
+- Run a cross-surface consistency check across title, attributes, main images, detail images, certificate/report links, physical label, and fulfillment SKU. A visually polished evidence card cannot cure a mismatched model, expired or unrelated document, missing warning, or false performance claim.
+- The national list can change and platforms map it to their own categories and publication forms. Verify the current list, exact leaf category, required fields, and platform enforcement state before upload; this gate adds no universal image dimension or slot order.
 
 ### Douyin Mall Product Images
 

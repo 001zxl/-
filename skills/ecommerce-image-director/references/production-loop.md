@@ -87,6 +87,16 @@ For secondhand, repaired, open-box, damaged-stock, collectible, and other condit
 - Keep evidence photos ungenerated and materially unretouched. Cosmetic cleanup may normalize exposure or crop only when it does not hide scratches, oxidation, discoloration, paint loss, deformation, repair traces, missing parts, or scale.
 - Archive the approved evidence set with the listing ID and prevent reuse after the unit sells or the condition changes. If an AI lifestyle or promotional derivative is allowed, label it as a separate derivative and never use it to prove condition, authenticity, included items, or inspection findings.
 
+### 3E. Regulated Industrial Product Sales-Page Gate
+
+For a product sold online in China, check the current `网络销售重点工业产品清单` before prompt writing or page layout. If the exact SKU is in scope:
+
+- Record the product name, producer name and address, model/specification, executed standard number, necessary warnings, platform leaf category, and whether the qualification route is production license, CCC, or mandatory-standard inspection report.
+- Preserve the source document, document number, covered model/configuration, issuing body, validity state, inspection basis/result where applicable, verification link, and named approver in the SKU manifest. Do not let a family-level document silently cover an unlisted voltage, size, material, factory, or variant.
+- Keep structured fields and platform verification links canonical. Use real captures or deterministic editable text for any supporting image module; never ask an image model to recreate a certificate, report, warning, producer address, or official number from memory or visual resemblance.
+- Compare title, attributes, visible image text, physical label, document scope, links, claims, and fulfillment SKU before release. Treat a certificate/report change, model change, recall, expiry, or list/category update as a re-approval trigger for every affected listing and derivative.
+- Do not convert this disclosure duty into a universal crowded-main-image template. Route mandatory information to the platform's actual fields and detail-page evidence, then apply separate category-specific main-image slots where they exist.
+
 ### 4. Generation Notes
 
 For each generated image, record:

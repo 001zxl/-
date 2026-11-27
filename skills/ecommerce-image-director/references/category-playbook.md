@@ -89,6 +89,18 @@ Useful images:
 
 Douyin 3C gate: the category rule revised effective September 16, 2026 requires five main images at 600 x 600 px or larger and recommends 1:1. Use an actual complete front view in slot 1. For products subject to compulsory CCC certification, reserve slot 3 for the CCC mark; for products subject to an energy-efficiency label, reserve slot 4 for that label. Use the remaining slots for real angles, verified brand and model information, ports/details, certification evidence, included accessories, outer packaging, and a readable complete Chinese label for domestic goods or simplified-Chinese label plus origin for imports. Do not generate or beautify certification marks, energy labels, manufacturer/address data, model numbers, or included-item evidence; capture them from the actual sellable SKU and verify the live category mapping before export.
 
+### China Online Priority Industrial Products
+
+Proof needs: exact product name, producer name and address, model or specification, executed standard number, necessary warnings, and the qualification route for the current `网络销售重点工业产品清单` entry.
+
+Effective December 1, 2026, China's national online-sales rule covers the current 99-product list across industrial-production-license products, CCC-managed products, and other products involving health or life/property safety that have mandatory national standards. For every in-scope SKU, keep the sales page and any visual evidence aligned with the physical product and the platform's structured fields:
+
+- For production-license or CCC products, show the applicable license or CCC certificate number, or the platform-supported certificate link identifier.
+- For the third group, show the applicable inspection report or link identifier; the report must cover at least the product information, inspection basis, and inspection result.
+- Build evidence from the exact SKU's physical label, current certificate, or current report. Do not generate, redraw, beautify, splice, or infer producer data, model/specification, standard numbers, warnings, certificate numbers, report conclusions, or validity scope.
+- Do not force all compliance text into a crowded main image. Use the platform's required structured fields and links as the canonical disclosure, then add readable detail-page captures or deterministic evidence modules where the category or platform requires them.
+- Recheck the live list and platform category mapping before release because the national list is dynamically maintained. A certificate for a nearby model, family, factory, voltage, material, or configuration is not evidence for the selected SKU unless its scope explicitly covers it.
+
 ### Home, Furniture, Storage, Decor
 
 Proof needs: scale, room fit, material, storage method, installation, before/after organization.

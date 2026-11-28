@@ -38,7 +38,7 @@ Always verify exact platform requirements when the task is listing-ready. Platfo
 - **Amazon**: main image commonly requires clean white background and high-resolution product clarity. Verify marketplace rules before final export.
 - **Shopify/Independent sites**: match theme layout; prepare square product cards, portrait detail blocks, and horizontal hero/banner variants as needed.
 
-## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-27)
+## Verified Marketplace And Paid-Image Notes (Checked through 2026-11-28)
 
 Keep marketplace listing assets separate from feed posts, ads, livestream covers, and other promotional creative. The rules below are placement- and market-specific.
 
@@ -138,8 +138,8 @@ Keep these paid-media specifications separate from TikTok Shop PDP requirements.
 
 - For Merchant Center product images created with a trained generative model, preserve IPTC `DigitalSourceType=TrainedAlgorithmicMedia`; use `CompositeSynthetic` when the delivery file is a composite that includes synthetic elements. Google's current specification also lists `AlgorithmicMedia` for imagery created purely by an algorithm that is not based on sampled training data. Select the value from the actual creation process rather than treating the three codes as interchangeable or labeling trained-model output as purely algorithmic.
 - Preserve the selected field through every derivative for `image_link`, `additional_image_link`, and `lifestyle_image_link`, then read it back from the final upload file. A visible AI label or Google-applied SynthID/C2PA does not replace this Merchant Center file-metadata requirement.
-- For Google Ads, Display & Video 360, Campaign Manager 360, Merchant Center, and Google Ads Editor assets, make a separate AI-label decision from the Merchant Center IPTC provenance check. Use the platform AI-label setting or a compliant label applied in the creative when the targeted market or applicable law requires disclosure.
-- Google currently says designated AI-created or AI-edited assets are disclosed in the global `How this ad was made` panel, while campaigns targeting the European Union, India, or New York can also receive a visible overlay. Confirm the live campaign geography and label status before launch; using the Google setting does not by itself prove legal compliance.
+- For Google Ads, Search Ads 360, Display & Video 360, Campaign Manager 360, Merchant Center, and Google Ads Editor assets, make a separate AI-label decision from the Merchant Center IPTC provenance check. Use the platform AI-label setting or a compliant label applied in the creative when the targeted market or applicable law requires disclosure.
+- Google currently says designated AI-created or AI-edited assets are disclosed in the global `How this ad was made` panel. Campaigns targeting the European Union, India, New York, California, South Korea, or Vietnam can also receive a visible overlay. Treat this as a geography-by-asset matrix rather than a single campaign-wide assumption, confirm the live target locations and final label status before launch, and do not treat use of the Google setting as proof of legal compliance.
 - If applying a visible label in the creative, keep it away from corners and edges, preview every responsive crop, and disable image-enhancement options that could crop the label. Record the final label route and status with each derivative rather than assuming one source file covers every placement.
 - Keep disclosure separate from asset truth and provenance: a label does not cure an inaccurate SKU, and Google-applied SynthID/C2PA or Merchant Center IPTC `DigitalSourceType` does not replace a required visible or platform-controlled disclosure.
 
